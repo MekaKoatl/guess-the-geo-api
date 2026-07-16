@@ -5,6 +5,8 @@ import "dotenv/config"
 import authRoutes from "./routes/auth.js";
 import gameRoutes from "./routes/games.js";
 import statsRoutes from "./routes/stats.js";
+import shareRoutes from "./routes/share.js";
+import mineralRoutes from "./routes/minerals.js";
 
 const app = express();
 
@@ -24,6 +26,8 @@ const PORT = process.env.PORT || 4000;
 app.use("/api/auth", authRoutes);
 app.use("/api/games", gameRoutes);
 app.use("/api/stats", statsRoutes);
+app.use("/api/share", shareRoutes);
+app.use("/api/minerals", mineralRoutes);
 
 mongoose
   .connect(process.env.MONGO_URI)
