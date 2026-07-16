@@ -63,4 +63,35 @@ router.post("/registrar", async (req, res) => {
   }
 });
 
+// POST /api/stats/importar — sube stats locales SOLO si la cuenta no tiene progreso
+router.post("/importar", async (req, res) => {
+  try {
+    const { stats } = req.body;
+    if (!stats) return res.status(400).json({ error: "Faltan stats." });
+
+    const user = await User.findById(req.user.id);
+
+    // Solo migrar a cuentas sin progreso, para no pisar datos reales
+    if (user.stats.jugadas > 0) {
+      return res.json(user.stats); // ya tiene datos: no tocar
+    }
+
+    user.stats = {
+      jugadas: stats.jugadas || 0,
+      ganadas: stats.ganadas || 0,
+      racha: stats.racha || 0,
+      mejorRacha: stats.mejorRacha || 0,
+      ultimaFecha: stats.ultimaFecha || null,
+      distribucion: Array.isArray(stats.distribucion)
+        ? stats.distribucion
+        : [0, 0, 0, 0, 0, 0],
+    };
+    user.markModified("stats");
+    await user.save();
+    res.json(user.stats);
+  } catch (err) {
+    res.status(500).json({ error: "Error del servidor: " + err.message });
+  }
+});
+
 export default router;
