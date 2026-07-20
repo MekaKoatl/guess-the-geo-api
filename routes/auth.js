@@ -2,6 +2,7 @@ import express from "express";
 import bcrypt from "bcrypt";
 import User from "../models/User.js";
 import auth from "../middleware/auth.js";
+import jwt from "jsonwebtoken";
 
 const router = express.Router();
 
@@ -43,7 +44,6 @@ router.post("/register", async (req, res) => {
   }
 });
 
-import jwt from "jsonwebtoken";
 
 // POST /api/auth/login — iniciar sesión
 router.post("/login", async (req, res) => {
