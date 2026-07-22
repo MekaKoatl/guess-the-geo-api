@@ -1,5 +1,7 @@
 import mongoose from "mongoose";
 import "dotenv/config";
+import dns from "node:dns";
+dns.setServers(["8.8.8.8", "1.1.1.1"]);
 import Mineral from "../models/Mineral.js";
 import { MINERALS } from "./minerals.js";
 

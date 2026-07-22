@@ -9,6 +9,7 @@
     "db:up": "docker compose up -d",
     "db:down": "docker compose down",
     "db:logs": "docker compose logs -f mongo",
+    "db:shell": "docker exec -it geo-mongo mongosh -u admin -p devpassword",
     "seed:minerals": "node scripts/subir-minerales.js"
   },
   "keywords": [],

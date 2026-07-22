@@ -8,6 +8,9 @@ import statsRoutes from "./routes/stats.js";
 import shareRoutes from "./routes/share.js";
 import mineralRoutes from "./routes/minerals.js";
 
+import dns from "node:dns";
+dns.setServers(["8.8.8.8", "1.1.1.1"]);
+
 const app = express();
 
 // Middlewares base
