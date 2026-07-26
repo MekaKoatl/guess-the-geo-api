@@ -1,6 +1,7 @@
 import express from "express";
 import bcrypt from "bcrypt";
 import User from "../models/User.js";
+import Game from "../models/Game.js";
 import auth from "../middleware/auth.js";
 import jwt from "jsonwebtoken";
 
@@ -86,6 +87,37 @@ router.post("/login", async (req, res) => {
 // GET /api/auth/me — devuelve el usuario actual (ruta protegida)
 router.get("/me", auth, async (req, res) => {
   res.json({ user: req.user });
+});
+
+
+// DELETE /api/auth/me — borrar la cuenta del usuario y todas sus partidas
+router.delete("/me", auth, async (req, res) => {
+  try {
+    const { password } = req.body;
+
+    if (!password) {
+      return res.status(400).json({ error: "Falta la contraseña." });
+    }
+
+    const user = await User.findById(req.user.id);
+    if (!user) {
+      return res.status(404).json({ error: "Usuario no encontrado." });
+    }
+
+    // Verificar la contraseña antes de borrar
+    const coincide = await bcrypt.compare(password, user.password);
+    if (!coincide) {
+      return res.status(401).json({ error: "Contraseña incorrecta." });
+    }
+
+    // Borrar las partidas del usuario y luego el usuario
+    await Game.deleteMany({ userId: user._id });
+    await User.findByIdAndDelete(user._id);
+
+    res.json({ mensaje: "Cuenta eliminada." });
+  } catch (err) {
+    res.status(500).json({ error: "Error del servidor: " + err.message });
+  }
 });
 
 export default router;
