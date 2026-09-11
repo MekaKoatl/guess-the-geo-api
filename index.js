@@ -1,7 +1,7 @@
 import express from "express";
 import mongoose from "mongoose";
 import cors from "cors";
-import "dotenv/config"
+import "dotenv/config";
 import authRoutes from "./routes/auth.js";
 import gameRoutes from "./routes/games.js";
 import statsRoutes from "./routes/stats.js";
@@ -14,8 +14,17 @@ dns.setServers(["8.8.8.8", "1.1.1.1"]);
 const app = express();
 
 // Middlewares base
-app.use(cors());          // permite que el frontend (otro origen) llame a la API
-app.use(express.json());  // permite leer JSON en el cuerpo de las peticiones
+const origenesPermitidos = [
+  "https://guess-the-geo.vercel.app",
+  "http://localhost:5173", // para que sigas pudiendo probar en local
+];
+
+app.use(
+  cors({
+    origin: origenesPermitidos,
+  }),
+); // permite que el frontend (otro origen) llame a la API
+app.use(express.json()); // permite leer JSON en el cuerpo de las peticiones
 
 // Ruta de prueba
 app.get("/", (req, res) => {
