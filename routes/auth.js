@@ -4,11 +4,18 @@ import User from "../models/User.js";
 import Game from "../models/Game.js";
 import auth from "../middleware/auth.js";
 import jwt from "jsonwebtoken";
+import rateLimit from "express-rate-limit";
 
 const router = express.Router();
 
+const limiteAuth = rateLimit({
+  windowMs: 15 * 60 * 1000, // 15 minutos
+  max: 10, // máx 10 intentos por IP en esa ventana
+  message: { error: "Demasiados intentos. Intenta de nuevo más tarde." },
+});
+
 // POST /api/auth/register — crear un usuario nuevo
-router.post("/register", async (req, res) => {
+router.post("/register", limiteAuth, async (req, res) => {
   try {
     const { username, email, password } = req.body;
 
@@ -47,7 +54,7 @@ router.post("/register", async (req, res) => {
 
 
 // POST /api/auth/login — iniciar sesión
-router.post("/login", async (req, res) => {
+router.post("/login", limiteAuth, async (req, res) => {
   try {
     const { email, password } = req.body;
 

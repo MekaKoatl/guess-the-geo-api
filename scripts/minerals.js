@@ -48,6 +48,29 @@ export const MINERALS = [
   },
   {
     "idNum": 3,
+    "id": "rubi",
+    "nombre": "Rubí",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Ruby%20-%20Winza%2C%20Tanzania.jpg?width=1200",
+    "familia": "Óxido / hidróxido",
+    "color": "Rojo",
+    "sistema": "Trigonal",
+    "densidad": "4 g/cm³",
+    "brillo": "",
+    "raya": "blanco",
+    "pistas": [
+      "Familia: Óxido / hidróxido",
+      "Sistema: Trigonal",
+      "Densidad: 4 g/cm³",
+      "Dureza: Duro",
+      "Dureza (Mohs): 9",
+      "Raya: blanco",
+      "Color: Rojo",
+      "Fórmula: Al₂O₃"
+    ]
+  },
+  {
+    "idNum": 4,
     "id": "cuarzo",
     "nombre": "Cuarzo",
     "tipo": "mineral",
@@ -70,29 +93,6 @@ export const MINERALS = [
       "Raya: negro",
       "Color: Incoloro",
       "Fórmula: SiO₂"
-    ]
-  },
-  {
-    "idNum": 4,
-    "id": "rubi",
-    "nombre": "Rubí",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Ruby%20-%20Winza%2C%20Tanzania.jpg?width=1200",
-    "familia": "Óxido / hidróxido",
-    "color": "Rojo",
-    "sistema": "Trigonal",
-    "densidad": "4 g/cm³",
-    "brillo": "",
-    "raya": "blanco",
-    "pistas": [
-      "Familia: Óxido / hidróxido",
-      "Sistema: Trigonal",
-      "Densidad: 4 g/cm³",
-      "Dureza: Duro",
-      "Dureza (Mohs): 9",
-      "Raya: blanco",
-      "Color: Rojo",
-      "Fórmula: Al₂O₃"
     ]
   },
   {
@@ -193,7 +193,7 @@ export const MINERALS = [
     "tipo": "mineral",
     "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Achat%20Mineral%20aus%20Brasilien.jpg?width=1200",
     "familia": "Silicato",
-    "color": "",
+    "color": "Bandas multicolor",
     "sistema": "",
     "densidad": "2.6 g/cm³",
     "brillo": "No metálico (vítreo)",
@@ -205,6 +205,7 @@ export const MINERALS = [
       "Brillo: No metálico (vítreo)",
       "Dureza (Mohs): 6.75",
       "Raya: blanco",
+      "Color: Bandas multicolor",
       "Fórmula: SiO₂"
     ]
   },
@@ -215,12 +216,14 @@ export const MINERALS = [
     "tipo": "mineral",
     "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Topaze%20Br%C3%A9sil.jpg?width=1200",
     "familia": "Silicato",
-    "color": "",
+    "color": "Amarillo miel a incoloro",
     "sistema": "Ortorrómbico",
     "densidad": "3.5 g/cm³",
     "brillo": "No metálico (vítreo)",
     "raya": "blanco",
     "pistas": [
+      "Grupo espacial: 62",
+      "Grupo puntual: ortorrómbico-dipiramidal",
       "Familia: Silicato",
       "Sistema: Ortorrómbico",
       "Densidad: 3.5 g/cm³",
@@ -228,6 +231,7 @@ export const MINERALS = [
       "Brillo: No metálico (vítreo)",
       "Dureza (Mohs): 8",
       "Raya: blanco",
+      "Color: Amarillo miel a incoloro",
       "Fórmula: Al₂SiO₄F₂"
     ]
   },
@@ -245,6 +249,7 @@ export const MINERALS = [
     "raya": "",
     "pistas": [
       "Grupo espacial: grupo espacial 1",
+      "Grupo puntual: triclinic-pedial",
       "Familia: Fosfato",
       "Sistema: Triclínico",
       "Brillo: No metálico (vítreo)",
@@ -259,17 +264,19 @@ export const MINERALS = [
     "tipo": "mineral",
     "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Beryl-0128-01a.jpg?width=1200",
     "familia": "Silicato",
-    "color": "",
+    "color": "Verde a azul",
     "sistema": "Hexagonal",
     "densidad": "",
     "brillo": "No metálico (vítreo)",
     "raya": "blanco",
     "pistas": [
       "Grupo espacial: P6/mcc",
+      "Grupo puntual: dihexagonal-dipyramidal",
       "Familia: Silicato",
       "Sistema: Hexagonal",
       "Brillo: No metálico (vítreo)",
       "Raya: blanco",
+      "Color: Verde a azul",
       "Fórmula: Be₃Al₂Si₆O₁₈"
     ]
   },
@@ -280,19 +287,22 @@ export const MINERALS = [
     "tipo": "mineral",
     "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/SaltCrystaUSGOV.jpg?width=1200",
     "familia": "Haluro",
-    "color": "",
+    "color": "Incoloro a blanco",
     "sistema": "Cúbico",
-    "densidad": "",
+    "densidad": "2224.6 g/cm³",
     "brillo": "No metálico (vítreo)",
     "raya": "blanco",
     "pistas": [
       "Grupo espacial: Fm-3m",
+      "Grupo puntual: cubic-hexoctahedral",
       "Familia: Haluro",
       "Sistema: Cúbico",
+      "Densidad: 2224.6 g/cm³",
       "Dureza: Blando",
       "Brillo: No metálico (vítreo)",
       "Dureza (Mohs): 2",
       "Raya: blanco",
+      "Color: Incoloro a blanco",
       "Fórmula: NaCl"
     ]
   },
@@ -331,6 +341,8 @@ export const MINERALS = [
     "brillo": "No metálico (vítreo)",
     "raya": "blanco",
     "pistas": [
+      "Grupo espacial: R-3c",
+      "Grupo puntual: ditrigonal scalahedral",
       "Familia: Carbonato",
       "Sistema: Trigonal",
       "Densidad: 2.7 g/cm³",
@@ -344,72 +356,6 @@ export const MINERALS = [
   },
   {
     "idNum": 16,
-    "id": "corindon",
-    "nombre": "Corindón",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Corundum.jpg?width=1200",
-    "familia": "Óxido / hidróxido",
-    "color": "",
-    "sistema": "Trigonal",
-    "densidad": "",
-    "brillo": "",
-    "raya": "blanco",
-    "pistas": [
-      "Grupo espacial: R-3c",
-      "Familia: Óxido / hidróxido",
-      "Sistema: Trigonal",
-      "Dureza: Duro",
-      "Dureza (Mohs): 9",
-      "Raya: blanco",
-      "Fórmula: Al₂O₃"
-    ]
-  },
-  {
-    "idNum": 17,
-    "id": "opalo",
-    "nombre": "Ópalo",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Opal%20banded.jpg?width=1200",
-    "familia": "Silicato",
-    "color": "",
-    "sistema": "",
-    "densidad": "",
-    "brillo": "No metálico (vítreo)",
-    "raya": "blanco",
-    "pistas": [
-      "Familia: Silicato",
-      "Brillo: No metálico (vítreo)",
-      "Raya: blanco",
-      "Fórmula: SiO₂·nH₂O"
-    ]
-  },
-  {
-    "idNum": 18,
-    "id": "pirita",
-    "nombre": "Pirita",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Pyrite%20-%20Huanzala%20mine%2C%20Huallanca%2C%20Bolognesi%2C%20Ancash%2C%20Peru.jpg?width=1200",
-    "familia": "Sulfuro",
-    "color": "Amarillo latón",
-    "sistema": "Cúbico",
-    "densidad": "5 g/cm³",
-    "brillo": "Metálico",
-    "raya": "negro",
-    "pistas": [
-      "Grupo espacial: Pa-3",
-      "Familia: Sulfuro",
-      "Sistema: Cúbico",
-      "Densidad: 5 g/cm³",
-      "Dureza: Medio",
-      "Brillo: Metálico",
-      "Dureza (Mohs): 6",
-      "Raya: negro",
-      "Color: Amarillo latón",
-      "Fórmula: FeS₂"
-    ]
-  },
-  {
-    "idNum": 19,
     "id": "hematites",
     "nombre": "Hematites",
     "tipo": "mineral",
@@ -422,6 +368,7 @@ export const MINERALS = [
     "raya": "",
     "pistas": [
       "Grupo espacial: R-3c",
+      "Grupo puntual: ditrigonal scalahedral",
       "Familia: Óxido / hidróxido",
       "Sistema: Trigonal",
       "Densidad: 5.1 g/cm³",
@@ -432,22 +379,96 @@ export const MINERALS = [
     ]
   },
   {
+    "idNum": 17,
+    "id": "corindon",
+    "nombre": "Corindón",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Corundum.jpg?width=1200",
+    "familia": "Óxido / hidróxido",
+    "color": "Rojo a azul",
+    "sistema": "Trigonal",
+    "densidad": "",
+    "brillo": "",
+    "raya": "blanco",
+    "pistas": [
+      "Grupo espacial: R-3c",
+      "Grupo puntual: ditrigonal scalahedral",
+      "Familia: Óxido / hidróxido",
+      "Sistema: Trigonal",
+      "Dureza: Duro",
+      "Dureza (Mohs): 9",
+      "Raya: blanco",
+      "Color: Rojo a azul",
+      "Fórmula: Al₂O₃"
+    ]
+  },
+  {
+    "idNum": 18,
+    "id": "opalo",
+    "nombre": "Ópalo",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Opal%20banded.jpg?width=1200",
+    "familia": "Silicato",
+    "color": "Multicolor iridiscente",
+    "sistema": "",
+    "densidad": "",
+    "brillo": "No metálico (vítreo)",
+    "raya": "blanco",
+    "pistas": [
+      "Familia: Silicato",
+      "Brillo: No metálico (vítreo)",
+      "Raya: blanco",
+      "Color: Multicolor iridiscente",
+      "Fórmula: SiO₂·nH₂O"
+    ]
+  },
+  {
+    "idNum": 19,
+    "id": "pirita",
+    "nombre": "Pirita",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Pyrite%20-%20Huanzala%20mine%2C%20Huallanca%2C%20Bolognesi%2C%20Ancash%2C%20Peru.jpg?width=1200",
+    "familia": "Sulfuro",
+    "color": "Amarillo latón",
+    "sistema": "Cúbico",
+    "densidad": "5 g/cm³",
+    "brillo": "Metálico",
+    "raya": "negro",
+    "pistas": [
+      "Grupo espacial: Pa-3",
+      "Grupo puntual: cubic-diploidal",
+      "Familia: Sulfuro",
+      "Sistema: Cúbico",
+      "Densidad: 5 g/cm³",
+      "Dureza: Medio",
+      "Brillo: Metálico",
+      "Dureza (Mohs): 6",
+      "Raya: negro",
+      "Color: Amarillo latón",
+      "Fórmula: FeS₂"
+    ]
+  },
+  {
     "idNum": 20,
     "id": "dolomita",
     "nombre": "Dolomita",
     "tipo": "mineral",
     "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Dolomite-Magn%C3%A9site-%20Navarre.jpg?width=1200",
     "familia": "Carbonato",
-    "color": "",
+    "color": "Blanco rosado",
     "sistema": "Trigonal",
-    "densidad": "",
+    "densidad": "2870 g/cm³",
     "brillo": "No metálico (vítreo)",
     "raya": "blanco",
     "pistas": [
+      "Grupo espacial: R-3",
+      "Grupo puntual: trigonal-rhombohedral",
       "Familia: Carbonato",
       "Sistema: Trigonal",
+      "Densidad: 2870 g/cm³",
       "Brillo: No metálico (vítreo)",
       "Raya: blanco",
+      "Color: Blanco rosado",
       "Fórmula: CaMg(CO₃)₂"
     ]
   },
@@ -487,6 +508,8 @@ export const MINERALS = [
     "brillo": "No metálico (vítreo)",
     "raya": "verde",
     "pistas": [
+      "Grupo espacial: P2₁/n",
+      "Grupo puntual: monoclinic-prismatic",
       "Familia: Carbonato",
       "Sistema: Monoclínico",
       "Densidad: 3.9 g/cm³",
@@ -500,30 +523,6 @@ export const MINERALS = [
   },
   {
     "idNum": 23,
-    "id": "zircon",
-    "nombre": "Zircón",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Zircon-t09zirc-06c.jpg?width=1200",
-    "familia": "Silicato",
-    "color": "",
-    "sistema": "Tetragonal",
-    "densidad": "4.7 g/cm³",
-    "brillo": "No metálico (vítreo)",
-    "raya": "blanco",
-    "pistas": [
-      "Grupo espacial: I4₁/amd",
-      "Familia: Silicato",
-      "Sistema: Tetragonal",
-      "Densidad: 4.7 g/cm³",
-      "Dureza: Duro",
-      "Brillo: No metálico (vítreo)",
-      "Dureza (Mohs): 7.5",
-      "Raya: blanco",
-      "Fórmula: ZrSiO₄"
-    ]
-  },
-  {
-    "idNum": 24,
     "id": "magnetita",
     "nombre": "Magnetita",
     "tipo": "mineral",
@@ -536,6 +535,7 @@ export const MINERALS = [
     "raya": "negro",
     "pistas": [
       "Grupo espacial: Fd-3m",
+      "Grupo puntual: cubic-hexoctahedral",
       "Familia: Óxido / hidróxido",
       "Sistema: Cúbico",
       "Densidad: 5.2 g/cm³",
@@ -547,13 +547,13 @@ export const MINERALS = [
     ]
   },
   {
-    "idNum": 25,
+    "idNum": 24,
     "id": "aguamarina",
     "nombre": "Aguamarina",
     "tipo": "mineral",
     "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Aquamarine%20P1000141.JPG?width=1200",
     "familia": "Silicato",
-    "color": "",
+    "color": "Azul verdoso claro",
     "sistema": "",
     "densidad": "",
     "brillo": "No metálico (vítreo)",
@@ -561,7 +561,34 @@ export const MINERALS = [
     "pistas": [
       "Familia: Silicato",
       "Brillo: No metálico (vítreo)",
+      "Color: Azul verdoso claro",
       "Fórmula: Be₃Al₂Si₅O₁₈"
+    ]
+  },
+  {
+    "idNum": 25,
+    "id": "zircon",
+    "nombre": "Zircón",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Zircon-t09zirc-06c.jpg?width=1200",
+    "familia": "Silicato",
+    "color": "Marrón rojizo",
+    "sistema": "Tetragonal",
+    "densidad": "4.7 g/cm³",
+    "brillo": "No metálico (vítreo)",
+    "raya": "blanco",
+    "pistas": [
+      "Grupo espacial: I4₁/amd",
+      "Grupo puntual: ditetragonal-dipyramidal",
+      "Familia: Silicato",
+      "Sistema: Tetragonal",
+      "Densidad: 4.7 g/cm³",
+      "Dureza: Duro",
+      "Brillo: No metálico (vítreo)",
+      "Dureza (Mohs): 7.5",
+      "Raya: blanco",
+      "Color: Marrón rojizo",
+      "Fórmula: ZrSiO₄"
     ]
   },
   {
@@ -573,12 +600,15 @@ export const MINERALS = [
     "familia": "Haluro",
     "color": "Multicolor",
     "sistema": "Cúbico",
-    "densidad": "",
+    "densidad": "3089.8 g/cm³",
     "brillo": "No metálico (vítreo)",
     "raya": "blanco",
     "pistas": [
+      "Grupo espacial: Fm-3m",
+      "Grupo puntual: cubic-hexoctahedral",
       "Familia: Haluro",
       "Sistema: Cúbico",
+      "Densidad: 3089.8 g/cm³",
       "Dureza: Medio",
       "Brillo: No metálico (vítreo)",
       "Dureza (Mohs): 4",
@@ -589,31 +619,12 @@ export const MINERALS = [
   },
   {
     "idNum": 27,
-    "id": "calcedonia",
-    "nombre": "Calcedonia",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Mineraly.sk%20-%20chalcedon.jpg?width=1200",
-    "familia": "",
-    "color": "",
-    "sistema": "Trigonal",
-    "densidad": "",
-    "brillo": "",
-    "raya": "blanco",
-    "pistas": [
-      "Sistema: Trigonal",
-      "Dureza: Duro",
-      "Dureza (Mohs): 7",
-      "Raya: blanco"
-    ]
-  },
-  {
-    "idNum": 28,
     "id": "caolinita",
     "nombre": "Caolinita",
     "tipo": "mineral",
     "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Mus%C3%A9um%20de%20Nantes%20-%20178%20-%20Kaolinite%20%28Nantes%2C%20France%29.jpg?width=1200",
     "familia": "Silicato",
-    "color": "",
+    "color": "Blanco",
     "sistema": "Triclínico",
     "densidad": "",
     "brillo": "No metálico (vítreo)",
@@ -625,11 +636,58 @@ export const MINERALS = [
       "Brillo: No metálico (vítreo)",
       "Dureza (Mohs): 1",
       "Raya: blanco",
+      "Color: Blanco",
       "Fórmula: Al₂Si₂O₅(OH)₄"
     ]
   },
   {
+    "idNum": 28,
+    "id": "calcedonia",
+    "nombre": "Calcedonia",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Mineraly.sk%20-%20chalcedon.jpg?width=1200",
+    "familia": "",
+    "color": "Gris azulado translúcido",
+    "sistema": "Trigonal",
+    "densidad": "",
+    "brillo": "",
+    "raya": "blanco",
+    "pistas": [
+      "Sistema: Trigonal",
+      "Dureza: Duro",
+      "Dureza (Mohs): 7",
+      "Raya: blanco",
+      "Color: Gris azulado translúcido"
+    ]
+  },
+  {
     "idNum": 29,
+    "id": "aragonito",
+    "nombre": "Aragonito",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Aragonite%202%20Enguidanos.jpg?width=1200",
+    "familia": "Carbonato",
+    "color": "Blanco a amarillento",
+    "sistema": "Ortorrómbico",
+    "densidad": "2.9 g/cm³",
+    "brillo": "No metálico (vítreo)",
+    "raya": "blanco",
+    "pistas": [
+      "Grupo espacial: R-3c",
+      "Grupo puntual: ditrigonal scalahedral",
+      "Familia: Carbonato",
+      "Sistema: Ortorrómbico",
+      "Densidad: 2.9 g/cm³",
+      "Dureza: Medio",
+      "Brillo: No metálico (vítreo)",
+      "Dureza (Mohs): 3.75",
+      "Raya: blanco",
+      "Color: Blanco a amarillento",
+      "Fórmula: CaCO₃"
+    ]
+  },
+  {
+    "idNum": 30,
     "id": "galena",
     "nombre": "Galena",
     "tipo": "mineral",
@@ -641,6 +699,8 @@ export const MINERALS = [
     "brillo": "Metálico",
     "raya": "",
     "pistas": [
+      "Grupo espacial: Fm-3m",
+      "Grupo puntual: cubic-hexoctahedral",
       "Familia: Sulfuro",
       "Sistema: Cúbico",
       "Densidad: 7.5 g/cm³",
@@ -652,19 +712,22 @@ export const MINERALS = [
     ]
   },
   {
-    "idNum": 30,
+    "idNum": 31,
     "id": "azurita",
     "nombre": "Azurita",
     "tipo": "mineral",
     "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Azurite-Malachite-188417.jpg?width=1200",
     "familia": "Carbonato",
     "color": "Azul",
-    "sistema": "",
+    "sistema": "Monoclínico",
     "densidad": "3.8 g/cm³",
     "brillo": "No metálico (vítreo)",
     "raya": "azul claro",
     "pistas": [
+      "Grupo espacial: P2₁/n",
+      "Grupo puntual: monoclinic-prismatic",
       "Familia: Carbonato",
+      "Sistema: Monoclínico",
       "Densidad: 3.8 g/cm³",
       "Dureza: Medio",
       "Brillo: No metálico (vítreo)",
@@ -675,13 +738,13 @@ export const MINERALS = [
     ]
   },
   {
-    "idNum": 31,
+    "idNum": 32,
     "id": "onix",
     "nombre": "Ónix",
     "tipo": "mineral",
     "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Onyx.jpg?width=1200",
     "familia": "Silicato",
-    "color": "",
+    "color": "Negro con bandas",
     "sistema": "Trigonal",
     "densidad": "2.7 g/cm³",
     "brillo": "No metálico (vítreo)",
@@ -693,71 +756,30 @@ export const MINERALS = [
       "Dureza: Duro",
       "Brillo: No metálico (vítreo)",
       "Dureza (Mohs): 7",
+      "Color: Negro con bandas",
       "Fórmula: SiO₂"
     ]
   },
   {
-    "idNum": 32,
+    "idNum": 33,
     "id": "jaspe",
     "nombre": "Jaspe",
     "tipo": "mineral",
     "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Unpolished%20jasper.jpg?width=1200",
     "familia": "",
-    "color": "",
+    "color": "Rojo pardo",
     "sistema": "",
     "densidad": "",
     "brillo": "",
     "raya": "",
     "pistas": [
       "Dureza: Duro",
-      "Dureza (Mohs): 7"
-    ]
-  },
-  {
-    "idNum": 33,
-    "id": "aragonito",
-    "nombre": "Aragonito",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Aragonite%202%20Enguidanos.jpg?width=1200",
-    "familia": "Carbonato",
-    "color": "",
-    "sistema": "Ortorrómbico",
-    "densidad": "2.9 g/cm³",
-    "brillo": "No metálico (vítreo)",
-    "raya": "blanco",
-    "pistas": [
-      "Familia: Carbonato",
-      "Sistema: Ortorrómbico",
-      "Densidad: 2.9 g/cm³",
-      "Dureza: Medio",
-      "Brillo: No metálico (vítreo)",
-      "Dureza (Mohs): 3.75",
-      "Raya: blanco",
-      "Fórmula: CaCO₃"
+      "Dureza (Mohs): 7",
+      "Color: Rojo pardo"
     ]
   },
   {
     "idNum": 34,
-    "id": "baritina",
-    "nombre": "Baritina",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Barite%20-%20Cerro%20Warihuyn%2C%20Miraflores%2C%20Huamalies%2C%20Huanuco%2C%20Peru.jpg?width=1200",
-    "familia": "Sulfato",
-    "color": "",
-    "sistema": "Ortorrómbico",
-    "densidad": "",
-    "brillo": "No metálico (vítreo)",
-    "raya": "blanco",
-    "pistas": [
-      "Familia: Sulfato",
-      "Sistema: Ortorrómbico",
-      "Brillo: No metálico (vítreo)",
-      "Raya: blanco",
-      "Fórmula: BaSO₄"
-    ]
-  },
-  {
-    "idNum": 35,
     "id": "calcopirita",
     "nombre": "Calcopirita",
     "tipo": "mineral",
@@ -770,6 +792,7 @@ export const MINERALS = [
     "raya": "",
     "pistas": [
       "Grupo espacial: I-42d",
+      "Grupo puntual: tetragonal-scalenohedral",
       "Familia: Sulfuro",
       "Sistema: Tetragonal",
       "Dureza: Medio",
@@ -780,24 +803,51 @@ export const MINERALS = [
     ]
   },
   {
+    "idNum": 35,
+    "id": "baritina",
+    "nombre": "Baritina",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Barite%20-%20Cerro%20Warihuyn%2C%20Miraflores%2C%20Huamalies%2C%20Huanuco%2C%20Peru.jpg?width=1200",
+    "familia": "Sulfato",
+    "color": "Blanco a incoloro",
+    "sistema": "Ortorrómbico",
+    "densidad": "4423.7 g/cm³",
+    "brillo": "No metálico (vítreo)",
+    "raya": "blanco",
+    "pistas": [
+      "Grupo espacial: 62",
+      "Grupo puntual: ortorrómbico-dipiramidal",
+      "Familia: Sulfato",
+      "Sistema: Ortorrómbico",
+      "Densidad: 4423.7 g/cm³",
+      "Brillo: No metálico (vítreo)",
+      "Raya: blanco",
+      "Color: Blanco a incoloro",
+      "Fórmula: BaSO₄"
+    ]
+  },
+  {
     "idNum": 36,
     "id": "espinela",
     "nombre": "Espinela",
     "tipo": "mineral",
     "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Spinel2.jpg?width=1200",
     "familia": "Óxido / hidróxido",
-    "color": "",
+    "color": "Rojo a azul",
     "sistema": "Cúbico",
-    "densidad": "",
+    "densidad": "3582.1 g/cm³",
     "brillo": "",
     "raya": "blanco",
     "pistas": [
       "Grupo espacial: Fd-3m",
+      "Grupo puntual: cubic-hexoctahedral",
       "Familia: Óxido / hidróxido",
       "Sistema: Cúbico",
+      "Densidad: 3582.1 g/cm³",
       "Dureza: Duro",
       "Dureza (Mohs): 8",
       "Raya: blanco",
+      "Color: Rojo a azul",
       "Fórmula: MgAl₂O₄"
     ]
   },
@@ -808,7 +858,7 @@ export const MINERALS = [
     "tipo": "mineral",
     "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Carneool.jpg?width=1200",
     "familia": "",
-    "color": "",
+    "color": "Naranja rojizo",
     "sistema": "Trigonal",
     "densidad": "",
     "brillo": "",
@@ -817,7 +867,8 @@ export const MINERALS = [
       "Sistema: Trigonal",
       "Dureza: Duro",
       "Dureza (Mohs): 7",
-      "Raya: blanco"
+      "Raya: blanco",
+      "Color: Naranja rojizo"
     ]
   },
   {
@@ -827,15 +878,19 @@ export const MINERALS = [
     "tipo": "mineral",
     "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Sphalerite%20-%20Iron%20Cap%20mine%2C%20Graham%2C%20Arizona%2C%20USA.jpg?width=1200",
     "familia": "Sulfuro",
-    "color": "",
+    "color": "Marrón a negro",
     "sistema": "Cúbico",
-    "densidad": "",
+    "densidad": "4141.1 g/cm³",
     "brillo": "Metálico",
     "raya": "",
     "pistas": [
+      "Grupo espacial: P6₃mc",
+      "Grupo puntual: dihexagonal-pyramidal",
       "Familia: Sulfuro",
       "Sistema: Cúbico",
+      "Densidad: 4141.1 g/cm³",
       "Brillo: Metálico",
+      "Color: Marrón a negro",
       "Fórmula: ZnS"
     ]
   },
@@ -846,14 +901,18 @@ export const MINERALS = [
     "tipo": "mineral",
     "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Goethit-1597.jpg?width=1200",
     "familia": "Óxido / hidróxido",
-    "color": "",
+    "color": "Marrón amarillento a negro",
     "sistema": "Ortorrómbico",
-    "densidad": "",
+    "densidad": "4243.8 g/cm³",
     "brillo": "",
     "raya": "",
     "pistas": [
+      "Grupo espacial: 62",
+      "Grupo puntual: ortorrómbico-dipiramidal",
       "Familia: Óxido / hidróxido",
       "Sistema: Ortorrómbico",
+      "Densidad: 4243.8 g/cm³",
+      "Color: Marrón amarillento a negro",
       "Fórmula: FeO(OH)"
     ]
   },
@@ -864,7 +923,7 @@ export const MINERALS = [
     "tipo": "mineral",
     "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Andalusite%20-%20Malacheta%2C%20Minas%20Gerais%2C%20Brazil.jpg?width=1200",
     "familia": "Silicato",
-    "color": "",
+    "color": "Marrón rosado verdoso",
     "sistema": "Ortorrómbico",
     "densidad": "3.2 g/cm³",
     "brillo": "No metálico (vítreo)",
@@ -877,6 +936,7 @@ export const MINERALS = [
       "Brillo: No metálico (vítreo)",
       "Dureza (Mohs): 7.5",
       "Raya: blanco",
+      "Color: Marrón rosado verdoso",
       "Fórmula: Al₂SiO₅"
     ]
   },
@@ -889,12 +949,13 @@ export const MINERALS = [
     "familia": "Silicato",
     "color": "",
     "sistema": "Monoclínico",
-    "densidad": "",
+    "densidad": "2.5 g/cm³",
     "brillo": "No metálico (vítreo)",
     "raya": "blanco",
     "pistas": [
       "Familia: Silicato",
       "Sistema: Monoclínico",
+      "Densidad: 2.5 g/cm³",
       "Dureza: Medio",
       "Brillo: No metálico (vítreo)",
       "Dureza (Mohs): 6",
@@ -916,6 +977,7 @@ export const MINERALS = [
     "raya": "negro",
     "pistas": [
       "Grupo espacial: R-3",
+      "Grupo puntual: trigonal-rhombohedral",
       "Familia: Óxido / hidróxido",
       "Sistema: Trigonal",
       "Densidad: 4.7 g/cm³",
@@ -934,13 +996,15 @@ export const MINERALS = [
     "familia": "Óxido / hidróxido",
     "color": "Rojizo",
     "sistema": "Tetragonal",
-    "densidad": "",
+    "densidad": "3856.1 g/cm³",
     "brillo": "",
     "raya": "",
     "pistas": [
       "Grupo espacial: P4₂/mnm",
+      "Grupo puntual: ditetragonal-dipyramidal",
       "Familia: Óxido / hidróxido",
       "Sistema: Tetragonal",
+      "Densidad: 3856.1 g/cm³",
       "Color: Rojizo",
       "Fórmula: TiO₂"
     ]
@@ -954,13 +1018,15 @@ export const MINERALS = [
     "familia": "Óxido / hidróxido",
     "color": "",
     "sistema": "Cúbico",
-    "densidad": "",
+    "densidad": "11055.3 g/cm³",
     "brillo": "",
     "raya": "",
     "pistas": [
       "Grupo espacial: Fm-3m",
+      "Grupo puntual: cubic-hexoctahedral",
       "Familia: Óxido / hidróxido",
       "Sistema: Cúbico",
+      "Densidad: 11055.3 g/cm³",
       "Fórmula: UO₂"
     ]
   },
@@ -977,6 +1043,8 @@ export const MINERALS = [
     "brillo": "Metálico",
     "raya": "",
     "pistas": [
+      "Grupo espacial: 62",
+      "Grupo puntual: ortorrómbico-dipiramidal",
       "Familia: Sulfuro",
       "Sistema: Ortorrómbico",
       "Dureza: Duro",
@@ -998,6 +1066,8 @@ export const MINERALS = [
     "brillo": "No metálico (vítreo)",
     "raya": "blanco",
     "pistas": [
+      "Grupo espacial: R-3c",
+      "Grupo puntual: ditrigonal scalahedral",
       "Familia: Carbonato",
       "Sistema: Trigonal",
       "Densidad: 3 g/cm³",
@@ -1019,6 +1089,8 @@ export const MINERALS = [
     "brillo": "No metálico (vítreo)",
     "raya": "blanco",
     "pistas": [
+      "Grupo espacial: 15",
+      "Grupo puntual: monoclinic-prismatic",
       "Familia: Silicato",
       "Sistema: Monoclínico",
       "Brillo: No metálico (vítreo)",
@@ -1035,7 +1107,7 @@ export const MINERALS = [
     "familia": "Silicato",
     "color": "",
     "sistema": "Triclínico",
-    "densidad": "",
+    "densidad": "2640 g/cm³",
     "brillo": "No metálico (vítreo)",
     "raya": "blanco",
     "pistas": [
@@ -1043,6 +1115,7 @@ export const MINERALS = [
       "Grupo puntual: triclinic-pinacoidal",
       "Familia: Silicato",
       "Sistema: Triclínico",
+      "Densidad: 2640 g/cm³",
       "Brillo: No metálico (vítreo)",
       "Raya: blanco",
       "Fórmula: NaAlSi₃O₈"
@@ -1062,6 +1135,7 @@ export const MINERALS = [
     "raya": "",
     "pistas": [
       "Grupo espacial: P4₂/mnm",
+      "Grupo puntual: ditetragonal-dipyramidal",
       "Familia: Óxido / hidróxido",
       "Sistema: Tetragonal",
       "Densidad: 6.6 g/cm³",
@@ -1079,13 +1153,15 @@ export const MINERALS = [
     "familia": "Óxido / hidróxido",
     "color": "",
     "sistema": "Ortorrómbico",
-    "densidad": "",
+    "densidad": "3713.5 g/cm³",
     "brillo": "",
     "raya": "blanco",
     "pistas": [
       "Grupo espacial: Pbnm",
+      "Grupo puntual: ortorrómbico-dipiramidal",
       "Familia: Óxido / hidróxido",
       "Sistema: Ortorrómbico",
+      "Densidad: 3713.5 g/cm³",
       "Dureza: Duro",
       "Dureza (Mohs): 8.5",
       "Raya: blanco",
@@ -1101,12 +1177,15 @@ export const MINERALS = [
     "familia": "Sulfato",
     "color": "",
     "sistema": "Ortorrómbico",
-    "densidad": "",
+    "densidad": "2978.7 g/cm³",
     "brillo": "No metálico (vítreo)",
     "raya": "blanco",
     "pistas": [
+      "Grupo espacial: 63",
+      "Grupo puntual: ortorrómbico-dipiramidal",
       "Familia: Sulfato",
       "Sistema: Ortorrómbico",
+      "Densidad: 2978.7 g/cm³",
       "Dureza: Medio",
       "Brillo: No metálico (vítreo)",
       "Dureza (Mohs): 3.5",
@@ -1138,26 +1217,6 @@ export const MINERALS = [
   },
   {
     "idNum": 53,
-    "id": "rejalgar",
-    "nombre": "Rejalgar",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Realgar-Calcite-37467.jpg?width=1200",
-    "familia": "Sulfuro",
-    "color": "Rojo anaranjado",
-    "sistema": "Monoclínico",
-    "densidad": "",
-    "brillo": "Metálico",
-    "raya": "",
-    "pistas": [
-      "Familia: Sulfuro",
-      "Sistema: Monoclínico",
-      "Brillo: Metálico",
-      "Color: Rojo anaranjado",
-      "Fórmula: AsS"
-    ]
-  },
-  {
-    "idNum": 54,
     "id": "cianita",
     "nombre": "Cianita",
     "tipo": "mineral",
@@ -1165,12 +1224,13 @@ export const MINERALS = [
     "familia": "Silicato",
     "color": "",
     "sistema": "Triclínico",
-    "densidad": "",
+    "densidad": "3677.1 g/cm³",
     "brillo": "No metálico (vítreo)",
     "raya": "blanco",
     "pistas": [
       "Familia: Silicato",
       "Sistema: Triclínico",
+      "Densidad: 3677.1 g/cm³",
       "Dureza: Medio",
       "Brillo: No metálico (vítreo)",
       "Dureza (Mohs): 4.5",
@@ -1179,7 +1239,7 @@ export const MINERALS = [
     ]
   },
   {
-    "idNum": 55,
+    "idNum": 54,
     "id": "criolita",
     "nombre": "Criolita",
     "tipo": "mineral",
@@ -1187,19 +1247,22 @@ export const MINERALS = [
     "familia": "Haluro",
     "color": "",
     "sistema": "Monoclínico",
-    "densidad": "",
+    "densidad": "3064.9 g/cm³",
     "brillo": "No metálico (vítreo)",
     "raya": "blanco",
     "pistas": [
+      "Grupo espacial: P2₁/n",
+      "Grupo puntual: monoclinic-prismatic",
       "Familia: Haluro",
       "Sistema: Monoclínico",
+      "Densidad: 3064.9 g/cm³",
       "Brillo: No metálico (vítreo)",
       "Raya: blanco",
       "Fórmula: Na₃AlF₆"
     ]
   },
   {
-    "idNum": 56,
+    "idNum": 55,
     "id": "oropimente",
     "nombre": "Oropimente",
     "tipo": "mineral",
@@ -1211,11 +1274,36 @@ export const MINERALS = [
     "brillo": "Metálico",
     "raya": "",
     "pistas": [
+      "Grupo espacial: P2₁/n",
+      "Grupo puntual: monoclinic-prismatic",
       "Familia: Sulfuro",
       "Sistema: Monoclínico",
       "Brillo: Metálico",
       "Color: Amarillo",
       "Fórmula: As₂S₃"
+    ]
+  },
+  {
+    "idNum": 56,
+    "id": "rejalgar",
+    "nombre": "Rejalgar",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Realgar-Calcite-37467.jpg?width=1200",
+    "familia": "Sulfuro",
+    "color": "Rojo anaranjado",
+    "sistema": "Monoclínico",
+    "densidad": "3260.3 g/cm³",
+    "brillo": "Metálico",
+    "raya": "",
+    "pistas": [
+      "Grupo espacial: P2₁/n",
+      "Grupo puntual: monoclinic-prismatic",
+      "Familia: Sulfuro",
+      "Sistema: Monoclínico",
+      "Densidad: 3260.3 g/cm³",
+      "Brillo: Metálico",
+      "Color: Rojo anaranjado",
+      "Fórmula: AsS"
     ]
   },
   {
@@ -1273,6 +1361,7 @@ export const MINERALS = [
     "raya": "marrón",
     "pistas": [
       "Grupo espacial: Fd-3m",
+      "Grupo puntual: cubic-hexoctahedral",
       "Familia: Óxido / hidróxido",
       "Sistema: Cúbico",
       "Dureza: Medio",
@@ -1294,6 +1383,7 @@ export const MINERALS = [
     "brillo": "No metálico (vítreo)",
     "raya": "blanco",
     "pistas": [
+      "Grupo puntual: cubic-hexoctahedral",
       "Familia: Silicato",
       "Sistema: Cúbico",
       "Densidad: 4.3 g/cm³",
@@ -1314,13 +1404,15 @@ export const MINERALS = [
     "familia": "Sulfato",
     "color": "",
     "sistema": "Ortorrómbico",
-    "densidad": "",
+    "densidad": "3977.7 g/cm³",
     "brillo": "No metálico (vítreo)",
     "raya": "blanco",
     "pistas": [
       "Grupo espacial: 62",
+      "Grupo puntual: ortorrómbico-dipiramidal",
       "Familia: Sulfato",
       "Sistema: Ortorrómbico",
+      "Densidad: 3977.7 g/cm³",
       "Dureza: Medio",
       "Brillo: No metálico (vítreo)",
       "Dureza (Mohs): 3.25",
@@ -1335,14 +1427,15 @@ export const MINERALS = [
     "tipo": "mineral",
     "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Wolframiteportugal2.jpg?width=1200",
     "familia": "",
-    "color": "",
+    "color": "Marrón negruzco",
     "sistema": "Monoclínico",
     "densidad": "",
     "brillo": "",
     "raya": "marrón",
     "pistas": [
       "Sistema: Monoclínico",
-      "Raya: marrón"
+      "Raya: marrón",
+      "Color: Marrón negruzco"
     ]
   },
   {
@@ -1373,7 +1466,7 @@ export const MINERALS = [
     "tipo": "mineral",
     "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Electrum%20on%20quartz%20Telluride%20%28cropped%29.jpg?width=1200",
     "familia": "",
-    "color": "",
+    "color": "Amarillo pálido",
     "sistema": "",
     "densidad": "14.1 g/cm³",
     "brillo": "",
@@ -1382,30 +1475,12 @@ export const MINERALS = [
       "Densidad: 14.1 g/cm³",
       "Dureza: Blando",
       "Dureza (Mohs): 2.5",
+      "Color: Amarillo pálido",
       "Fórmula: Au·Ag"
     ]
   },
   {
     "idNum": 65,
-    "id": "marcasita",
-    "nombre": "Marcasita",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/MarcassiteII.jpg?width=1200",
-    "familia": "Sulfuro",
-    "color": "",
-    "sistema": "Ortorrómbico",
-    "densidad": "",
-    "brillo": "Metálico",
-    "raya": "",
-    "pistas": [
-      "Familia: Sulfuro",
-      "Sistema: Ortorrómbico",
-      "Brillo: Metálico",
-      "Fórmula: FeS₂"
-    ]
-  },
-  {
-    "idNum": 66,
     "id": "augita",
     "nombre": "Augita",
     "tipo": "mineral",
@@ -1425,7 +1500,7 @@ export const MINERALS = [
     ]
   },
   {
-    "idNum": 67,
+    "idNum": 66,
     "id": "diopsido",
     "nombre": "Diópsido",
     "tipo": "mineral",
@@ -1433,20 +1508,22 @@ export const MINERALS = [
     "familia": "Silicato",
     "color": "",
     "sistema": "Monoclínico",
-    "densidad": "",
+    "densidad": "3149.5 g/cm³",
     "brillo": "No metálico (vítreo)",
     "raya": "blanco",
     "pistas": [
       "Grupo espacial: C2/c",
+      "Grupo puntual: monoclinic-prismatic",
       "Familia: Silicato",
       "Sistema: Monoclínico",
+      "Densidad: 3149.5 g/cm³",
       "Brillo: No metálico (vítreo)",
       "Raya: blanco",
       "Fórmula: CaMgSi₂O₆"
     ]
   },
   {
-    "idNum": 68,
+    "idNum": 67,
     "id": "cuprita",
     "nombre": "Cuprita",
     "tipo": "mineral",
@@ -1458,9 +1535,33 @@ export const MINERALS = [
     "brillo": "",
     "raya": "",
     "pistas": [
+      "Grupo espacial: Pn-3m",
+      "Grupo puntual: cubic-hexoctahedral",
       "Familia: Óxido / hidróxido",
       "Sistema: Cúbico",
       "Fórmula: Cu₂O"
+    ]
+  },
+  {
+    "idNum": 68,
+    "id": "marcasita",
+    "nombre": "Marcasita",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/MarcassiteII.jpg?width=1200",
+    "familia": "Sulfuro",
+    "color": "",
+    "sistema": "Ortorrómbico",
+    "densidad": "4939.2 g/cm³",
+    "brillo": "Metálico",
+    "raya": "",
+    "pistas": [
+      "Grupo espacial: Pa-3",
+      "Grupo puntual: cubic-diploidal",
+      "Familia: Sulfuro",
+      "Sistema: Ortorrómbico",
+      "Densidad: 4939.2 g/cm³",
+      "Brillo: Metálico",
+      "Fórmula: FeS₂"
     ]
   },
   {
@@ -1477,6 +1578,7 @@ export const MINERALS = [
     "raya": "",
     "pistas": [
       "Grupo espacial: P4₂/mnm",
+      "Grupo puntual: ditetragonal-dipyramidal",
       "Familia: Óxido / hidróxido",
       "Sistema: Tetragonal",
       "Fórmula: MnO₂"
@@ -1495,6 +1597,8 @@ export const MINERALS = [
     "brillo": "No metálico (vítreo)",
     "raya": "blanco",
     "pistas": [
+      "Grupo espacial: R-3c",
+      "Grupo puntual: ditrigonal scalahedral",
       "Familia: Carbonato",
       "Sistema: Trigonal",
       "Densidad: 4 g/cm³",
@@ -1536,12 +1640,15 @@ export const MINERALS = [
     "familia": "Carbonato",
     "color": "",
     "sistema": "Trigonal",
-    "densidad": "",
+    "densidad": "4457 g/cm³",
     "brillo": "No metálico (vítreo)",
     "raya": "blanco",
     "pistas": [
+      "Grupo espacial: R-3c",
+      "Grupo puntual: ditrigonal scalahedral",
       "Familia: Carbonato",
       "Sistema: Trigonal",
+      "Densidad: 4457 g/cm³",
       "Dureza: Medio",
       "Brillo: No metálico (vítreo)",
       "Dureza (Mohs): 5",
@@ -1551,27 +1658,6 @@ export const MINERALS = [
   },
   {
     "idNum": 73,
-    "id": "rodocrosita",
-    "nombre": "Rodocrosita",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Rhodocrosite%206%28P%C3%A9rou%29.jpg?width=1200",
-    "familia": "Carbonato",
-    "color": "Rosa",
-    "sistema": "Trigonal",
-    "densidad": "",
-    "brillo": "No metálico (vítreo)",
-    "raya": "blanco",
-    "pistas": [
-      "Familia: Carbonato",
-      "Sistema: Trigonal",
-      "Brillo: No metálico (vítreo)",
-      "Raya: blanco",
-      "Color: Rosa",
-      "Fórmula: MnCO₃"
-    ]
-  },
-  {
-    "idNum": 74,
     "id": "arsenopirita",
     "nombre": "Arsenopirita",
     "tipo": "mineral",
@@ -1579,19 +1665,22 @@ export const MINERALS = [
     "familia": "Sulfuro",
     "color": "",
     "sistema": "Monoclínico",
-    "densidad": "",
+    "densidad": "6347.3 g/cm³",
     "brillo": "Metálico",
     "raya": "negro",
     "pistas": [
+      "Grupo espacial: triclinic-pinacoidal",
+      "Grupo puntual: triclinic-pinacoidal",
       "Familia: Sulfuro",
       "Sistema: Monoclínico",
+      "Densidad: 6347.3 g/cm³",
       "Brillo: Metálico",
       "Raya: negro",
       "Fórmula: FeAsS"
     ]
   },
   {
-    "idNum": 75,
+    "idNum": 74,
     "id": "vermiculita",
     "nombre": "Vermiculita",
     "tipo": "mineral",
@@ -1613,7 +1702,7 @@ export const MINERALS = [
     ]
   },
   {
-    "idNum": 76,
+    "idNum": 75,
     "id": "epidota",
     "nombre": "Epidota",
     "tipo": "mineral",
@@ -1626,11 +1715,36 @@ export const MINERALS = [
     "raya": "",
     "pistas": [
       "Grupo espacial: P2₁/m",
+      "Grupo puntual: monoclinic-prismatic",
       "Familia: Silicato",
       "Sistema: Monoclínico",
       "Brillo: No metálico (vítreo)",
       "Color: Verde",
       "Fórmula: {Ca₂}{Al₂Fe³⁺}(Si₂O₇)(SiO₄)O(OH)"
+    ]
+  },
+  {
+    "idNum": 76,
+    "id": "rodocrosita",
+    "nombre": "Rodocrosita",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Rhodocrosite%206%28P%C3%A9rou%29.jpg?width=1200",
+    "familia": "Carbonato",
+    "color": "Rosa",
+    "sistema": "Trigonal",
+    "densidad": "3736.3 g/cm³",
+    "brillo": "No metálico (vítreo)",
+    "raya": "blanco",
+    "pistas": [
+      "Grupo espacial: R-3c",
+      "Grupo puntual: ditrigonal scalahedral",
+      "Familia: Carbonato",
+      "Sistema: Trigonal",
+      "Densidad: 3736.3 g/cm³",
+      "Brillo: No metálico (vítreo)",
+      "Raya: blanco",
+      "Color: Rosa",
+      "Fórmula: MnCO₃"
     ]
   },
   {
@@ -1647,6 +1761,7 @@ export const MINERALS = [
     "raya": "",
     "pistas": [
       "Grupo espacial: P-43n",
+      "Grupo puntual: cubic-hextetrahedral",
       "Familia: Silicato",
       "Sistema: Cúbico",
       "Dureza: Medio",
@@ -1665,12 +1780,13 @@ export const MINERALS = [
     "familia": "Óxido / hidróxido",
     "color": "",
     "sistema": "Ortorrómbico",
-    "densidad": "",
+    "densidad": "4233.9 g/cm³",
     "brillo": "",
     "raya": "",
     "pistas": [
       "Familia: Óxido / hidróxido",
       "Sistema: Ortorrómbico",
+      "Densidad: 4233.9 g/cm³",
       "Dureza: Medio",
       "Dureza (Mohs): 3.5",
       "Fórmula: Zn₂AsO₄(OH)"
@@ -1690,6 +1806,7 @@ export const MINERALS = [
     "raya": "blanco",
     "pistas": [
       "Grupo espacial: C2/c",
+      "Grupo puntual: monoclinic-prismatic",
       "Familia: Silicato",
       "Sistema: Monoclínico",
       "Brillo: No metálico (vítreo)",
@@ -1706,12 +1823,15 @@ export const MINERALS = [
     "familia": "Sulfato",
     "color": "",
     "sistema": "Ortorrómbico",
-    "densidad": "",
+    "densidad": "6342.9 g/cm³",
     "brillo": "No metálico (vítreo)",
     "raya": "blanco",
     "pistas": [
+      "Grupo espacial: 62",
+      "Grupo puntual: ortorrómbico-dipiramidal",
       "Familia: Sulfato",
       "Sistema: Ortorrómbico",
+      "Densidad: 6342.9 g/cm³",
       "Brillo: No metálico (vítreo)",
       "Raya: blanco",
       "Fórmula: PbSO₄"
@@ -1719,27 +1839,6 @@ export const MINERALS = [
   },
   {
     "idNum": 81,
-    "id": "rodonita",
-    "nombre": "Rodonita",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/8224M-rhodonite3.jpg?width=1200",
-    "familia": "Silicato",
-    "color": "Rosa",
-    "sistema": "Triclínico",
-    "densidad": "",
-    "brillo": "No metálico (vítreo)",
-    "raya": "blanco",
-    "pistas": [
-      "Familia: Silicato",
-      "Sistema: Triclínico",
-      "Brillo: No metálico (vítreo)",
-      "Raya: blanco",
-      "Color: Rosa",
-      "Fórmula: CaMn₃Mn(Si₅O₁₅)"
-    ]
-  },
-  {
-    "idNum": 82,
     "id": "titanita",
     "nombre": "Titanita",
     "tipo": "mineral",
@@ -1747,7 +1846,7 @@ export const MINERALS = [
     "familia": "Silicato",
     "color": "",
     "sistema": "Monoclínico",
-    "densidad": "",
+    "densidad": "3416.5 g/cm³",
     "brillo": "No metálico (vítreo)",
     "raya": "",
     "pistas": [
@@ -1755,6 +1854,7 @@ export const MINERALS = [
       "Grupo puntual: monoclinic-prismatic",
       "Familia: Silicato",
       "Sistema: Monoclínico",
+      "Densidad: 3416.5 g/cm³",
       "Dureza: Medio",
       "Brillo: No metálico (vítreo)",
       "Dureza (Mohs): 5.5",
@@ -1762,7 +1862,7 @@ export const MINERALS = [
     ]
   },
   {
-    "idNum": 83,
+    "idNum": 82,
     "id": "vanadinita",
     "nombre": "Vanadinita",
     "tipo": "mineral",
@@ -1775,6 +1875,7 @@ export const MINERALS = [
     "raya": "pajizo",
     "pistas": [
       "Grupo espacial: P6₃/m",
+      "Grupo puntual: hexagonal-dipyramidal",
       "Familia: Óxido / hidróxido",
       "Sistema: Hexagonal",
       "Densidad: 6.9 g/cm³",
@@ -1786,6 +1887,29 @@ export const MINERALS = [
     ]
   },
   {
+    "idNum": 83,
+    "id": "rodonita",
+    "nombre": "Rodonita",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/8224M-rhodonite3.jpg?width=1200",
+    "familia": "Silicato",
+    "color": "Rosa",
+    "sistema": "Triclínico",
+    "densidad": "",
+    "brillo": "No metálico (vítreo)",
+    "raya": "blanco",
+    "pistas": [
+      "Grupo espacial: triclinic-pinacoidal",
+      "Grupo puntual: triclinic-pinacoidal",
+      "Familia: Silicato",
+      "Sistema: Triclínico",
+      "Brillo: No metálico (vítreo)",
+      "Raya: blanco",
+      "Color: Rosa",
+      "Fórmula: CaMn₃Mn(Si₅O₁₅)"
+    ]
+  },
+  {
     "idNum": 84,
     "id": "wollastonita",
     "nombre": "Wollastonita",
@@ -1794,13 +1918,15 @@ export const MINERALS = [
     "familia": "Silicato",
     "color": "",
     "sistema": "Triclínico",
-    "densidad": "",
+    "densidad": "2902.9 g/cm³",
     "brillo": "No metálico (vítreo)",
     "raya": "blanco",
     "pistas": [
       "Grupo espacial: grupo espacial 1",
+      "Grupo puntual: triclinic-pedial",
       "Familia: Silicato",
       "Sistema: Triclínico",
+      "Densidad: 2902.9 g/cm³",
       "Brillo: No metálico (vítreo)",
       "Raya: blanco",
       "Fórmula: CaSiO₃"
@@ -1808,6 +1934,24 @@ export const MINERALS = [
   },
   {
     "idNum": 85,
+    "id": "cuarzo-citrino",
+    "nombre": "Cuarzo citrino",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Citrin%20cut.jpg?width=1200",
+    "familia": "",
+    "color": "Amarillo dorado",
+    "sistema": "",
+    "densidad": "",
+    "brillo": "",
+    "raya": "",
+    "pistas": [
+      "Dureza: Duro",
+      "Dureza (Mohs): 7",
+      "Color: Amarillo dorado"
+    ]
+  },
+  {
+    "idNum": 86,
     "id": "molibdenita",
     "nombre": "Molibdenita",
     "tipo": "mineral",
@@ -1815,38 +1959,42 @@ export const MINERALS = [
     "familia": "Sulfuro",
     "color": "",
     "sistema": "Hexagonal",
-    "densidad": "",
+    "densidad": "4669.6 g/cm³",
     "brillo": "Metálico",
     "raya": "azul gris",
     "pistas": [
       "Familia: Sulfuro",
       "Sistema: Hexagonal",
+      "Densidad: 4669.6 g/cm³",
       "Brillo: Metálico",
       "Raya: azul gris",
       "Fórmula: MoS₂"
     ]
   },
   {
-    "idNum": 86,
+    "idNum": 87,
     "id": "nefelina",
     "nombre": "Nefelina",
     "tipo": "mineral",
     "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Nepheline-Schorlomite-250211.jpg?width=1200",
     "familia": "Silicato",
     "color": "",
-    "sistema": "",
+    "sistema": "Hexagonal",
     "densidad": "",
     "brillo": "No metálico (vítreo)",
     "raya": "blanco",
     "pistas": [
+      "Grupo espacial: P6₃",
+      "Grupo puntual: hexagonal-pyramidal",
       "Familia: Silicato",
+      "Sistema: Hexagonal",
       "Brillo: No metálico (vítreo)",
       "Raya: blanco",
       "Fórmula: Na₃K(Al₄Si₄O₁₆)"
     ]
   },
   {
-    "idNum": 87,
+    "idNum": 88,
     "id": "crisocola",
     "nombre": "Crisocola",
     "tipo": "mineral",
@@ -1866,30 +2014,13 @@ export const MINERALS = [
     ]
   },
   {
-    "idNum": 88,
-    "id": "cuarzo-citrino",
-    "nombre": "Cuarzo citrino",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Citrin%20cut.jpg?width=1200",
-    "familia": "",
-    "color": "",
-    "sistema": "",
-    "densidad": "",
-    "brillo": "",
-    "raya": "",
-    "pistas": [
-      "Dureza: Duro",
-      "Dureza (Mohs): 7"
-    ]
-  },
-  {
     "idNum": 89,
     "id": "tanzanita",
     "nombre": "Tanzanita",
     "tipo": "mineral",
     "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Zo%C3%AFsite%20%28Tanzanite%29.jpg?width=1200",
     "familia": "",
-    "color": "",
+    "color": "Azul violáceo",
     "sistema": "Ortorrómbico",
     "densidad": "3.4 g/cm³",
     "brillo": "",
@@ -1898,7 +2029,8 @@ export const MINERALS = [
       "Sistema: Ortorrómbico",
       "Densidad: 3.4 g/cm³",
       "Dureza: Duro",
-      "Dureza (Mohs): 6.75"
+      "Dureza (Mohs): 6.75",
+      "Color: Azul violáceo"
     ]
   },
   {
@@ -1915,6 +2047,7 @@ export const MINERALS = [
     "raya": "blanco",
     "pistas": [
       "Grupo espacial: C2/c",
+      "Grupo puntual: monoclinic-prismatic",
       "Familia: Silicato",
       "Sistema: Monoclínico",
       "Brillo: No metálico (vítreo)",
@@ -1930,12 +2063,16 @@ export const MINERALS = [
     "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Cerussite%20-%20Nakhlak%20mine%2C%20Anarak%2C%20Esfahan%2C%20Iran.jpg?width=1200",
     "familia": "Carbonato",
     "color": "",
-    "sistema": "",
-    "densidad": "",
+    "sistema": "Ortorrómbico",
+    "densidad": "6604 g/cm³",
     "brillo": "No metálico (vítreo)",
     "raya": "blanco",
     "pistas": [
+      "Grupo espacial: 62",
+      "Grupo puntual: ortorrómbico-dipiramidal",
       "Familia: Carbonato",
+      "Sistema: Ortorrómbico",
+      "Densidad: 6604 g/cm³",
       "Brillo: No metálico (vítreo)",
       "Raya: blanco",
       "Fórmula: PbCO₃"
@@ -1954,6 +2091,8 @@ export const MINERALS = [
     "brillo": "",
     "raya": "",
     "pistas": [
+      "Grupo espacial: 62",
+      "Grupo puntual: ortorrómbico-dipiramidal",
       "Familia: Óxido / hidróxido",
       "Sistema: Ortorrómbico",
       "Densidad: 4 g/cm³",
@@ -1976,6 +2115,7 @@ export const MINERALS = [
     "raya": "blanco",
     "pistas": [
       "Grupo espacial: I4₁/a",
+      "Grupo puntual: tetragonal-dipyramidal",
       "Familia: Óxido / hidróxido",
       "Sistema: Tetragonal",
       "Densidad: 6.8 g/cm³",
@@ -1988,48 +2128,6 @@ export const MINERALS = [
   },
   {
     "idNum": 94,
-    "id": "silvina",
-    "nombre": "Silvina",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Mineral%20Silvina%20GDFL105.jpg?width=1200",
-    "familia": "Haluro",
-    "color": "",
-    "sistema": "Cúbico",
-    "densidad": "1987 g/cm³",
-    "brillo": "No metálico (vítreo)",
-    "raya": "blanco",
-    "pistas": [
-      "Familia: Haluro",
-      "Sistema: Cúbico",
-      "Densidad: 1987 g/cm³",
-      "Dureza: Blando",
-      "Brillo: No metálico (vítreo)",
-      "Dureza (Mohs): 2",
-      "Raya: blanco",
-      "Fórmula: KCl"
-    ]
-  },
-  {
-    "idNum": 95,
-    "id": "scheelita",
-    "nombre": "Scheelita",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Scheelite%20MHNT.MIN.2004.0.88%20%28p%29.jpg?width=1200",
-    "familia": "Óxido / hidróxido",
-    "color": "",
-    "sistema": "Tetragonal",
-    "densidad": "",
-    "brillo": "",
-    "raya": "blanco",
-    "pistas": [
-      "Familia: Óxido / hidróxido",
-      "Sistema: Tetragonal",
-      "Raya: blanco",
-      "Fórmula: CaWO₄"
-    ]
-  },
-  {
-    "idNum": 96,
     "id": "calcosina",
     "nombre": "Calcosina",
     "tipo": "mineral",
@@ -2051,6 +2149,53 @@ export const MINERALS = [
     ]
   },
   {
+    "idNum": 95,
+    "id": "silvina",
+    "nombre": "Silvina",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Mineral%20Silvina%20GDFL105.jpg?width=1200",
+    "familia": "Haluro",
+    "color": "",
+    "sistema": "Cúbico",
+    "densidad": "2 g/cm³",
+    "brillo": "No metálico (vítreo)",
+    "raya": "blanco",
+    "pistas": [
+      "Grupo espacial: Fm-3m",
+      "Grupo puntual: cubic-hexoctahedral",
+      "Familia: Haluro",
+      "Sistema: Cúbico",
+      "Densidad: 2 g/cm³",
+      "Dureza: Blando",
+      "Brillo: No metálico (vítreo)",
+      "Dureza (Mohs): 2",
+      "Raya: blanco",
+      "Fórmula: KCl"
+    ]
+  },
+  {
+    "idNum": 96,
+    "id": "scheelita",
+    "nombre": "Scheelita",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Scheelite%20MHNT.MIN.2004.0.88%20%28p%29.jpg?width=1200",
+    "familia": "Óxido / hidróxido",
+    "color": "",
+    "sistema": "Tetragonal",
+    "densidad": "6099.9 g/cm³",
+    "brillo": "",
+    "raya": "blanco",
+    "pistas": [
+      "Grupo espacial: I4₁/a",
+      "Grupo puntual: tetragonal-dipyramidal",
+      "Familia: Óxido / hidróxido",
+      "Sistema: Tetragonal",
+      "Densidad: 6099.9 g/cm³",
+      "Raya: blanco",
+      "Fórmula: CaWO₄"
+    ]
+  },
+  {
     "idNum": 97,
     "id": "pirrotina",
     "nombre": "Pirrotina",
@@ -2063,6 +2208,7 @@ export const MINERALS = [
     "brillo": "Metálico",
     "raya": "negro",
     "pistas": [
+      "Grupo espacial: 15",
       "Grupo puntual: dihexagonal-dipyramidal",
       "Familia: Sulfuro",
       "Sistema: Monoclínico",
@@ -2075,103 +2221,6 @@ export const MINERALS = [
   },
   {
     "idNum": 98,
-    "id": "argentita",
-    "nombre": "Argentita",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Argentite%20%28Maroc%29%20.jpg?width=1200",
-    "familia": "Sulfuro",
-    "color": "",
-    "sistema": "",
-    "densidad": "",
-    "brillo": "Metálico",
-    "raya": "",
-    "pistas": [
-      "Familia: Sulfuro",
-      "Brillo: Metálico",
-      "Fórmula: Ag₂S"
-    ]
-  },
-  {
-    "idNum": 99,
-    "id": "gibbsita",
-    "nombre": "Gibbsita",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Gibbsite-fiu09b.jpg?width=1200",
-    "familia": "Óxido / hidróxido",
-    "color": "",
-    "sistema": "Monoclínico",
-    "densidad": "",
-    "brillo": "",
-    "raya": "",
-    "pistas": [
-      "Familia: Óxido / hidróxido",
-      "Sistema: Monoclínico",
-      "Fórmula: Al(OH)₃"
-    ]
-  },
-  {
-    "idNum": 100,
-    "id": "boulangerita",
-    "nombre": "Boulangerita",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Boulangerite-uri-41a.jpg?width=1200",
-    "familia": "Sulfuro",
-    "color": "",
-    "sistema": "Monoclínico",
-    "densidad": "",
-    "brillo": "Metálico",
-    "raya": "negro",
-    "pistas": [
-      "Familia: Sulfuro",
-      "Sistema: Monoclínico",
-      "Dureza: Blando",
-      "Brillo: Metálico",
-      "Dureza (Mohs): 2.75",
-      "Raya: negro",
-      "Fórmula: Pb₅Sb₄S₁₁"
-    ]
-  },
-  {
-    "idNum": 101,
-    "id": "covellina",
-    "nombre": "Covellina",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Covellite-USA.jpg?width=1200",
-    "familia": "Sulfuro",
-    "color": "",
-    "sistema": "Hexagonal",
-    "densidad": "",
-    "brillo": "Metálico",
-    "raya": "",
-    "pistas": [
-      "Familia: Sulfuro",
-      "Sistema: Hexagonal",
-      "Brillo: Metálico",
-      "Fórmula: CuS"
-    ]
-  },
-  {
-    "idNum": 102,
-    "id": "acantita",
-    "nombre": "Acantita",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Acanthite%20-%20Imiter%20mine%2C%20Jbel%20Saghro%2C%20Tinghir%2C%20Dr%C3%A2a-Tafilalet%2C%20Morocco.jpg?width=1200",
-    "familia": "Sulfuro",
-    "color": "",
-    "sistema": "Monoclínico",
-    "densidad": "",
-    "brillo": "Metálico",
-    "raya": "negro",
-    "pistas": [
-      "Familia: Sulfuro",
-      "Sistema: Monoclínico",
-      "Brillo: Metálico",
-      "Raya: negro",
-      "Fórmula: Ag₂S"
-    ]
-  },
-  {
-    "idNum": 103,
     "id": "natron",
     "nombre": "Natrón",
     "tipo": "mineral",
@@ -2192,7 +2241,26 @@ export const MINERALS = [
     ]
   },
   {
-    "idNum": 104,
+    "idNum": 99,
+    "id": "argentita",
+    "nombre": "Argentita",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Argentite%20%28Maroc%29%20.jpg?width=1200",
+    "familia": "Sulfuro",
+    "color": "Gris plomo",
+    "sistema": "",
+    "densidad": "",
+    "brillo": "Metálico",
+    "raya": "",
+    "pistas": [
+      "Familia: Sulfuro",
+      "Brillo: Metálico",
+      "Color: Gris plomo",
+      "Fórmula: Ag₂S"
+    ]
+  },
+  {
+    "idNum": 100,
     "id": "sillimanita",
     "nombre": "Sillimanita",
     "tipo": "mineral",
@@ -2200,12 +2268,13 @@ export const MINERALS = [
     "familia": "Silicato",
     "color": "",
     "sistema": "Ortorrómbico",
-    "densidad": "",
+    "densidad": "3677.1 g/cm³",
     "brillo": "No metálico (vítreo)",
     "raya": "blanco",
     "pistas": [
       "Familia: Silicato",
       "Sistema: Ortorrómbico",
+      "Densidad: 3677.1 g/cm³",
       "Dureza: Duro",
       "Brillo: No metálico (vítreo)",
       "Dureza (Mohs): 7",
@@ -2214,7 +2283,140 @@ export const MINERALS = [
     ]
   },
   {
+    "idNum": 101,
+    "id": "boulangerita",
+    "nombre": "Boulangerita",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Boulangerite-uri-41a.jpg?width=1200",
+    "familia": "Sulfuro",
+    "color": "",
+    "sistema": "Monoclínico",
+    "densidad": "",
+    "brillo": "Metálico",
+    "raya": "negro",
+    "pistas": [
+      "Grupo espacial: 62",
+      "Grupo puntual: ortorrómbico-dipiramidal",
+      "Familia: Sulfuro",
+      "Sistema: Monoclínico",
+      "Dureza: Blando",
+      "Brillo: Metálico",
+      "Dureza (Mohs): 2.75",
+      "Raya: negro",
+      "Fórmula: Pb₅Sb₄S₁₁"
+    ]
+  },
+  {
+    "idNum": 102,
+    "id": "covellina",
+    "nombre": "Covellina",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Covellite-USA.jpg?width=1200",
+    "familia": "Sulfuro",
+    "color": "",
+    "sistema": "Hexagonal",
+    "densidad": "",
+    "brillo": "Metálico",
+    "raya": "",
+    "pistas": [
+      "Grupo espacial: P6₃/mmc",
+      "Grupo puntual: dihexagonal-dipyramidal",
+      "Familia: Sulfuro",
+      "Sistema: Hexagonal",
+      "Brillo: Metálico",
+      "Fórmula: CuS"
+    ]
+  },
+  {
+    "idNum": 103,
+    "id": "gibbsita",
+    "nombre": "Gibbsita",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Gibbsite-fiu09b.jpg?width=1200",
+    "familia": "Óxido / hidróxido",
+    "color": "",
+    "sistema": "Monoclínico",
+    "densidad": "",
+    "brillo": "",
+    "raya": "",
+    "pistas": [
+      "Grupo espacial: P2₁/n",
+      "Grupo puntual: monoclinic-prismatic",
+      "Familia: Óxido / hidróxido",
+      "Sistema: Monoclínico",
+      "Fórmula: Al(OH)₃"
+    ]
+  },
+  {
+    "idNum": 104,
+    "id": "hidroxiapatita",
+    "nombre": "Hidroxiapatita",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Hydroxylapatite-338779.jpg?width=1200",
+    "familia": "Fosfato",
+    "color": "",
+    "sistema": "Hexagonal",
+    "densidad": "",
+    "brillo": "No metálico (vítreo)",
+    "raya": "blanco",
+    "pistas": [
+      "Grupo espacial: P6₃/m",
+      "Grupo puntual: hexagonal-dipyramidal",
+      "Familia: Fosfato",
+      "Sistema: Hexagonal",
+      "Dureza: Medio",
+      "Brillo: No metálico (vítreo)",
+      "Dureza (Mohs): 5",
+      "Raya: blanco",
+      "Fórmula: Ca₅(PO₄)₃(OH)"
+    ]
+  },
+  {
     "idNum": 105,
+    "id": "acantita",
+    "nombre": "Acantita",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Acanthite%20-%20Imiter%20mine%2C%20Jbel%20Saghro%2C%20Tinghir%2C%20Dr%C3%A2a-Tafilalet%2C%20Morocco.jpg?width=1200",
+    "familia": "Sulfuro",
+    "color": "",
+    "sistema": "Monoclínico",
+    "densidad": "",
+    "brillo": "Metálico",
+    "raya": "negro",
+    "pistas": [
+      "Grupo espacial: P2₁/n",
+      "Grupo puntual: monoclinic-prismatic",
+      "Familia: Sulfuro",
+      "Sistema: Monoclínico",
+      "Brillo: Metálico",
+      "Raya: negro",
+      "Fórmula: Ag₂S"
+    ]
+  },
+  {
+    "idNum": 106,
+    "id": "alunita",
+    "nombre": "Alunita",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Mineraly.sk%20-%20alunit%20m.jpg?width=1200",
+    "familia": "Sulfato",
+    "color": "",
+    "sistema": "Trigonal",
+    "densidad": "",
+    "brillo": "No metálico (vítreo)",
+    "raya": "blanco",
+    "pistas": [
+      "Grupo espacial: R-3m",
+      "Grupo puntual: ditrigonal scalahedral",
+      "Familia: Sulfato",
+      "Sistema: Trigonal",
+      "Brillo: No metálico (vítreo)",
+      "Raya: blanco",
+      "Fórmula: KAl₃(SO₄)₂(OH)₆"
+    ]
+  },
+  {
+    "idNum": 107,
     "id": "carnotita",
     "nombre": "Carnotita",
     "tipo": "mineral",
@@ -2236,7 +2438,7 @@ export const MINERALS = [
     ]
   },
   {
-    "idNum": 106,
+    "idNum": 108,
     "id": "cobaltita",
     "nombre": "Cobaltita",
     "tipo": "mineral",
@@ -2244,45 +2446,28 @@ export const MINERALS = [
     "familia": "Sulfuro",
     "color": "",
     "sistema": "Ortorrómbico",
-    "densidad": "",
+    "densidad": "6258.5 g/cm³",
     "brillo": "Metálico",
     "raya": "",
     "pistas": [
+      "Grupo espacial: Pca2₁",
       "Familia: Sulfuro",
       "Sistema: Ortorrómbico",
+      "Densidad: 6258.5 g/cm³",
+      "Dureza: Medio",
       "Brillo: Metálico",
+      "Dureza (Mohs): 5.5",
       "Fórmula: CoAsS"
     ]
   },
   {
-    "idNum": 107,
-    "id": "alunita",
-    "nombre": "Alunita",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Mineraly.sk%20-%20alunit%20m.jpg?width=1200",
-    "familia": "Sulfato",
-    "color": "",
-    "sistema": "Trigonal",
-    "densidad": "",
-    "brillo": "No metálico (vítreo)",
-    "raya": "blanco",
-    "pistas": [
-      "Grupo espacial: R-3m",
-      "Familia: Sulfato",
-      "Sistema: Trigonal",
-      "Brillo: No metálico (vítreo)",
-      "Raya: blanco",
-      "Fórmula: KAl₃(SO₄)₂(OH)₆"
-    ]
-  },
-  {
-    "idNum": 108,
+    "idNum": 109,
     "id": "vivianita",
     "nombre": "Vivianita",
     "tipo": "mineral",
     "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Vivianite-22431%20%28Henk%20Smeets%2C%20tomeikminerals%29.jpg?width=1200",
     "familia": "Fosfato",
-    "color": "",
+    "color": "Azul verdoso",
     "sistema": "Monoclínico",
     "densidad": "",
     "brillo": "No metálico (vítreo)",
@@ -2291,11 +2476,12 @@ export const MINERALS = [
       "Familia: Fosfato",
       "Sistema: Monoclínico",
       "Brillo: No metálico (vítreo)",
+      "Color: Azul verdoso",
       "Fórmula: Fe²⁺₃(PO₄)₂·8H₂O"
     ]
   },
   {
-    "idNum": 109,
+    "idNum": 110,
     "id": "vesuvianita",
     "nombre": "Vesuvianita",
     "tipo": "mineral",
@@ -2308,6 +2494,7 @@ export const MINERALS = [
     "raya": "blanco",
     "pistas": [
       "Grupo espacial: P4/nnc",
+      "Grupo puntual: ditetragonal-dipyramidal",
       "Familia: Silicato",
       "Sistema: Tetragonal",
       "Dureza: Duro",
@@ -2318,48 +2505,7 @@ export const MINERALS = [
     ]
   },
   {
-    "idNum": 110,
-    "id": "hidroxiapatita",
-    "nombre": "Hidroxiapatita",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Hydroxylapatite-338779.jpg?width=1200",
-    "familia": "Fosfato",
-    "color": "",
-    "sistema": "Hexagonal",
-    "densidad": "",
-    "brillo": "No metálico (vítreo)",
-    "raya": "blanco",
-    "pistas": [
-      "Familia: Fosfato",
-      "Sistema: Hexagonal",
-      "Brillo: No metálico (vítreo)",
-      "Raya: blanco",
-      "Fórmula: Ca₅(PO₄)₃(OH)"
-    ]
-  },
-  {
     "idNum": 111,
-    "id": "carnalita",
-    "nombre": "Carnalita",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Carnalita.jpg?width=1200",
-    "familia": "Óxido / hidróxido",
-    "color": "",
-    "sistema": "Ortorrómbico",
-    "densidad": "",
-    "brillo": "",
-    "raya": "blanco",
-    "pistas": [
-      "Familia: Óxido / hidróxido",
-      "Sistema: Ortorrómbico",
-      "Dureza: Blando",
-      "Dureza (Mohs): 2.5",
-      "Raya: blanco",
-      "Fórmula: KMgCl₃·6H₂O"
-    ]
-  },
-  {
-    "idNum": 112,
     "id": "egirina",
     "nombre": "Egirina",
     "tipo": "mineral",
@@ -2381,7 +2527,7 @@ export const MINERALS = [
     ]
   },
   {
-    "idNum": 113,
+    "idNum": 112,
     "id": "manganita",
     "nombre": "Manganita",
     "tipo": "mineral",
@@ -2401,13 +2547,13 @@ export const MINERALS = [
     ]
   },
   {
-    "idNum": 114,
+    "idNum": 113,
     "id": "autunita",
     "nombre": "Autunita",
     "tipo": "mineral",
     "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Autunite%20carri%C3%A8re%20Les%20Oudots.jpg?width=1200",
     "familia": "Fosfato",
-    "color": "",
+    "color": "Amarillo verdoso",
     "sistema": "Ortorrómbico",
     "densidad": "",
     "brillo": "No metálico (vítreo)",
@@ -2416,7 +2562,29 @@ export const MINERALS = [
       "Familia: Fosfato",
       "Sistema: Ortorrómbico",
       "Brillo: No metálico (vítreo)",
+      "Color: Amarillo verdoso",
       "Fórmula: Ca(UO₂)₂(PO₄)₂·(10-12)H₂O"
+    ]
+  },
+  {
+    "idNum": 114,
+    "id": "carnalita",
+    "nombre": "Carnalita",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Carnalita.jpg?width=1200",
+    "familia": "Óxido / hidróxido",
+    "color": "",
+    "sistema": "Ortorrómbico",
+    "densidad": "",
+    "brillo": "",
+    "raya": "blanco",
+    "pistas": [
+      "Familia: Óxido / hidróxido",
+      "Sistema: Ortorrómbico",
+      "Dureza: Blando",
+      "Dureza (Mohs): 2.5",
+      "Raya: blanco",
+      "Fórmula: KMgCl₃·6H₂O"
     ]
   },
   {
@@ -2426,7 +2594,7 @@ export const MINERALS = [
     "tipo": "mineral",
     "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Anatase%20Oisans.jpg?width=1200",
     "familia": "Óxido / hidróxido",
-    "color": "",
+    "color": "Marrón a negro azulado",
     "sistema": "Tetragonal",
     "densidad": "3.9 g/cm³",
     "brillo": "",
@@ -2435,6 +2603,7 @@ export const MINERALS = [
       "Familia: Óxido / hidróxido",
       "Sistema: Tetragonal",
       "Densidad: 3.9 g/cm³",
+      "Color: Marrón a negro azulado",
       "Fórmula: TiO₂"
     ]
   },
@@ -2452,6 +2621,7 @@ export const MINERALS = [
     "raya": "gris",
     "pistas": [
       "Grupo espacial: 61",
+      "Grupo puntual: ortorrómbico-dipiramidal",
       "Familia: Silicato",
       "Sistema: Ortorrómbico",
       "Densidad: 3.2 g/cm³",
@@ -2485,48 +2655,6 @@ export const MINERALS = [
   },
   {
     "idNum": 118,
-    "id": "atacamita",
-    "nombre": "Atacamita",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Atacamite%20on%20malachite%20-%20Mt%20Gunson%20mines%2C%20South%20Australia.jpg?width=1200",
-    "familia": "Óxido / hidróxido",
-    "color": "",
-    "sistema": "Ortorrómbico",
-    "densidad": "",
-    "brillo": "",
-    "raya": "",
-    "pistas": [
-      "Familia: Óxido / hidróxido",
-      "Sistema: Ortorrómbico",
-      "Fórmula: Cu₂Cl(OH)₃"
-    ]
-  },
-  {
-    "idNum": 119,
-    "id": "sodalita",
-    "nombre": "Sodalita",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Sodalith%20-%20Rohstein.jpg?width=1200",
-    "familia": "Silicato",
-    "color": "Azul",
-    "sistema": "Cúbico",
-    "densidad": "",
-    "brillo": "No metálico (vítreo)",
-    "raya": "blanco",
-    "pistas": [
-      "Grupo espacial: P-43n",
-      "Familia: Silicato",
-      "Sistema: Cúbico",
-      "Dureza: Medio",
-      "Brillo: No metálico (vítreo)",
-      "Dureza (Mohs): 6",
-      "Raya: blanco",
-      "Color: Azul",
-      "Fórmula: Na₄Si₃Al₃O₁₂Cl"
-    ]
-  },
-  {
-    "idNum": 120,
     "id": "zoisita",
     "nombre": "Zoisita",
     "tipo": "mineral",
@@ -2539,6 +2667,7 @@ export const MINERALS = [
     "raya": "",
     "pistas": [
       "Grupo espacial: Pnma",
+      "Grupo puntual: ortorrómbico-dipiramidal",
       "Familia: Silicato",
       "Sistema: Ortorrómbico",
       "Dureza: Duro",
@@ -2548,7 +2677,71 @@ export const MINERALS = [
     ]
   },
   {
+    "idNum": 119,
+    "id": "atacamita",
+    "nombre": "Atacamita",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Atacamite%20on%20malachite%20-%20Mt%20Gunson%20mines%2C%20South%20Australia.jpg?width=1200",
+    "familia": "Óxido / hidróxido",
+    "color": "Verde esmeralda",
+    "sistema": "Ortorrómbico",
+    "densidad": "",
+    "brillo": "",
+    "raya": "",
+    "pistas": [
+      "Familia: Óxido / hidróxido",
+      "Sistema: Ortorrómbico",
+      "Color: Verde esmeralda",
+      "Fórmula: Cu₂Cl(OH)₃"
+    ]
+  },
+  {
+    "idNum": 120,
+    "id": "sodalita",
+    "nombre": "Sodalita",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Sodalith%20-%20Rohstein.jpg?width=1200",
+    "familia": "Silicato",
+    "color": "Azul",
+    "sistema": "Cúbico",
+    "densidad": "",
+    "brillo": "No metálico (vítreo)",
+    "raya": "blanco",
+    "pistas": [
+      "Grupo espacial: P-43n",
+      "Grupo puntual: cubic-hextetrahedral",
+      "Familia: Silicato",
+      "Sistema: Cúbico",
+      "Dureza: Medio",
+      "Brillo: No metálico (vítreo)",
+      "Dureza (Mohs): 6",
+      "Raya: blanco",
+      "Color: Azul",
+      "Fórmula: Na₄Si₃Al₃O₁₂Cl"
+    ]
+  },
+  {
     "idNum": 121,
+    "id": "braunita",
+    "nombre": "Braunita",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Braunite-195641.jpg?width=1200",
+    "familia": "Silicato",
+    "color": "",
+    "sistema": "Tetragonal",
+    "densidad": "",
+    "brillo": "No metálico (vítreo)",
+    "raya": "negro",
+    "pistas": [
+      "Familia: Silicato",
+      "Sistema: Tetragonal",
+      "Brillo: No metálico (vítreo)",
+      "Raya: negro",
+      "Fórmula: Mn²⁺Mn³⁺₆(Si₈O₄)"
+    ]
+  },
+  {
+    "idNum": 122,
     "id": "microclina",
     "nombre": "Microclina",
     "tipo": "mineral",
@@ -2556,13 +2749,15 @@ export const MINERALS = [
     "familia": "Silicato",
     "color": "",
     "sistema": "Triclínico",
-    "densidad": "",
+    "densidad": "2456.8 g/cm³",
     "brillo": "No metálico (vítreo)",
     "raya": "",
     "pistas": [
       "Grupo espacial: triclinic-pinacoidal",
+      "Grupo puntual: triclinic-pinacoidal",
       "Familia: Silicato",
       "Sistema: Triclínico",
+      "Densidad: 2456.8 g/cm³",
       "Dureza: Medio",
       "Brillo: No metálico (vítreo)",
       "Dureza (Mohs): 6",
@@ -2570,7 +2765,7 @@ export const MINERALS = [
     ]
   },
   {
-    "idNum": 122,
+    "idNum": 123,
     "id": "estroncianita",
     "nombre": "Estroncianita",
     "tipo": "mineral",
@@ -2582,6 +2777,8 @@ export const MINERALS = [
     "brillo": "No metálico (vítreo)",
     "raya": "blanco",
     "pistas": [
+      "Grupo espacial: 62",
+      "Grupo puntual: ortorrómbico-dipiramidal",
       "Familia: Carbonato",
       "Sistema: Ortorrómbico",
       "Densidad: 3.8 g/cm³",
@@ -2589,11 +2786,11 @@ export const MINERALS = [
       "Brillo: No metálico (vítreo)",
       "Dureza (Mohs): 3.5",
       "Raya: blanco",
-      "Fórmula: SrCO₃"
+      "Fórmula: Sr(CO₃)"
     ]
   },
   {
-    "idNum": 123,
+    "idNum": 124,
     "id": "tremolita",
     "nombre": "Tremolita",
     "tipo": "mineral",
@@ -2614,44 +2811,26 @@ export const MINERALS = [
     ]
   },
   {
-    "idNum": 124,
-    "id": "pentlandita",
-    "nombre": "Pentlandita",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/PentlanditeUSGOV.jpg?width=1200",
-    "familia": "Sulfuro",
-    "color": "",
-    "sistema": "Cúbico",
-    "densidad": "4.8 g/cm³",
-    "brillo": "Metálico",
-    "raya": "",
-    "pistas": [
-      "Familia: Sulfuro",
-      "Sistema: Cúbico",
-      "Densidad: 4.8 g/cm³",
-      "Brillo: Metálico",
-      "Fórmula: (Ni,Fe)₉S₈"
-    ]
-  },
-  {
     "idNum": 125,
-    "id": "cordierita",
-    "nombre": "Cordierita",
+    "id": "crisotilo",
+    "nombre": "Crisotilo",
     "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Cordierite%20Italie.jpg?width=1200",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Chrysotile%201.jpg?width=1200",
     "familia": "Silicato",
     "color": "",
-    "sistema": "Ortorrómbico",
-    "densidad": "",
+    "sistema": "Monoclínico",
+    "densidad": "2487.5 g/cm³",
     "brillo": "No metálico (vítreo)",
     "raya": "blanco",
     "pistas": [
-      "Grupo espacial: Cccm",
+      "Grupo espacial: P31m",
+      "Grupo puntual: ditrigonal pyramidal",
       "Familia: Silicato",
-      "Sistema: Ortorrómbico",
+      "Sistema: Monoclínico",
+      "Densidad: 2487.5 g/cm³",
       "Brillo: No metálico (vítreo)",
       "Raya: blanco",
-      "Fórmula: Mg₂Al₄Si₅O₁₈"
+      "Fórmula: Mg₃Si₂O₅(OH)₄"
     ]
   },
   {
@@ -2687,6 +2866,7 @@ export const MINERALS = [
     "brillo": "No metálico (vítreo)",
     "raya": "blanco",
     "pistas": [
+      "Grupo puntual: cubic-hexoctahedral",
       "Familia: Silicato",
       "Sistema: Cúbico",
       "Brillo: No metálico (vítreo)",
@@ -2696,43 +2876,67 @@ export const MINERALS = [
   },
   {
     "idNum": 128,
-    "id": "braunita",
-    "nombre": "Braunita",
+    "id": "pentlandita",
+    "nombre": "Pentlandita",
     "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Braunite-195641.jpg?width=1200",
-    "familia": "Silicato",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/PentlanditeUSGOV.jpg?width=1200",
+    "familia": "Sulfuro",
     "color": "",
-    "sistema": "Tetragonal",
-    "densidad": "",
-    "brillo": "No metálico (vítreo)",
-    "raya": "negro",
+    "sistema": "Cúbico",
+    "densidad": "4.8 g/cm³",
+    "brillo": "Metálico",
+    "raya": "",
     "pistas": [
-      "Familia: Silicato",
-      "Sistema: Tetragonal",
-      "Brillo: No metálico (vítreo)",
-      "Raya: negro",
-      "Fórmula: Mn²⁺Mn³⁺₆(Si₈O₄)"
+      "Familia: Sulfuro",
+      "Sistema: Cúbico",
+      "Densidad: 4.8 g/cm³",
+      "Brillo: Metálico",
+      "Fórmula: (Ni,Fe)₉S₈"
     ]
   },
   {
     "idNum": 129,
+    "id": "cordierita",
+    "nombre": "Cordierita",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Cordierite%20Italie.jpg?width=1200",
+    "familia": "Silicato",
+    "color": "",
+    "sistema": "Ortorrómbico",
+    "densidad": "2424.7 g/cm³",
+    "brillo": "No metálico (vítreo)",
+    "raya": "blanco",
+    "pistas": [
+      "Grupo espacial: Cccm",
+      "Grupo puntual: ortorrómbico-dipiramidal",
+      "Familia: Silicato",
+      "Sistema: Ortorrómbico",
+      "Densidad: 2424.7 g/cm³",
+      "Brillo: No metálico (vítreo)",
+      "Raya: blanco",
+      "Fórmula: Mg₂Al₄Si₅O₁₈"
+    ]
+  },
+  {
+    "idNum": 130,
     "id": "niquelina",
     "nombre": "Niquelina",
     "tipo": "mineral",
     "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Nickeline.jpg?width=1200",
     "familia": "",
-    "color": "",
+    "color": "Rojo cobrizo",
     "sistema": "Hexagonal",
     "densidad": "",
     "brillo": "",
     "raya": "",
     "pistas": [
       "Sistema: Hexagonal",
+      "Color: Rojo cobrizo",
       "Fórmula: NiAs"
     ]
   },
   {
-    "idNum": 130,
+    "idNum": 131,
     "id": "boracita",
     "nombre": "Boracita",
     "tipo": "mineral",
@@ -2744,6 +2948,8 @@ export const MINERALS = [
     "brillo": "",
     "raya": "blanco",
     "pistas": [
+      "Grupo espacial: F-43c",
+      "Grupo puntual: cubic-hextetrahedral",
       "Familia: Óxido / hidróxido",
       "Sistema: Ortorrómbico",
       "Raya: blanco",
@@ -2751,7 +2957,7 @@ export const MINERALS = [
     ]
   },
   {
-    "idNum": 131,
+    "idNum": 132,
     "id": "piropo",
     "nombre": "Piropo",
     "tipo": "mineral",
@@ -2763,6 +2969,7 @@ export const MINERALS = [
     "brillo": "No metálico (vítreo)",
     "raya": "blanco",
     "pistas": [
+      "Grupo puntual: cubic-hexoctahedral",
       "Familia: Silicato",
       "Sistema: Cúbico",
       "Densidad: 3.7 g/cm³",
@@ -2774,45 +2981,69 @@ export const MINERALS = [
     ]
   },
   {
-    "idNum": 132,
+    "idNum": 133,
     "id": "crocoita",
     "nombre": "Crocoíta",
     "tipo": "mineral",
     "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Croco%C3%AFte%20Dundas2p.jpg?width=1200",
     "familia": "Óxido / hidróxido",
-    "color": "",
+    "color": "Rojo anaranjado",
     "sistema": "Monoclínico",
-    "densidad": "",
+    "densidad": "6105.8 g/cm³",
     "brillo": "",
     "raya": "",
     "pistas": [
       "Familia: Óxido / hidróxido",
       "Sistema: Monoclínico",
+      "Densidad: 6105.8 g/cm³",
+      "Color: Rojo anaranjado",
       "Fórmula: PbCrO₄"
     ]
   },
   {
-    "idNum": 133,
-    "id": "crisotilo",
-    "nombre": "Crisotilo",
+    "idNum": 134,
+    "id": "grosularia",
+    "nombre": "Grosularia",
     "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Chrysotile%201.jpg?width=1200",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Grossular-57594.jpg?width=1200",
     "familia": "Silicato",
     "color": "",
-    "sistema": "Monoclínico",
+    "sistema": "Cúbico",
+    "densidad": "",
+    "brillo": "No metálico (vítreo)",
+    "raya": "",
+    "pistas": [
+      "Grupo puntual: cubic-hexoctahedral",
+      "Familia: Silicato",
+      "Sistema: Cúbico",
+      "Brillo: No metálico (vítreo)",
+      "Fórmula: Ca₃Al₂(SiO₄)₃"
+    ]
+  },
+  {
+    "idNum": 135,
+    "id": "calcantita",
+    "nombre": "Calcantita",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Chalcanthite%20-%20streak%20color.JPG?width=1200",
+    "familia": "Sulfato",
+    "color": "",
+    "sistema": "Triclínico",
     "densidad": "",
     "brillo": "No metálico (vítreo)",
     "raya": "blanco",
     "pistas": [
-      "Familia: Silicato",
-      "Sistema: Monoclínico",
+      "Familia: Sulfato",
+      "Sistema: Triclínico",
+      "Dureza: Blando",
       "Brillo: No metálico (vítreo)",
+      "Dureza (Mohs): 2.5",
       "Raya: blanco",
-      "Fórmula: Mg₃Si₂O₅(OH)₄"
+      "Fórmula: CuSO₄·5H₂O"
     ]
   },
   {
-    "idNum": 134,
+    "idNum": 136,
     "id": "uvarovita",
     "nombre": "Uvarovita",
     "tipo": "mineral",
@@ -2820,19 +3051,21 @@ export const MINERALS = [
     "familia": "Silicato",
     "color": "",
     "sistema": "Cúbico",
-    "densidad": "",
+    "densidad": "3833.5 g/cm³",
     "brillo": "No metálico (vítreo)",
     "raya": "blanco",
     "pistas": [
+      "Grupo puntual: cubic-hexoctahedral",
       "Familia: Silicato",
       "Sistema: Cúbico",
+      "Densidad: 3833.5 g/cm³",
       "Brillo: No metálico (vítreo)",
       "Raya: blanco",
       "Fórmula: Ca₃Cr₂(SiO₄)₃"
     ]
   },
   {
-    "idNum": 135,
+    "idNum": 137,
     "id": "fayalita",
     "nombre": "Fayalita",
     "tipo": "mineral",
@@ -2853,52 +3086,13 @@ export const MINERALS = [
     ]
   },
   {
-    "idNum": 136,
-    "id": "grosularia",
-    "nombre": "Grosularia",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Grossular-57594.jpg?width=1200",
-    "familia": "Silicato",
-    "color": "",
-    "sistema": "Cúbico",
-    "densidad": "",
-    "brillo": "No metálico (vítreo)",
-    "raya": "",
-    "pistas": [
-      "Familia: Silicato",
-      "Sistema: Cúbico",
-      "Brillo: No metálico (vítreo)",
-      "Fórmula: Ca₃Al₂(SiO₄)₃"
-    ]
-  },
-  {
-    "idNum": 137,
-    "id": "calcantita",
-    "nombre": "Calcantita",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Chalcanthite%20-%20streak%20color.JPG?width=1200",
-    "familia": "Sulfato",
-    "color": "",
-    "sistema": "Triclínico",
-    "densidad": "",
-    "brillo": "No metálico (vítreo)",
-    "raya": "blanco",
-    "pistas": [
-      "Familia: Sulfato",
-      "Sistema: Triclínico",
-      "Brillo: No metálico (vítreo)",
-      "Raya: blanco",
-      "Fórmula: CuSO₄·5H₂O"
-    ]
-  },
-  {
     "idNum": 138,
     "id": "estaurolita",
     "nombre": "Estaurolita",
     "tipo": "mineral",
     "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Staurolite-37001.jpg?width=1200",
     "familia": "Silicato",
-    "color": "",
+    "color": "Marrón rojizo",
     "sistema": "Monoclínico",
     "densidad": "",
     "brillo": "No metálico (vítreo)",
@@ -2907,6 +3101,7 @@ export const MINERALS = [
       "Familia: Silicato",
       "Sistema: Monoclínico",
       "Brillo: No metálico (vítreo)",
+      "Color: Marrón rojizo",
       "Fórmula: Fe²⁺₂Al₉Si₄O₂₃(OH)"
     ]
   },
@@ -2923,6 +3118,8 @@ export const MINERALS = [
     "brillo": "No metálico (vítreo)",
     "raya": "blanco",
     "pistas": [
+      "Grupo espacial: I4₁/a",
+      "Grupo puntual: tetragonal-dipyramidal",
       "Familia: Silicato",
       "Sistema: Tetragonal",
       "Brillo: No metálico (vítreo)",
@@ -2939,12 +3136,17 @@ export const MINERALS = [
     "familia": "Óxido / hidróxido",
     "color": "",
     "sistema": "Trigonal",
-    "densidad": "",
+    "densidad": "2459 g/cm³",
     "brillo": "",
     "raya": "blanco",
     "pistas": [
+      "Grupo espacial: P-3m1",
+      "Grupo puntual: ditrigonal scalahedral",
       "Familia: Óxido / hidróxido",
       "Sistema: Trigonal",
+      "Densidad: 2459 g/cm³",
+      "Dureza: Blando",
+      "Dureza (Mohs): 2.5",
       "Raya: blanco",
       "Fórmula: Mg(OH)₂"
     ]
@@ -2958,12 +3160,15 @@ export const MINERALS = [
     "familia": "Silicato",
     "color": "",
     "sistema": "Trigonal",
-    "densidad": "",
+    "densidad": "2963.1 g/cm³",
     "brillo": "No metálico (vítreo)",
     "raya": "",
     "pistas": [
+      "Grupo espacial: R-3",
+      "Grupo puntual: trigonal-rhombohedral",
       "Familia: Silicato",
       "Sistema: Trigonal",
+      "Densidad: 2963.1 g/cm³",
       "Brillo: No metálico (vítreo)",
       "Fórmula: Be₂SiO₄"
     ]
@@ -2975,14 +3180,15 @@ export const MINERALS = [
     "tipo": "mineral",
     "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/01722%20Andesine.jpg?width=1200",
     "familia": "",
-    "color": "",
+    "color": "Blanco grisáceo",
     "sistema": "Triclínico",
     "densidad": "",
     "brillo": "",
     "raya": "blanco",
     "pistas": [
       "Sistema: Triclínico",
-      "Raya: blanco"
+      "Raya: blanco",
+      "Color: Blanco grisáceo"
     ]
   },
   {
@@ -3037,13 +3243,15 @@ export const MINERALS = [
     "familia": "Silicato",
     "color": "",
     "sistema": "Trigonal",
-    "densidad": "",
+    "densidad": "4245.7 g/cm³",
     "brillo": "No metálico (vítreo)",
     "raya": "",
     "pistas": [
       "Grupo espacial: R-3",
+      "Grupo puntual: trigonal-rhombohedral",
       "Familia: Silicato",
       "Sistema: Trigonal",
+      "Densidad: 4245.7 g/cm³",
       "Dureza: Medio",
       "Brillo: No metálico (vítreo)",
       "Dureza (Mohs): 5.5",
@@ -3058,12 +3266,18 @@ export const MINERALS = [
     "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/B%C3%B6hmite-89904.jpg?width=1200",
     "familia": "Óxido / hidróxido",
     "color": "",
-    "sistema": "",
-    "densidad": "",
+    "sistema": "Ortorrómbico",
+    "densidad": "3410.1 g/cm³",
     "brillo": "",
     "raya": "blanco",
     "pistas": [
+      "Grupo espacial: 62",
+      "Grupo puntual: ortorrómbico-dipiramidal",
       "Familia: Óxido / hidróxido",
+      "Sistema: Ortorrómbico",
+      "Densidad: 3410.1 g/cm³",
+      "Dureza: Medio",
+      "Dureza (Mohs): 3.5",
       "Raya: blanco",
       "Fórmula: AlO(OH)"
     ]
@@ -3075,14 +3289,16 @@ export const MINERALS = [
     "tipo": "mineral",
     "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Brookit2%20Pakistan.jpg?width=1200",
     "familia": "Óxido / hidróxido",
-    "color": "",
+    "color": "Marrón rojizo",
     "sistema": "Ortorrómbico",
-    "densidad": "",
+    "densidad": "3856.1 g/cm³",
     "brillo": "",
     "raya": "",
     "pistas": [
       "Familia: Óxido / hidróxido",
       "Sistema: Ortorrómbico",
+      "Densidad: 3856.1 g/cm³",
+      "Color: Marrón rojizo",
       "Fórmula: TiO₂"
     ]
   },
@@ -3094,12 +3310,16 @@ export const MINERALS = [
     "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Mineraly.sk%20-%20diaspor.jpg?width=1200",
     "familia": "Óxido / hidróxido",
     "color": "",
-    "sistema": "",
-    "densidad": "",
+    "sistema": "Ortorrómbico",
+    "densidad": "3410.1 g/cm³",
     "brillo": "",
     "raya": "",
     "pistas": [
+      "Grupo espacial: 62",
+      "Grupo puntual: ortorrómbico-dipiramidal",
       "Familia: Óxido / hidróxido",
+      "Sistema: Ortorrómbico",
+      "Densidad: 3410.1 g/cm³",
       "Fórmula: AlO(OH)"
     ]
   },
@@ -3111,12 +3331,15 @@ export const MINERALS = [
     "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Pyromorphite-171694.jpg?width=1200",
     "familia": "Fosfato",
     "color": "",
-    "sistema": "",
+    "sistema": "Hexagonal",
     "densidad": "",
     "brillo": "No metálico (vítreo)",
     "raya": "blanco",
     "pistas": [
+      "Grupo espacial: P6₃/m",
+      "Grupo puntual: hexagonal-dipyramidal",
       "Familia: Fosfato",
+      "Sistema: Hexagonal",
       "Brillo: No metálico (vítreo)",
       "Raya: blanco",
       "Fórmula: Pb₅(PO₄)₃Cl"
@@ -3135,6 +3358,8 @@ export const MINERALS = [
     "brillo": "Metálico",
     "raya": "",
     "pistas": [
+      "Grupo espacial: 31",
+      "Grupo puntual: ortorrómbico-piramidal",
       "Familia: Sulfuro",
       "Sistema: Ortorrómbico",
       "Dureza: Medio",
@@ -3152,13 +3377,15 @@ export const MINERALS = [
     "familia": "Silicato",
     "color": "",
     "sistema": "Tetragonal",
-    "densidad": "",
+    "densidad": "6661 g/cm³",
     "brillo": "No metálico (vítreo)",
     "raya": "",
     "pistas": [
       "Grupo espacial: I4₁/amd",
+      "Grupo puntual: ditetragonal-dipyramidal",
       "Familia: Silicato",
       "Sistema: Tetragonal",
+      "Densidad: 6661 g/cm³",
       "Brillo: No metálico (vítreo)",
       "Fórmula: ThSiO₄"
     ]
@@ -3172,13 +3399,15 @@ export const MINERALS = [
     "familia": "Silicato",
     "color": "",
     "sistema": "Ortorrómbico",
-    "densidad": "",
+    "densidad": "3235.7 g/cm³",
     "brillo": "No metálico (vítreo)",
     "raya": "blanco",
     "pistas": [
       "Grupo espacial: Pbnm",
+      "Grupo puntual: ortorrómbico-dipiramidal",
       "Familia: Silicato",
       "Sistema: Ortorrómbico",
+      "Densidad: 3235.7 g/cm³",
       "Dureza: Duro",
       "Brillo: No metálico (vítreo)",
       "Dureza (Mohs): 7",
@@ -3195,13 +3424,15 @@ export const MINERALS = [
     "familia": "Sulfuro",
     "color": "",
     "sistema": "Hexagonal",
-    "densidad": "",
+    "densidad": "4141.1 g/cm³",
     "brillo": "Metálico",
     "raya": "marrón",
     "pistas": [
       "Grupo espacial: P6₃mc",
+      "Grupo puntual: dihexagonal-pyramidal",
       "Familia: Sulfuro",
       "Sistema: Hexagonal",
+      "Densidad: 4141.1 g/cm³",
       "Brillo: Metálico",
       "Raya: marrón",
       "Fórmula: ZnS"
@@ -3209,6 +3440,30 @@ export const MINERALS = [
   },
   {
     "idNum": 154,
+    "id": "sanidina",
+    "nombre": "Sanidina",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Sanidine-477065.jpg?width=1200",
+    "familia": "Silicato",
+    "color": "",
+    "sistema": "Monoclínico",
+    "densidad": "2456.8 g/cm³",
+    "brillo": "No metálico (vítreo)",
+    "raya": "blanco",
+    "pistas": [
+      "Grupo espacial: C2/m",
+      "Familia: Silicato",
+      "Sistema: Monoclínico",
+      "Densidad: 2456.8 g/cm³",
+      "Dureza: Medio",
+      "Brillo: No metálico (vítreo)",
+      "Dureza (Mohs): 6",
+      "Raya: blanco",
+      "Fórmula: KAlSi₃O₈"
+    ]
+  },
+  {
+    "idNum": 155,
     "id": "selenita",
     "nombre": "Selenita",
     "tipo": "mineral",
@@ -3231,7 +3486,7 @@ export const MINERALS = [
     ]
   },
   {
-    "idNum": 155,
+    "idNum": 156,
     "id": "cristal-de-roca",
     "nombre": "Cristal de roca",
     "tipo": "mineral",
@@ -3253,13 +3508,13 @@ export const MINERALS = [
     ]
   },
   {
-    "idNum": 156,
+    "idNum": 157,
     "id": "torbernita",
     "nombre": "Torbernita",
     "tipo": "mineral",
     "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Wulfenite-Kasolite-Torbernite-214957.jpg?width=1200",
     "familia": "Fosfato",
-    "color": "",
+    "color": "Verde esmeralda",
     "sistema": "Tetragonal",
     "densidad": "",
     "brillo": "No metálico (vítreo)",
@@ -3268,11 +3523,32 @@ export const MINERALS = [
       "Familia: Fosfato",
       "Sistema: Tetragonal",
       "Brillo: No metálico (vítreo)",
+      "Color: Verde esmeralda",
       "Fórmula: Cu(UO₂)₂(PO₄)₂·12H₂O"
     ]
   },
   {
-    "idNum": 157,
+    "idNum": 158,
+    "id": "jarosita",
+    "nombre": "Jarosita",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Jarosite-114913.jpg?width=1200",
+    "familia": "Sulfato",
+    "color": "Amarillo ocre",
+    "sistema": "Hexagonal",
+    "densidad": "",
+    "brillo": "No metálico (vítreo)",
+    "raya": "",
+    "pistas": [
+      "Familia: Sulfato",
+      "Sistema: Hexagonal",
+      "Brillo: No metálico (vítreo)",
+      "Color: Amarillo ocre",
+      "Fórmula: KFe³⁺₃(SO₄)₂(OH)₆"
+    ]
+  },
+  {
+    "idNum": 159,
     "id": "glaucofana",
     "nombre": "Glaucofana",
     "tipo": "mineral",
@@ -3287,12 +3563,14 @@ export const MINERALS = [
       "Grupo espacial: C2/m",
       "Familia: Silicato",
       "Sistema: Monoclínico",
+      "Dureza: Medio",
       "Brillo: No metálico (vítreo)",
+      "Dureza (Mohs): 6",
       "Fórmula: ☐Na₂(Mg₃Al₂)Si₈O₂₂(OH)₂"
     ]
   },
   {
-    "idNum": 158,
+    "idNum": 160,
     "id": "dioptasa",
     "nombre": "Dioptasa",
     "tipo": "mineral",
@@ -3305,6 +3583,7 @@ export const MINERALS = [
     "raya": "verde",
     "pistas": [
       "Grupo espacial: R-3",
+      "Grupo puntual: trigonal-rhombohedral",
       "Familia: Silicato",
       "Sistema: Trigonal",
       "Dureza: Medio",
@@ -3315,7 +3594,7 @@ export const MINERALS = [
     ]
   },
   {
-    "idNum": 159,
+    "idNum": 161,
     "id": "sepiolita",
     "nombre": "Sepiolita",
     "tipo": "mineral",
@@ -3328,6 +3607,7 @@ export const MINERALS = [
     "raya": "blanco",
     "pistas": [
       "Grupo espacial: 52",
+      "Grupo puntual: ortorrómbico-dipiramidal",
       "Familia: Silicato",
       "Sistema: Ortorrómbico",
       "Dureza: Blando",
@@ -3338,7 +3618,7 @@ export const MINERALS = [
     ]
   },
   {
-    "idNum": 160,
+    "idNum": 162,
     "id": "bismutina",
     "nombre": "Bismutina",
     "tipo": "mineral",
@@ -3346,12 +3626,15 @@ export const MINERALS = [
     "familia": "Sulfuro",
     "color": "",
     "sistema": "Ortorrómbico",
-    "densidad": "",
+    "densidad": "6602 g/cm³",
     "brillo": "Metálico",
     "raya": "",
     "pistas": [
+      "Grupo espacial: 62",
+      "Grupo puntual: ortorrómbico-dipiramidal",
       "Familia: Sulfuro",
       "Sistema: Ortorrómbico",
+      "Densidad: 6602 g/cm³",
       "Dureza: Blando",
       "Brillo: Metálico",
       "Dureza (Mohs): 2",
@@ -3359,7 +3642,7 @@ export const MINERALS = [
     ]
   },
   {
-    "idNum": 161,
+    "idNum": 163,
     "id": "flogopita",
     "nombre": "Flogopita",
     "tipo": "mineral",
@@ -3372,6 +3655,7 @@ export const MINERALS = [
     "raya": "blanco",
     "pistas": [
       "Grupo espacial: C2/m",
+      "Grupo puntual: monoclinic-prismatic",
       "Familia: Silicato",
       "Sistema: Monoclínico",
       "Densidad: 2.8 g/cm³",
@@ -3383,30 +3667,7 @@ export const MINERALS = [
     ]
   },
   {
-    "idNum": 162,
-    "id": "sanidina",
-    "nombre": "Sanidina",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Sanidine-477065.jpg?width=1200",
-    "familia": "Silicato",
-    "color": "",
-    "sistema": "Monoclínico",
-    "densidad": "",
-    "brillo": "No metálico (vítreo)",
-    "raya": "blanco",
-    "pistas": [
-      "Grupo espacial: C2/m",
-      "Familia: Silicato",
-      "Sistema: Monoclínico",
-      "Dureza: Medio",
-      "Brillo: No metálico (vítreo)",
-      "Dureza (Mohs): 6",
-      "Raya: blanco",
-      "Fórmula: KAlSi₃O₈"
-    ]
-  },
-  {
-    "idNum": 163,
+    "idNum": 164,
     "id": "spessartina",
     "nombre": "Spessartina",
     "tipo": "mineral",
@@ -3418,6 +3679,7 @@ export const MINERALS = [
     "brillo": "No metálico (vítreo)",
     "raya": "blanco",
     "pistas": [
+      "Grupo puntual: cubic-hexoctahedral",
       "Familia: Silicato",
       "Sistema: Cúbico",
       "Densidad: 4.2 g/cm³",
@@ -3427,7 +3689,7 @@ export const MINERALS = [
     ]
   },
   {
-    "idNum": 164,
+    "idNum": 165,
     "id": "ankerita",
     "nombre": "Ankerita",
     "tipo": "mineral",
@@ -3448,48 +3710,7 @@ export const MINERALS = [
     ]
   },
   {
-    "idNum": 165,
-    "id": "clorargirita",
-    "nombre": "Clorargirita",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Chlorargyrite-Iodargyrite-ea16c.jpg?width=1200",
-    "familia": "Haluro",
-    "color": "",
-    "sistema": "Cúbico",
-    "densidad": "",
-    "brillo": "No metálico (vítreo)",
-    "raya": "blanco",
-    "pistas": [
-      "Familia: Haluro",
-      "Sistema: Cúbico",
-      "Dureza: Blando",
-      "Brillo: No metálico (vítreo)",
-      "Dureza (Mohs): 2.5",
-      "Raya: blanco",
-      "Fórmula: AgCl"
-    ]
-  },
-  {
     "idNum": 166,
-    "id": "jarosita",
-    "nombre": "Jarosita",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Jarosite-114913.jpg?width=1200",
-    "familia": "Sulfato",
-    "color": "",
-    "sistema": "Hexagonal",
-    "densidad": "",
-    "brillo": "No metálico (vítreo)",
-    "raya": "",
-    "pistas": [
-      "Familia: Sulfato",
-      "Sistema: Hexagonal",
-      "Brillo: No metálico (vítreo)",
-      "Fórmula: KFe³⁺₃(SO₄)₂(OH)₆"
-    ]
-  },
-  {
-    "idNum": 167,
     "id": "hemimorfita",
     "nombre": "Hemimorfita",
     "tipo": "mineral",
@@ -3502,11 +3723,35 @@ export const MINERALS = [
     "raya": "blanco",
     "pistas": [
       "Grupo espacial: Imm2",
+      "Grupo puntual: ortorrómbico-piramidal",
       "Familia: Silicato",
       "Sistema: Ortorrómbico",
       "Brillo: No metálico (vítreo)",
       "Raya: blanco",
       "Fórmula: Zn₄Si₂O₇(OH)₂·H₂O"
+    ]
+  },
+  {
+    "idNum": 167,
+    "id": "clorargirita",
+    "nombre": "Clorargirita",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Chlorargyrite-Iodargyrite-ea16c.jpg?width=1200",
+    "familia": "Haluro",
+    "color": "",
+    "sistema": "Cúbico",
+    "densidad": "5582.6 g/cm³",
+    "brillo": "No metálico (vítreo)",
+    "raya": "blanco",
+    "pistas": [
+      "Familia: Haluro",
+      "Sistema: Cúbico",
+      "Densidad: 5582.6 g/cm³",
+      "Dureza: Blando",
+      "Brillo: No metálico (vítreo)",
+      "Dureza (Mohs): 2.5",
+      "Raya: blanco",
+      "Fórmula: AgCl"
     ]
   },
   {
@@ -3522,9 +3767,13 @@ export const MINERALS = [
     "brillo": "Metálico",
     "raya": "negro",
     "pistas": [
+      "Grupo espacial: 31",
+      "Grupo puntual: ortorrómbico-piramidal",
       "Familia: Sulfuro",
       "Sistema: Ortorrómbico",
+      "Dureza: Medio",
       "Brillo: Metálico",
+      "Dureza (Mohs): 3",
       "Raya: negro",
       "Fórmula: Cu₃AsS₄"
     ]
@@ -3558,13 +3807,15 @@ export const MINERALS = [
     "familia": "Carbonato",
     "color": "",
     "sistema": "Ortorrómbico",
-    "densidad": "",
+    "densidad": "4244.7 g/cm³",
     "brillo": "No metálico (vítreo)",
     "raya": "blanco",
     "pistas": [
       "Grupo espacial: Pmcn",
+      "Grupo puntual: ortorrómbico-dipiramidal",
       "Familia: Carbonato",
       "Sistema: Ortorrómbico",
+      "Densidad: 4244.7 g/cm³",
       "Brillo: No metálico (vítreo)",
       "Raya: blanco",
       "Fórmula: BaCO₃"
@@ -3583,6 +3834,8 @@ export const MINERALS = [
     "brillo": "No metálico (vítreo)",
     "raya": "",
     "pistas": [
+      "Grupo espacial: P2/n",
+      "Grupo puntual: monoclinic-prismatic",
       "Familia: Silicato",
       "Sistema: Monoclínico",
       "Brillo: No metálico (vítreo)",
@@ -3596,18 +3849,38 @@ export const MINERALS = [
     "tipo": "mineral",
     "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Mineral%20Hedemberguita%20GDFL041.jpg?width=1200",
     "familia": "",
-    "color": "",
+    "color": "Verde oscuro a negro",
     "sistema": "Monoclínico",
     "densidad": "",
     "brillo": "",
     "raya": "",
     "pistas": [
       "Grupo espacial: C2/c",
-      "Sistema: Monoclínico"
+      "Sistema: Monoclínico",
+      "Color: Verde oscuro a negro"
     ]
   },
   {
     "idNum": 173,
+    "id": "eritrina",
+    "nombre": "Eritrina",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Erythritemaroc1.jpg?width=1200",
+    "familia": "Óxido / hidróxido",
+    "color": "Rosa carmín",
+    "sistema": "Monoclínico",
+    "densidad": "",
+    "brillo": "",
+    "raya": "",
+    "pistas": [
+      "Familia: Óxido / hidróxido",
+      "Sistema: Monoclínico",
+      "Color: Rosa carmín",
+      "Fórmula: Co₃(AsO₄)₂·8H₂O"
+    ]
+  },
+  {
+    "idNum": 174,
     "id": "ulexita",
     "nombre": "Ulexita",
     "tipo": "mineral",
@@ -3620,6 +3893,7 @@ export const MINERALS = [
     "raya": "blanco",
     "pistas": [
       "Grupo espacial: grupo espacial 1",
+      "Grupo puntual: triclinic-pedial",
       "Familia: Óxido / hidróxido",
       "Sistema: Triclínico",
       "Dureza: Blando",
@@ -3629,7 +3903,7 @@ export const MINERALS = [
     ]
   },
   {
-    "idNum": 174,
+    "idNum": 175,
     "id": "tridimita",
     "nombre": "Tridimita",
     "tipo": "mineral",
@@ -3637,20 +3911,24 @@ export const MINERALS = [
     "familia": "Silicato",
     "color": "",
     "sistema": "Ortorrómbico",
-    "densidad": "",
+    "densidad": "2634.2 g/cm³",
     "brillo": "No metálico (vítreo)",
     "raya": "blanco",
     "pistas": [
       "Grupo espacial: C222₁",
+      "Grupo puntual: ortorrómbico-diesfenoidal",
       "Familia: Silicato",
       "Sistema: Ortorrómbico",
+      "Densidad: 2634.2 g/cm³",
+      "Dureza: Duro",
       "Brillo: No metálico (vítreo)",
+      "Dureza (Mohs): 7",
       "Raya: blanco",
       "Fórmula: SiO₂"
     ]
   },
   {
-    "idNum": 175,
+    "idNum": 176,
     "id": "brochantita",
     "nombre": "Brochantita",
     "tipo": "mineral",
@@ -3662,6 +3940,8 @@ export const MINERALS = [
     "brillo": "No metálico (vítreo)",
     "raya": "",
     "pistas": [
+      "Grupo espacial: P2₁/n",
+      "Grupo puntual: monoclinic-prismatic",
       "Familia: Sulfato",
       "Sistema: Monoclínico",
       "Brillo: No metálico (vítreo)",
@@ -3669,7 +3949,7 @@ export const MINERALS = [
     ]
   },
   {
-    "idNum": 176,
+    "idNum": 177,
     "id": "millerita",
     "nombre": "Millerita",
     "tipo": "mineral",
@@ -3677,18 +3957,21 @@ export const MINERALS = [
     "familia": "Sulfuro",
     "color": "",
     "sistema": "Trigonal",
-    "densidad": "",
+    "densidad": "5374 g/cm³",
     "brillo": "Metálico",
     "raya": "",
     "pistas": [
       "Familia: Sulfuro",
       "Sistema: Trigonal",
+      "Densidad: 5374 g/cm³",
+      "Dureza: Medio",
       "Brillo: Metálico",
+      "Dureza (Mohs): 3.5",
       "Fórmula: NiS"
     ]
   },
   {
-    "idNum": 177,
+    "idNum": 178,
     "id": "benitoita",
     "nombre": "Benitoíta",
     "tipo": "mineral",
@@ -3696,32 +3979,15 @@ export const MINERALS = [
     "familia": "",
     "color": "",
     "sistema": "Hexagonal",
-    "densidad": "",
+    "densidad": "3650 g/cm³",
     "brillo": "",
     "raya": "blanco",
     "pistas": [
       "Sistema: Hexagonal",
+      "Densidad: 3650 g/cm³",
       "Dureza: Medio",
       "Dureza (Mohs): 6",
       "Raya: blanco"
-    ]
-  },
-  {
-    "idNum": 178,
-    "id": "eritrina",
-    "nombre": "Eritrina",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Erythritemaroc1.jpg?width=1200",
-    "familia": "Óxido / hidróxido",
-    "color": "",
-    "sistema": "Monoclínico",
-    "densidad": "",
-    "brillo": "",
-    "raya": "",
-    "pistas": [
-      "Familia: Óxido / hidróxido",
-      "Sistema: Monoclínico",
-      "Fórmula: Co₃(AsO₄)₂·8H₂O"
     ]
   },
   {
@@ -3737,9 +4003,13 @@ export const MINERALS = [
     "brillo": "Metálico",
     "raya": "",
     "pistas": [
+      "Grupo espacial: P2₁/n",
+      "Grupo puntual: monoclinic-prismatic",
       "Familia: Sulfuro",
       "Sistema: Monoclínico",
+      "Dureza: Blando",
       "Brillo: Metálico",
+      "Dureza (Mohs): 2.5",
       "Fórmula: Pb₄FeSb₆S₁₄"
     ]
   },
@@ -3752,13 +4022,15 @@ export const MINERALS = [
     "familia": "Sulfuro",
     "color": "",
     "sistema": "Hexagonal",
-    "densidad": "",
+    "densidad": "3227.7 g/cm³",
     "brillo": "Metálico",
     "raya": "",
     "pistas": [
       "Grupo espacial: P6₃mc",
+      "Grupo puntual: dihexagonal-pyramidal",
       "Familia: Sulfuro",
       "Sistema: Hexagonal",
+      "Densidad: 3227.7 g/cm³",
       "Dureza: Duro",
       "Brillo: Metálico",
       "Dureza (Mohs): 9.25",
@@ -3772,7 +4044,7 @@ export const MINERALS = [
     "tipo": "mineral",
     "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Euxenite%20-%20Vegusdal%2C%20Norvegia%2001.jpg?width=1200",
     "familia": "Óxido / hidróxido",
-    "color": "",
+    "color": "Negro pardusco",
     "sistema": "Ortorrómbico",
     "densidad": "",
     "brillo": "",
@@ -3780,11 +4052,57 @@ export const MINERALS = [
     "pistas": [
       "Familia: Óxido / hidróxido",
       "Sistema: Ortorrómbico",
+      "Color: Negro pardusco",
       "Fórmula: (Y,Ca,Ce,U,Th)(Nb,Ta,Ti)₂O₆"
     ]
   },
   {
     "idNum": 182,
+    "id": "cincita",
+    "nombre": "Cincita",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Zincite%20from%20Arizona.jpg?width=1200",
+    "familia": "Óxido / hidróxido",
+    "color": "",
+    "sistema": "Hexagonal",
+    "densidad": "5704.2 g/cm³",
+    "brillo": "",
+    "raya": "",
+    "pistas": [
+      "Grupo espacial: P6₃mc",
+      "Grupo puntual: dihexagonal-pyramidal",
+      "Familia: Óxido / hidróxido",
+      "Sistema: Hexagonal",
+      "Densidad: 5704.2 g/cm³",
+      "Dureza: Medio",
+      "Dureza (Mohs): 4",
+      "Fórmula: ZnO"
+    ]
+  },
+  {
+    "idNum": 183,
+    "id": "abelsonita",
+    "nombre": "Abelsonita",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Abelsonite%20-%20Green%20River%20Formation%2C%20Uintah%20County%2C%20Utah%2C%20USA.jpg?width=1200",
+    "familia": "",
+    "color": "",
+    "sistema": "Triclínico",
+    "densidad": "",
+    "brillo": "",
+    "raya": "rosa",
+    "pistas": [
+      "Grupo espacial: grupo espacial 1",
+      "Grupo puntual: triclinic-pedial",
+      "Sistema: Triclínico",
+      "Dureza: Blando",
+      "Dureza (Mohs): 2.5",
+      "Raya: rosa",
+      "Fórmula: NiC₃₁H₃₂N₄"
+    ]
+  },
+  {
+    "idNum": 184,
     "id": "pirofilita",
     "nombre": "Pirofilita",
     "tipo": "mineral",
@@ -3796,6 +4114,8 @@ export const MINERALS = [
     "brillo": "No metálico (vítreo)",
     "raya": "blanco",
     "pistas": [
+      "Grupo espacial: 15",
+      "Grupo puntual: monoclinic-prismatic",
       "Familia: Silicato",
       "Sistema: Triclínico",
       "Brillo: No metálico (vítreo)",
@@ -3804,7 +4124,7 @@ export const MINERALS = [
     ]
   },
   {
-    "idNum": 183,
+    "idNum": 185,
     "id": "hauyna",
     "nombre": "Haüyna",
     "tipo": "mineral",
@@ -3817,6 +4137,7 @@ export const MINERALS = [
     "raya": "",
     "pistas": [
       "Grupo espacial: P-43n",
+      "Grupo puntual: cubic-hextetrahedral",
       "Familia: Sulfato",
       "Sistema: Cúbico",
       "Brillo: No metálico (vítreo)",
@@ -3824,7 +4145,7 @@ export const MINERALS = [
     ]
   },
   {
-    "idNum": 184,
+    "idNum": 186,
     "id": "epsomita",
     "nombre": "Epsomita",
     "tipo": "mineral",
@@ -3849,47 +4170,27 @@ export const MINERALS = [
     ]
   },
   {
-    "idNum": 185,
-    "id": "cincita",
-    "nombre": "Cincita",
+    "idNum": 187,
+    "id": "antofilita",
+    "nombre": "Antofilita",
     "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Zincite%20from%20Arizona.jpg?width=1200",
-    "familia": "Óxido / hidróxido",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Anthophyllite%20Su%C3%A8de%20Fond.jpg?width=1200",
+    "familia": "Silicato",
     "color": "",
-    "sistema": "Hexagonal",
+    "sistema": "Ortorrómbico",
     "densidad": "",
-    "brillo": "",
+    "brillo": "No metálico (vítreo)",
     "raya": "",
     "pistas": [
-      "Grupo espacial: P6₃mc",
-      "Familia: Óxido / hidróxido",
-      "Sistema: Hexagonal",
-      "Dureza: Medio",
-      "Dureza (Mohs): 4",
-      "Fórmula: ZnO"
+      "Grupo espacial: Pnma",
+      "Familia: Silicato",
+      "Sistema: Ortorrómbico",
+      "Brillo: No metálico (vítreo)",
+      "Fórmula: ☐Mg₂Mg₅Si₈O₂₂(OH)₂"
     ]
   },
   {
-    "idNum": 186,
-    "id": "abelsonita",
-    "nombre": "Abelsonita",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Abelsonite%20-%20Green%20River%20Formation%2C%20Uintah%20County%2C%20Utah%2C%20USA.jpg?width=1200",
-    "familia": "",
-    "color": "",
-    "sistema": "Triclínico",
-    "densidad": "",
-    "brillo": "",
-    "raya": "rosa",
-    "pistas": [
-      "Grupo espacial: grupo espacial 1",
-      "Sistema: Triclínico",
-      "Raya: rosa",
-      "Fórmula: NiC₃₁H₃₂N₄"
-    ]
-  },
-  {
-    "idNum": 187,
+    "idNum": 188,
     "id": "kainita",
     "nombre": "Kainita",
     "tipo": "mineral",
@@ -3897,19 +4198,20 @@ export const MINERALS = [
     "familia": "Sulfato",
     "color": "",
     "sistema": "Monoclínico",
-    "densidad": "",
+    "densidad": "2100 g/cm³",
     "brillo": "No metálico (vítreo)",
     "raya": "blanco",
     "pistas": [
       "Familia: Sulfato",
       "Sistema: Monoclínico",
+      "Densidad: 2100 g/cm³",
       "Brillo: No metálico (vítreo)",
       "Raya: blanco",
       "Fórmula: KMg(SO₄)Cl·3H₂O"
     ]
   },
   {
-    "idNum": 188,
+    "idNum": 189,
     "id": "cobre-nativo",
     "nombre": "Cobre nativo",
     "tipo": "mineral",
@@ -3922,6 +4224,7 @@ export const MINERALS = [
     "raya": "",
     "pistas": [
       "Grupo espacial: Fm-3m",
+      "Grupo puntual: cubic-hexoctahedral",
       "Familia: Elemento nativo",
       "Sistema: Cúbico",
       "Densidad: 8.5 g/cm³",
@@ -3932,13 +4235,13 @@ export const MINERALS = [
     ]
   },
   {
-    "idNum": 189,
+    "idNum": 190,
     "id": "espato-de-islandia",
     "nombre": "Espato de Islandia",
     "tipo": "mineral",
     "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Calcite-HUGE.jpg?width=1200",
     "familia": "",
-    "color": "",
+    "color": "Incoloro transparente",
     "sistema": "Trigonal",
     "densidad": "",
     "brillo": "",
@@ -3946,11 +4249,12 @@ export const MINERALS = [
     "pistas": [
       "Sistema: Trigonal",
       "Dureza: Medio",
-      "Dureza (Mohs): 3"
+      "Dureza (Mohs): 3",
+      "Color: Incoloro transparente"
     ]
   },
   {
-    "idNum": 190,
+    "idNum": 191,
     "id": "ambligonita",
     "nombre": "Ambligonita",
     "tipo": "mineral",
@@ -3962,6 +4266,8 @@ export const MINERALS = [
     "brillo": "No metálico (vítreo)",
     "raya": "",
     "pistas": [
+      "Grupo espacial: triclinic-pinacoidal",
+      "Grupo puntual: triclinic-pinacoidal",
       "Familia: Fosfato",
       "Sistema: Triclínico",
       "Brillo: No metálico (vítreo)",
@@ -3969,7 +4275,7 @@ export const MINERALS = [
     ]
   },
   {
-    "idNum": 191,
+    "idNum": 192,
     "id": "auricalcita",
     "nombre": "Auricalcita",
     "tipo": "mineral",
@@ -3991,7 +4297,7 @@ export const MINERALS = [
     ]
   },
   {
-    "idNum": 192,
+    "idNum": 193,
     "id": "lepidocrocita",
     "nombre": "Lepidocrocita",
     "tipo": "mineral",
@@ -4008,26 +4314,6 @@ export const MINERALS = [
       "Dureza: Medio",
       "Dureza (Mohs): 5",
       "Fórmula: Fe³⁺O(OH)"
-    ]
-  },
-  {
-    "idNum": 193,
-    "id": "antofilita",
-    "nombre": "Antofilita",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Anthophyllite%20Su%C3%A8de%20Fond.jpg?width=1200",
-    "familia": "Silicato",
-    "color": "",
-    "sistema": "Ortorrómbico",
-    "densidad": "",
-    "brillo": "No metálico (vítreo)",
-    "raya": "",
-    "pistas": [
-      "Grupo espacial: Pnma",
-      "Familia: Silicato",
-      "Sistema: Ortorrómbico",
-      "Brillo: No metálico (vítreo)",
-      "Fórmula: ☐Mg₂Mg₅Si₈O₂₂(OH)₂"
     ]
   },
   {
@@ -4060,14 +4346,17 @@ export const MINERALS = [
     "familia": "Silicato",
     "color": "",
     "sistema": "Tetragonal",
-    "densidad": "",
+    "densidad": "2634.2 g/cm³",
     "brillo": "No metálico (vítreo)",
     "raya": "blanco",
     "pistas": [
       "Grupo espacial: P4₁2₁2",
       "Familia: Silicato",
       "Sistema: Tetragonal",
+      "Densidad: 2634.2 g/cm³",
+      "Dureza: Duro",
       "Brillo: No metálico (vítreo)",
+      "Dureza (Mohs): 6.5",
       "Raya: blanco",
       "Fórmula: SiO₂"
     ]
@@ -4085,21 +4374,45 @@ export const MINERALS = [
     "brillo": "No metálico (vítreo)",
     "raya": "blanco",
     "pistas": [
+      "Grupo espacial: P2₁/n",
+      "Grupo puntual: monoclinic-prismatic",
       "Familia: Silicato",
       "Sistema: Monoclínico",
+      "Dureza: Duro",
       "Brillo: No metálico (vítreo)",
+      "Dureza (Mohs): 7.5",
       "Raya: blanco",
       "Fórmula: BeAlSiO₄(OH)"
     ]
   },
   {
     "idNum": 197,
+    "id": "salitre",
+    "nombre": "Salitre",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Niter.jpg?width=1200",
+    "familia": "Óxido / hidróxido",
+    "color": "",
+    "sistema": "Ortorrómbico",
+    "densidad": "2.2 g/cm³",
+    "brillo": "",
+    "raya": "blanco",
+    "pistas": [
+      "Familia: Óxido / hidróxido",
+      "Sistema: Ortorrómbico",
+      "Densidad: 2.2 g/cm³",
+      "Raya: blanco",
+      "Fórmula: KNO₃"
+    ]
+  },
+  {
+    "idNum": 198,
     "id": "halloysita",
     "nombre": "Halloysita",
     "tipo": "mineral",
     "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Mineraly.sk%20-%20halloyzit.jpg?width=1200",
     "familia": "Silicato",
-    "color": "",
+    "color": "Blanco",
     "sistema": "Monoclínico",
     "densidad": "",
     "brillo": "No metálico (vítreo)",
@@ -4108,26 +4421,8 @@ export const MINERALS = [
       "Familia: Silicato",
       "Sistema: Monoclínico",
       "Brillo: No metálico (vítreo)",
+      "Color: Blanco",
       "Fórmula: Al₂Si₂O₅(OH)₄"
-    ]
-  },
-  {
-    "idNum": 198,
-    "id": "salitre",
-    "nombre": "Salitre",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Niter.jpg?width=1200",
-    "familia": "Óxido / hidróxido",
-    "color": "",
-    "sistema": "Ortorrómbico",
-    "densidad": "",
-    "brillo": "",
-    "raya": "blanco",
-    "pistas": [
-      "Familia: Óxido / hidróxido",
-      "Sistema: Ortorrómbico",
-      "Raya: blanco",
-      "Fórmula: KNO₃"
     ]
   },
   {
@@ -4139,12 +4434,15 @@ export const MINERALS = [
     "familia": "Sulfuro",
     "color": "",
     "sistema": "Trigonal",
-    "densidad": "",
+    "densidad": "5802.7 g/cm³",
     "brillo": "Metálico",
     "raya": "",
     "pistas": [
+      "Grupo espacial: R3c",
+      "Grupo puntual: ditrigonal pyramidal",
       "Familia: Sulfuro",
       "Sistema: Trigonal",
+      "Densidad: 5802.7 g/cm³",
       "Dureza: Blando",
       "Brillo: Metálico",
       "Dureza (Mohs): 2.75",
@@ -4164,6 +4462,8 @@ export const MINERALS = [
     "brillo": "",
     "raya": "negro",
     "pistas": [
+      "Grupo espacial: 15",
+      "Grupo puntual: monoclinic-prismatic",
       "Familia: Óxido / hidróxido",
       "Sistema: Monoclínico",
       "Densidad: 6.3 g/cm³",
@@ -4175,26 +4475,6 @@ export const MINERALS = [
   },
   {
     "idNum": 201,
-    "id": "proustita",
-    "nombre": "Proustita",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Calcite-Proustite-mf16b.jpg?width=1200",
-    "familia": "Sulfuro",
-    "color": "",
-    "sistema": "Trigonal",
-    "densidad": "",
-    "brillo": "Metálico",
-    "raya": "bermellón",
-    "pistas": [
-      "Familia: Sulfuro",
-      "Sistema: Trigonal",
-      "Brillo: Metálico",
-      "Raya: bermellón",
-      "Fórmula: Ag₃AsS₃"
-    ]
-  },
-  {
-    "idNum": 202,
     "id": "riebeckita",
     "nombre": "Riebeckita",
     "tipo": "mineral",
@@ -4216,7 +4496,7 @@ export const MINERALS = [
     ]
   },
   {
-    "idNum": 203,
+    "idNum": 202,
     "id": "gahnita",
     "nombre": "Gahnita",
     "tipo": "mineral",
@@ -4224,19 +4504,21 @@ export const MINERALS = [
     "familia": "Óxido / hidróxido",
     "color": "",
     "sistema": "Cúbico",
-    "densidad": "",
+    "densidad": "4625.9 g/cm³",
     "brillo": "",
     "raya": "gris",
     "pistas": [
       "Grupo espacial: Fd-3m",
+      "Grupo puntual: cubic-hexoctahedral",
       "Familia: Óxido / hidróxido",
       "Sistema: Cúbico",
+      "Densidad: 4625.9 g/cm³",
       "Raya: gris",
       "Fórmula: ZnAl₂O₄"
     ]
   },
   {
-    "idNum": 204,
+    "idNum": 203,
     "id": "hausmannita",
     "nombre": "Hausmannita",
     "tipo": "mineral",
@@ -4250,7 +4532,32 @@ export const MINERALS = [
     "pistas": [
       "Familia: Óxido / hidróxido",
       "Sistema: Tetragonal",
+      "Dureza: Medio",
+      "Dureza (Mohs): 5.5",
       "Fórmula: Mn²⁺Mn³⁺₂O₄"
+    ]
+  },
+  {
+    "idNum": 204,
+    "id": "proustita",
+    "nombre": "Proustita",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Calcite-Proustite-mf16b.jpg?width=1200",
+    "familia": "Sulfuro",
+    "color": "",
+    "sistema": "Trigonal",
+    "densidad": "5393.9 g/cm³",
+    "brillo": "Metálico",
+    "raya": "bermellón",
+    "pistas": [
+      "Grupo espacial: R3c",
+      "Grupo puntual: ditrigonal pyramidal",
+      "Familia: Sulfuro",
+      "Sistema: Trigonal",
+      "Densidad: 5393.9 g/cm³",
+      "Brillo: Metálico",
+      "Raya: bermellón",
+      "Fórmula: Ag₃AsS₃"
     ]
   },
   {
@@ -4266,6 +4573,8 @@ export const MINERALS = [
     "brillo": "No metálico (vítreo)",
     "raya": "",
     "pistas": [
+      "Grupo espacial: P2₁/n",
+      "Grupo puntual: monoclinic-prismatic",
       "Familia: Silicato",
       "Sistema: Monoclínico",
       "Brillo: No metálico (vítreo)",
@@ -4279,7 +4588,7 @@ export const MINERALS = [
     "tipo": "mineral",
     "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Charoite%20MFrey.jpg?width=1200",
     "familia": "Silicato",
-    "color": "",
+    "color": "Violeta",
     "sistema": "",
     "densidad": "",
     "brillo": "No metálico (vítreo)",
@@ -4288,6 +4597,7 @@ export const MINERALS = [
       "Familia: Silicato",
       "Brillo: No metálico (vítreo)",
       "Raya: blanco",
+      "Color: Violeta",
       "Fórmula: (K,Sr)₁₅-₁₆(Ca,Na)₃₂[Si₆O₁₁(O,OH)₆]₂[Si₁₂O₁₈(O,OH)₁₂]₂[Si₁₇O₂₅(O,OH)₁₈]₂(OH,F)₄ * ~₃H₂O"
     ]
   },
@@ -4300,12 +4610,17 @@ export const MINERALS = [
     "familia": "Óxido / hidróxido",
     "color": "",
     "sistema": "Cúbico",
-    "densidad": "",
+    "densidad": "3628.9 g/cm³",
     "brillo": "",
     "raya": "blanco",
     "pistas": [
+      "Grupo espacial: Fm-3m",
+      "Grupo puntual: cubic-hexoctahedral",
       "Familia: Óxido / hidróxido",
       "Sistema: Cúbico",
+      "Densidad: 3628.9 g/cm³",
+      "Dureza: Medio",
+      "Dureza (Mohs): 5.5",
       "Raya: blanco",
       "Fórmula: MgO"
     ]
@@ -4332,6 +4647,46 @@ export const MINERALS = [
   },
   {
     "idNum": 209,
+    "id": "trona",
+    "nombre": "Trona",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Trona-417603.jpg?width=1200",
+    "familia": "Carbonato",
+    "color": "",
+    "sistema": "Monoclínico",
+    "densidad": "",
+    "brillo": "No metálico (vítreo)",
+    "raya": "blanco",
+    "pistas": [
+      "Grupo puntual: ortorrómbico-piramidal",
+      "Familia: Carbonato",
+      "Sistema: Monoclínico",
+      "Brillo: No metálico (vítreo)",
+      "Raya: blanco",
+      "Fórmula: Na₃(HCO₃)(CO₃)·2H₂O"
+    ]
+  },
+  {
+    "idNum": 210,
+    "id": "abernathyita",
+    "nombre": "Abernathyita",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Abernathyite%2C%20Heinrichite-497484.jpg?width=1200",
+    "familia": "Óxido / hidróxido",
+    "color": "Amarillo",
+    "sistema": "Tetragonal",
+    "densidad": "",
+    "brillo": "",
+    "raya": "",
+    "pistas": [
+      "Familia: Óxido / hidróxido",
+      "Sistema: Tetragonal",
+      "Color: Amarillo",
+      "Fórmula: K(UO₂)(AsO₄)·3H₂O"
+    ]
+  },
+  {
+    "idNum": 211,
     "id": "melanterita",
     "nombre": "Melanterita",
     "tipo": "mineral",
@@ -4353,44 +4708,6 @@ export const MINERALS = [
     ]
   },
   {
-    "idNum": 210,
-    "id": "trona",
-    "nombre": "Trona",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Trona-417603.jpg?width=1200",
-    "familia": "Carbonato",
-    "color": "",
-    "sistema": "Monoclínico",
-    "densidad": "",
-    "brillo": "No metálico (vítreo)",
-    "raya": "blanco",
-    "pistas": [
-      "Familia: Carbonato",
-      "Sistema: Monoclínico",
-      "Brillo: No metálico (vítreo)",
-      "Raya: blanco",
-      "Fórmula: Na₃(HCO₃)(CO₃)·2H₂O"
-    ]
-  },
-  {
-    "idNum": 211,
-    "id": "abernathyita",
-    "nombre": "Abernathyita",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Abernathyite%2C%20Heinrichite-497484.jpg?width=1200",
-    "familia": "Óxido / hidróxido",
-    "color": "",
-    "sistema": "Tetragonal",
-    "densidad": "",
-    "brillo": "",
-    "raya": "",
-    "pistas": [
-      "Familia: Óxido / hidróxido",
-      "Sistema: Tetragonal",
-      "Fórmula: K(UO₂)(AsO₄)·3H₂O"
-    ]
-  },
-  {
     "idNum": 212,
     "id": "greenockita",
     "nombre": "Greenockita",
@@ -4399,12 +4716,13 @@ export const MINERALS = [
     "familia": "Sulfuro",
     "color": "",
     "sistema": "Hexagonal",
-    "densidad": "",
+    "densidad": "4702.3 g/cm³",
     "brillo": "Metálico",
     "raya": "",
     "pistas": [
       "Familia: Sulfuro",
       "Sistema: Hexagonal",
+      "Densidad: 4702.3 g/cm³",
       "Brillo: Metálico",
       "Fórmula: CdS"
     ]
@@ -4422,6 +4740,8 @@ export const MINERALS = [
     "brillo": "",
     "raya": "",
     "pistas": [
+      "Grupo espacial: P2/n",
+      "Grupo puntual: monoclinic-prismatic",
       "Sistema: Monoclínico",
       "Densidad: 8.1 g/cm³",
       "Dureza: Blando",
@@ -4458,12 +4778,17 @@ export const MINERALS = [
     "familia": "Óxido / hidróxido",
     "color": "",
     "sistema": "Monoclínico",
-    "densidad": "",
+    "densidad": "5777.3 g/cm³",
     "brillo": "",
     "raya": "blanco",
     "pistas": [
+      "Grupo espacial: P2₁/n",
+      "Grupo puntual: monoclinic-prismatic",
       "Familia: Óxido / hidróxido",
       "Sistema: Monoclínico",
+      "Densidad: 5777.3 g/cm³",
+      "Dureza: Duro",
+      "Dureza (Mohs): 6.5",
       "Raya: blanco",
       "Fórmula: ZrO₂"
     ]
@@ -4481,8 +4806,12 @@ export const MINERALS = [
     "brillo": "",
     "raya": "",
     "pistas": [
+      "Grupo espacial: P2₁/n",
+      "Grupo puntual: monoclinic-prismatic",
       "Familia: Óxido / hidróxido",
       "Sistema: Ortorrómbico",
+      "Dureza: Medio",
+      "Dureza (Mohs): 3",
       "Fórmula: Cu₂(AsO₄)(OH)"
     ]
   },
@@ -4493,7 +4822,7 @@ export const MINERALS = [
     "tipo": "mineral",
     "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Samarskite-%28Y%29-75446.jpg?width=1200",
     "familia": "Óxido / hidróxido",
-    "color": "",
+    "color": "Negro pardusco",
     "sistema": "Ortorrómbico",
     "densidad": "",
     "brillo": "",
@@ -4502,6 +4831,7 @@ export const MINERALS = [
       "Familia: Óxido / hidróxido",
       "Sistema: Ortorrómbico",
       "Raya: marrón",
+      "Color: Negro pardusco",
       "Fórmula: YFe³⁺Nb₂O₈"
     ]
   },
@@ -4514,13 +4844,16 @@ export const MINERALS = [
     "familia": "Silicato",
     "color": "",
     "sistema": "Cúbico",
-    "densidad": "",
+    "densidad": "2900 g/cm³",
     "brillo": "No metálico (vítreo)",
     "raya": "blanco",
     "pistas": [
       "Familia: Silicato",
       "Sistema: Cúbico",
+      "Densidad: 2900 g/cm³",
+      "Dureza: Duro",
       "Brillo: No metálico (vítreo)",
+      "Dureza (Mohs): 6.5",
       "Raya: blanco",
       "Fórmula: Cs(Si₂Al)O₆·nH₂O"
     ]
@@ -4538,9 +4871,13 @@ export const MINERALS = [
     "brillo": "Metálico",
     "raya": "negro",
     "pistas": [
+      "Grupo espacial: I-42m",
+      "Grupo puntual: tetragonal-scalenohedral",
       "Familia: Sulfuro",
       "Sistema: Tetragonal",
+      "Dureza: Medio",
       "Brillo: Metálico",
+      "Dureza (Mohs): 4",
       "Raya: negro",
       "Fórmula: Cu₂FeSnS₄"
     ]
@@ -4558,6 +4895,8 @@ export const MINERALS = [
     "brillo": "No metálico (vítreo)",
     "raya": "blanco",
     "pistas": [
+      "Grupo espacial: 62",
+      "Grupo puntual: ortorrómbico-dipiramidal",
       "Familia: Silicato",
       "Sistema: Ortorrómbico",
       "Brillo: No metálico (vítreo)",
@@ -4574,13 +4913,15 @@ export const MINERALS = [
     "familia": "Silicato",
     "color": "",
     "sistema": "Monoclínico",
-    "densidad": "",
+    "densidad": "3373.3 g/cm³",
     "brillo": "No metálico (vítreo)",
     "raya": "gris",
     "pistas": [
       "Grupo espacial: C2/m",
+      "Grupo puntual: monoclinic-prismatic",
       "Familia: Silicato",
       "Sistema: Monoclínico",
+      "Densidad: 3373.3 g/cm³",
       "Brillo: No metálico (vítreo)",
       "Raya: gris",
       "Fórmula: Sc₂Si₂O₇"
@@ -4595,12 +4936,15 @@ export const MINERALS = [
     "familia": "Óxido / hidróxido",
     "color": "",
     "sistema": "Cúbico",
-    "densidad": "",
+    "densidad": "9981.3 g/cm³",
     "brillo": "",
     "raya": "",
     "pistas": [
+      "Grupo espacial: Fm-3m",
+      "Grupo puntual: cubic-hexoctahedral",
       "Familia: Óxido / hidróxido",
       "Sistema: Cúbico",
+      "Densidad: 9981.3 g/cm³",
       "Fórmula: ThO₂"
     ]
   },
@@ -4639,6 +4983,8 @@ export const MINERALS = [
     "brillo": "No metálico (vítreo)",
     "raya": "blanco",
     "pistas": [
+      "Grupo espacial: Pm-3m",
+      "Grupo puntual: cubic-hexoctahedral",
       "Familia: Haluro",
       "Sistema: Cúbico",
       "Brillo: No metálico (vítreo)",
@@ -4655,11 +5001,14 @@ export const MINERALS = [
     "familia": "",
     "color": "",
     "sistema": "Cúbico",
-    "densidad": "",
+    "densidad": "7.9 g/cm³",
     "brillo": "",
     "raya": "gris",
     "pistas": [
       "Sistema: Cúbico",
+      "Densidad: 7.9 g/cm³",
+      "Dureza: Medio",
+      "Dureza (Mohs): 4",
       "Raya: gris"
     ]
   },
@@ -4676,6 +5025,8 @@ export const MINERALS = [
     "brillo": "No metálico (vítreo)",
     "raya": "blanco",
     "pistas": [
+      "Grupo espacial: P2₁/n",
+      "Grupo puntual: monoclinic-prismatic",
       "Familia: Fosfato",
       "Sistema: Monoclínico",
       "Brillo: No metálico (vítreo)",
@@ -4692,11 +5043,14 @@ export const MINERALS = [
     "familia": "",
     "color": "",
     "sistema": "Monoclínico",
-    "densidad": "",
+    "densidad": "8860.3 g/cm³",
     "brillo": "",
     "raya": "",
     "pistas": [
+      "Grupo espacial: 12",
+      "Grupo puntual: monoclinic-prismatic",
       "Sistema: Monoclínico",
+      "Densidad: 8860.3 g/cm³",
       "Fórmula: AuTe₂"
     ]
   },
@@ -4709,11 +5063,14 @@ export const MINERALS = [
     "familia": "",
     "color": "",
     "sistema": "Cúbico",
-    "densidad": "",
+    "densidad": "7943.4 g/cm³",
     "brillo": "",
     "raya": "negro",
     "pistas": [
+      "Grupo espacial: Fm-3m",
+      "Grupo puntual: cubic-hexoctahedral",
       "Sistema: Cúbico",
+      "Densidad: 7943.4 g/cm³",
       "Raya: negro",
       "Fórmula: PbTe"
     ]
@@ -4747,12 +5104,15 @@ export const MINERALS = [
     "familia": "Óxido / hidróxido",
     "color": "",
     "sistema": "Hexagonal",
-    "densidad": "",
+    "densidad": "4000 g/cm³",
     "brillo": "",
     "raya": "blanco",
     "pistas": [
+      "Grupo espacial: P6₃",
+      "Grupo puntual: hexagonal-pyramidal",
       "Familia: Óxido / hidróxido",
       "Sistema: Hexagonal",
+      "Densidad: 4000 g/cm³",
       "Dureza: Duro",
       "Dureza (Mohs): 8",
       "Raya: blanco",
@@ -4794,6 +5154,7 @@ export const MINERALS = [
     "raya": "blanco",
     "pistas": [
       "Grupo espacial: 62",
+      "Grupo puntual: ortorrómbico-dipiramidal",
       "Familia: Fosfato",
       "Sistema: Ortorrómbico",
       "Brillo: No metálico (vítreo)",
@@ -4810,44 +5171,27 @@ export const MINERALS = [
     "familia": "Óxido / hidróxido",
     "color": "",
     "sistema": "Triclínico",
-    "densidad": "",
+    "densidad": "1647.9 g/cm³",
     "brillo": "",
     "raya": "blanco",
     "pistas": [
       "Familia: Óxido / hidróxido",
       "Sistema: Triclínico",
+      "Densidad: 1647.9 g/cm³",
+      "Dureza: Blando",
+      "Dureza (Mohs): 1",
       "Raya: blanco",
       "Fórmula: B(OH)₃"
     ]
   },
   {
     "idNum": 234,
-    "id": "ringwoodita",
-    "nombre": "Ringwoodita",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/BlueRingwoodite.jpg?width=1200",
-    "familia": "Silicato",
-    "color": "",
-    "sistema": "Cúbico",
-    "densidad": "",
-    "brillo": "No metálico (vítreo)",
-    "raya": "",
-    "pistas": [
-      "Grupo espacial: Fd-3m",
-      "Familia: Silicato",
-      "Sistema: Cúbico",
-      "Brillo: No metálico (vítreo)",
-      "Fórmula: SiMg₂O₄"
-    ]
-  },
-  {
-    "idNum": 235,
     "id": "valentinita",
     "nombre": "Valentinita",
     "tipo": "mineral",
     "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Valentinite-155153.jpg?width=1200",
     "familia": "Óxido / hidróxido",
-    "color": "",
+    "color": "Blanco a incoloro",
     "sistema": "Ortorrómbico",
     "densidad": "",
     "brillo": "",
@@ -4856,7 +5200,30 @@ export const MINERALS = [
       "Familia: Óxido / hidróxido",
       "Sistema: Ortorrómbico",
       "Raya: blanco",
+      "Color: Blanco a incoloro",
       "Fórmula: Sb₂O₃"
+    ]
+  },
+  {
+    "idNum": 235,
+    "id": "ringwoodita",
+    "nombre": "Ringwoodita",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/BlueRingwoodite.jpg?width=1200",
+    "familia": "Silicato",
+    "color": "",
+    "sistema": "Cúbico",
+    "densidad": "3.2 g/cm³",
+    "brillo": "No metálico (vítreo)",
+    "raya": "",
+    "pistas": [
+      "Grupo espacial: Fd-3m",
+      "Grupo puntual: cubic-hexoctahedral",
+      "Familia: Silicato",
+      "Sistema: Cúbico",
+      "Densidad: 3.2 g/cm³",
+      "Brillo: No metálico (vítreo)",
+      "Fórmula: SiMg₂O₄"
     ]
   },
   {
@@ -4873,6 +5240,7 @@ export const MINERALS = [
     "raya": "blanco",
     "pistas": [
       "Grupo espacial: P31c",
+      "Grupo puntual: ditrigonal pyramidal",
       "Familia: Sulfato",
       "Sistema: Trigonal",
       "Brillo: No metálico (vítreo)",
@@ -4894,9 +5262,12 @@ export const MINERALS = [
     "raya": "blanco",
     "pistas": [
       "Grupo espacial: R3m",
+      "Grupo puntual: ditrigonal pyramidal",
       "Familia: Silicato",
       "Sistema: Trigonal",
+      "Dureza: Duro",
       "Brillo: No metálico (vítreo)",
+      "Dureza (Mohs): 7",
       "Raya: blanco",
       "Fórmula: Na(Li₁.₅Al₁.₅)Al₆(Si₆O₁₈)(BO₃)₃(OH)₃(OH)"
     ]
@@ -4910,12 +5281,15 @@ export const MINERALS = [
     "familia": "Haluro",
     "color": "",
     "sistema": "Tetragonal",
-    "densidad": "",
+    "densidad": "6.9 g/cm³",
     "brillo": "No metálico (vítreo)",
     "raya": "",
     "pistas": [
+      "Grupo espacial: I4/mmm",
+      "Grupo puntual: ditetragonal-dipyramidal",
       "Familia: Haluro",
       "Sistema: Tetragonal",
+      "Densidad: 6.9 g/cm³",
       "Brillo: No metálico (vítreo)",
       "Fórmula: HgCl"
     ]
@@ -4933,6 +5307,8 @@ export const MINERALS = [
     "brillo": "No metálico (vítreo)",
     "raya": "blanco",
     "pistas": [
+      "Grupo espacial: 12",
+      "Grupo puntual: monoclinic-prismatic",
       "Familia: Carbonato",
       "Sistema: Monoclínico",
       "Brillo: No metálico (vítreo)",
@@ -4976,9 +5352,12 @@ export const MINERALS = [
     "raya": "",
     "pistas": [
       "Grupo espacial: P-43m",
+      "Grupo puntual: cubic-hextetrahedral",
       "Familia: Sulfato",
       "Sistema: Cúbico",
+      "Dureza: Medio",
       "Brillo: No metálico (vítreo)",
+      "Dureza (Mohs): 5.5",
       "Fórmula: Na₈(Si₆Al₆)O₂₄(SO₄)·H₂O"
     ]
   },
@@ -5015,9 +5394,13 @@ export const MINERALS = [
     "brillo": "No metálico (vítreo)",
     "raya": "blanco",
     "pistas": [
+      "Grupo espacial: P2₁/n",
+      "Grupo puntual: monoclinic-prismatic",
       "Familia: Fosfato",
       "Sistema: Monoclínico",
+      "Dureza: Medio",
       "Brillo: No metálico (vítreo)",
+      "Dureza (Mohs): 5.5",
       "Raya: blanco",
       "Fórmula: NaAl₃(PO₄)₂(OH)₄"
     ]
@@ -5036,6 +5419,7 @@ export const MINERALS = [
     "raya": "",
     "pistas": [
       "Grupo espacial: P2₁3",
+      "Grupo puntual: cubic-tetartoidal",
       "Familia: Sulfuro",
       "Sistema: Cúbico",
       "Densidad: 5.9 g/cm³",
@@ -5052,7 +5436,7 @@ export const MINERALS = [
     "tipo": "mineral",
     "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Armalcolite%20Tomeik.jpg?width=1200",
     "familia": "Óxido / hidróxido",
-    "color": "",
+    "color": "Negro",
     "sistema": "Ortorrómbico",
     "densidad": "",
     "brillo": "",
@@ -5060,6 +5444,7 @@ export const MINERALS = [
     "pistas": [
       "Familia: Óxido / hidróxido",
       "Sistema: Ortorrómbico",
+      "Color: Negro",
       "Fórmula: (Mg,Fe²⁺)Ti₂O₅"
     ]
   },
@@ -5072,11 +5457,14 @@ export const MINERALS = [
     "familia": "",
     "color": "",
     "sistema": "Cúbico",
-    "densidad": "",
+    "densidad": "6839.8 g/cm³",
     "brillo": "",
     "raya": "negro",
     "pistas": [
+      "Grupo espacial: Im-3",
+      "Grupo puntual: cubic-diploidal",
       "Sistema: Cúbico",
+      "Densidad: 6839.8 g/cm³",
       "Raya: negro",
       "Fórmula: CoAs₃"
     ]
@@ -5090,12 +5478,15 @@ export const MINERALS = [
     "familia": "Óxido / hidróxido",
     "color": "",
     "sistema": "Ortorrómbico",
-    "densidad": "",
+    "densidad": "6205.1 g/cm³",
     "brillo": "",
     "raya": "",
     "pistas": [
+      "Grupo espacial: 62",
+      "Grupo puntual: ortorrómbico-dipiramidal",
       "Familia: Óxido / hidróxido",
       "Sistema: Ortorrómbico",
+      "Densidad: 6205.1 g/cm³",
       "Fórmula: PbZn(VO₄)(OH)"
     ]
   },
@@ -5108,12 +5499,15 @@ export const MINERALS = [
     "familia": "Sulfato",
     "color": "",
     "sistema": "Ortorrómbico",
-    "densidad": "",
+    "densidad": "2738.8 g/cm³",
     "brillo": "No metálico (vítreo)",
     "raya": "blanco",
     "pistas": [
+      "Grupo espacial: Fddd",
+      "Grupo puntual: ortorrómbico-dipiramidal",
       "Familia: Sulfato",
       "Sistema: Ortorrómbico",
+      "Densidad: 2738.8 g/cm³",
       "Brillo: No metálico (vítreo)",
       "Raya: blanco",
       "Fórmula: Na₂SO₄"
@@ -5128,11 +5522,14 @@ export const MINERALS = [
     "familia": "Sulfuro",
     "color": "",
     "sistema": "",
-    "densidad": "",
+    "densidad": "4191.8 g/cm³",
     "brillo": "Metálico",
     "raya": "verde",
     "pistas": [
+      "Grupo espacial: Fm-3m",
+      "Grupo puntual: cubic-hexoctahedral",
       "Familia: Sulfuro",
+      "Densidad: 4191.8 g/cm³",
       "Brillo: Metálico",
       "Raya: verde",
       "Fórmula: MnS"
@@ -5151,6 +5548,8 @@ export const MINERALS = [
     "brillo": "No metálico (vítreo)",
     "raya": "",
     "pistas": [
+      "Grupo espacial: P4/nmm",
+      "Grupo puntual: ditetragonal-dipyramidal",
       "Familia: Haluro",
       "Sistema: Tetragonal",
       "Brillo: No metálico (vítreo)",
@@ -5187,12 +5586,15 @@ export const MINERALS = [
     "familia": "Silicato",
     "color": "",
     "sistema": "Triclínico",
-    "densidad": "",
+    "densidad": "2783.3 g/cm³",
     "brillo": "No metálico (vítreo)",
     "raya": "",
     "pistas": [
+      "Grupo espacial: triclinic-pinacoidal",
+      "Grupo puntual: triclinic-pinacoidal",
       "Familia: Silicato",
       "Sistema: Triclínico",
+      "Densidad: 2783.3 g/cm³",
       "Brillo: No metálico (vítreo)",
       "Fórmula: NaCa₂Si₃O₈(OH)"
     ]
@@ -5206,12 +5608,15 @@ export const MINERALS = [
     "familia": "Óxido / hidróxido",
     "color": "",
     "sistema": "Hexagonal",
-    "densidad": "",
+    "densidad": "6861.1 g/cm³",
     "brillo": "",
     "raya": "blanco",
     "pistas": [
+      "Grupo espacial: P6₃/m",
+      "Grupo puntual: hexagonal-dipyramidal",
       "Familia: Óxido / hidróxido",
       "Sistema: Hexagonal",
+      "Densidad: 6861.1 g/cm³",
       "Raya: blanco",
       "Fórmula: Pb₅(AsO₄)₃Cl"
     ]
@@ -5224,12 +5629,15 @@ export const MINERALS = [
     "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Germanite-231229.jpg?width=1200",
     "familia": "Sulfuro",
     "color": "",
-    "sistema": "",
+    "sistema": "Cúbico",
     "densidad": "",
     "brillo": "Metálico",
     "raya": "",
     "pistas": [
+      "Grupo espacial: P-43n",
+      "Grupo puntual: cubic-hextetrahedral",
       "Familia: Sulfuro",
+      "Sistema: Cúbico",
       "Dureza: Medio",
       "Brillo: Metálico",
       "Dureza (Mohs): 3",
@@ -5250,7 +5658,9 @@ export const MINERALS = [
     "raya": "blanco",
     "pistas": [
       "Familia: Silicato",
+      "Dureza: Medio",
       "Brillo: No metálico (vítreo)",
+      "Dureza (Mohs): 3",
       "Raya: blanco",
       "Fórmula: Al₂O₃(SiO₂)₁.₃-₂.₀·2.5-3.0H₂O"
     ]
@@ -5290,12 +5700,35 @@ export const MINERALS = [
     "pistas": [
       "Familia: Silicato",
       "Sistema: Triclínico",
+      "Dureza: Medio",
       "Brillo: No metálico (vítreo)",
+      "Dureza (Mohs): 3",
       "Fórmula: K₂NaFe²⁺₇Ti₂Si₈O₂₈(OH)₄F"
     ]
   },
   {
     "idNum": 258,
+    "id": "litargirio",
+    "nombre": "Litargirio",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Litharge.jpg?width=1200",
+    "familia": "Óxido / hidróxido",
+    "color": "",
+    "sistema": "Tetragonal",
+    "densidad": "8810.2 g/cm³",
+    "brillo": "",
+    "raya": "",
+    "pistas": [
+      "Grupo espacial: P4/nmm",
+      "Grupo puntual: ditetragonal-dipyramidal",
+      "Familia: Óxido / hidróxido",
+      "Sistema: Tetragonal",
+      "Densidad: 8810.2 g/cm³",
+      "Fórmula: PbO"
+    ]
+  },
+  {
+    "idNum": 259,
     "id": "dundasita",
     "nombre": "Dundasita",
     "tipo": "mineral",
@@ -5309,13 +5742,15 @@ export const MINERALS = [
     "pistas": [
       "Familia: Carbonato",
       "Sistema: Ortorrómbico",
+      "Dureza: Blando",
       "Brillo: No metálico (vítreo)",
+      "Dureza (Mohs): 2",
       "Raya: blanco",
       "Fórmula: PbAl₂(CO₃)₂(OH)₄·H₂O"
     ]
   },
   {
-    "idNum": 259,
+    "idNum": 260,
     "id": "jadarita",
     "nombre": "Jadarita",
     "tipo": "mineral",
@@ -5323,25 +5758,28 @@ export const MINERALS = [
     "familia": "Silicato",
     "color": "",
     "sistema": "Monoclínico",
-    "densidad": "",
+    "densidad": "2370.1 g/cm³",
     "brillo": "No metálico (vítreo)",
     "raya": "blanco",
     "pistas": [
+      "Grupo espacial: P2₁/n",
+      "Grupo puntual: monoclinic-prismatic",
       "Familia: Silicato",
       "Sistema: Monoclínico",
+      "Densidad: 2370.1 g/cm³",
       "Brillo: No metálico (vítreo)",
       "Raya: blanco",
       "Fórmula: LiNaB₃SiO₇(OH)"
     ]
   },
   {
-    "idNum": 260,
+    "idNum": 261,
     "id": "laumontita",
     "nombre": "Laumontita",
     "tipo": "mineral",
     "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Prehnite-Laumontite-132299.jpg?width=1200",
     "familia": "Silicato",
-    "color": "",
+    "color": "Blanco a incoloro",
     "sistema": "Monoclínico",
     "densidad": "",
     "brillo": "No metálico (vítreo)",
@@ -5350,35 +5788,39 @@ export const MINERALS = [
       "Familia: Silicato",
       "Sistema: Monoclínico",
       "Brillo: No metálico (vítreo)",
+      "Color: Blanco a incoloro",
       "Fórmula: CaAl₂Si₄O₁₂·4H₂O"
     ]
   },
   {
-    "idNum": 261,
+    "idNum": 262,
     "id": "aikinita",
     "nombre": "Aikinita",
     "tipo": "mineral",
     "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Aikinite%20-%20Beresowsk%2C%20Ural.JPG?width=1200",
     "familia": "Sulfuro",
     "color": "",
-    "sistema": "",
+    "sistema": "Ortorrómbico",
     "densidad": "",
     "brillo": "Metálico",
     "raya": "",
     "pistas": [
+      "Grupo espacial: 62",
+      "Grupo puntual: ortorrómbico-dipiramidal",
       "Familia: Sulfuro",
+      "Sistema: Ortorrómbico",
       "Brillo: Metálico",
       "Fórmula: CuPbBiS₃"
     ]
   },
   {
-    "idNum": 262,
+    "idNum": 263,
     "id": "annabergita",
     "nombre": "Annabergita",
     "tipo": "mineral",
     "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Annabergite-Siderite-%20Grece-1.jpg?width=1200",
     "familia": "Óxido / hidróxido",
-    "color": "",
+    "color": "Verde manzana",
     "sistema": "Monoclínico",
     "densidad": "",
     "brillo": "",
@@ -5386,11 +5828,12 @@ export const MINERALS = [
     "pistas": [
       "Familia: Óxido / hidróxido",
       "Sistema: Monoclínico",
+      "Color: Verde manzana",
       "Fórmula: Ni₃(AsO₄)₂·8H₂O"
     ]
   },
   {
-    "idNum": 263,
+    "idNum": 264,
     "id": "tugtupita",
     "nombre": "Tugtupita",
     "tipo": "mineral",
@@ -5403,6 +5846,7 @@ export const MINERALS = [
     "raya": "",
     "pistas": [
       "Grupo espacial: I-4",
+      "Grupo puntual: tetragonal-disphenoidal",
       "Familia: Silicato",
       "Sistema: Tetragonal",
       "Densidad: 2.5 g/cm³",
@@ -5413,7 +5857,7 @@ export const MINERALS = [
     ]
   },
   {
-    "idNum": 264,
+    "idNum": 265,
     "id": "lollingita",
     "nombre": "Lollingita",
     "tipo": "mineral",
@@ -5421,18 +5865,21 @@ export const MINERALS = [
     "familia": "Haluro",
     "color": "",
     "sistema": "Ortorrómbico",
-    "densidad": "",
+    "densidad": "7601.9 g/cm³",
     "brillo": "No metálico (vítreo)",
     "raya": "",
     "pistas": [
+      "Grupo espacial: 58",
+      "Grupo puntual: ortorrómbico-dipiramidal",
       "Familia: Haluro",
       "Sistema: Ortorrómbico",
+      "Densidad: 7601.9 g/cm³",
       "Brillo: No metálico (vítreo)",
       "Fórmula: FeAs₂"
     ]
   },
   {
-    "idNum": 265,
+    "idNum": 266,
     "id": "franklinita",
     "nombre": "Franklinita",
     "tipo": "mineral",
@@ -5445,13 +5892,14 @@ export const MINERALS = [
     "raya": "",
     "pistas": [
       "Grupo espacial: Fd-3m",
+      "Grupo puntual: cubic-hexoctahedral",
       "Familia: Óxido / hidróxido",
       "Sistema: Cúbico",
       "Fórmula: ZnFe³⁺₂O₄"
     ]
   },
   {
-    "idNum": 266,
+    "idNum": 267,
     "id": "cummingtonita",
     "nombre": "Cummingtonita",
     "tipo": "mineral",
@@ -5471,7 +5919,7 @@ export const MINERALS = [
     ]
   },
   {
-    "idNum": 267,
+    "idNum": 268,
     "id": "mullita",
     "nombre": "Mullita",
     "tipo": "mineral",
@@ -5491,7 +5939,7 @@ export const MINERALS = [
     ]
   },
   {
-    "idNum": 268,
+    "idNum": 269,
     "id": "glauberita",
     "nombre": "Glauberita",
     "tipo": "mineral",
@@ -5499,19 +5947,22 @@ export const MINERALS = [
     "familia": "Sulfato",
     "color": "",
     "sistema": "Monoclínico",
-    "densidad": "",
+    "densidad": "2840.3 g/cm³",
     "brillo": "No metálico (vítreo)",
     "raya": "blanco",
     "pistas": [
+      "Grupo espacial: 15",
+      "Grupo puntual: monoclinic-prismatic",
       "Familia: Sulfato",
       "Sistema: Monoclínico",
+      "Densidad: 2840.3 g/cm³",
       "Brillo: No metálico (vítreo)",
       "Raya: blanco",
       "Fórmula: Na₂Ca(SO₄)₂"
     ]
   },
   {
-    "idNum": 269,
+    "idNum": 270,
     "id": "ettringita",
     "nombre": "Ettringita",
     "tipo": "mineral",
@@ -5531,7 +5982,7 @@ export const MINERALS = [
     ]
   },
   {
-    "idNum": 270,
+    "idNum": 271,
     "id": "chamosita",
     "nombre": "Chamosita",
     "tipo": "mineral",
@@ -5552,7 +6003,7 @@ export const MINERALS = [
     ]
   },
   {
-    "idNum": 271,
+    "idNum": 272,
     "id": "rosasita",
     "nombre": "Rosasita",
     "tipo": "mineral",
@@ -5566,12 +6017,14 @@ export const MINERALS = [
     "pistas": [
       "Familia: Carbonato",
       "Sistema: Monoclínico",
+      "Dureza: Medio",
       "Brillo: No metálico (vítreo)",
+      "Dureza (Mohs): 4.5",
       "Fórmula: CuZnCO₃(OH)₂"
     ]
   },
   {
-    "idNum": 272,
+    "idNum": 273,
     "id": "coesita",
     "nombre": "Coesita",
     "tipo": "mineral",
@@ -5579,20 +6032,22 @@ export const MINERALS = [
     "familia": "Silicato",
     "color": "",
     "sistema": "Monoclínico",
-    "densidad": "",
+    "densidad": "2634.2 g/cm³",
     "brillo": "No metálico (vítreo)",
     "raya": "blanco",
     "pistas": [
       "Grupo espacial: C2/c",
+      "Grupo puntual: trigonal-trapezoidal",
       "Familia: Silicato",
       "Sistema: Monoclínico",
+      "Densidad: 2634.2 g/cm³",
       "Brillo: No metálico (vítreo)",
       "Raya: blanco",
       "Fórmula: SiO₂"
     ]
   },
   {
-    "idNum": 273,
+    "idNum": 274,
     "id": "lawsonita",
     "nombre": "Lawsonita",
     "tipo": "mineral",
@@ -5605,6 +6060,7 @@ export const MINERALS = [
     "raya": "blanco",
     "pistas": [
       "Grupo espacial: 63",
+      "Grupo puntual: ortorrómbico-dipiramidal",
       "Familia: Silicato",
       "Sistema: Ortorrómbico",
       "Dureza: Duro",
@@ -5615,13 +6071,13 @@ export const MINERALS = [
     ]
   },
   {
-    "idNum": 274,
+    "idNum": 275,
     "id": "kernita",
     "nombre": "Kernita",
     "tipo": "mineral",
     "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Kernite%20-%20USGS%20Mineral%20Specimens%20692.jpg?width=1200",
     "familia": "Óxido / hidróxido",
-    "color": "",
+    "color": "Incoloro a blanco",
     "sistema": "Monoclínico",
     "densidad": "",
     "brillo": "",
@@ -5630,11 +6086,12 @@ export const MINERALS = [
       "Familia: Óxido / hidróxido",
       "Sistema: Monoclínico",
       "Raya: blanco",
+      "Color: Incoloro a blanco",
       "Fórmula: Na₂B₄O₆(OH)₂·3H₂O"
     ]
   },
   {
-    "idNum": 275,
+    "idNum": 276,
     "id": "polihalita",
     "nombre": "Polihalita",
     "tipo": "mineral",
@@ -5648,28 +6105,11 @@ export const MINERALS = [
     "pistas": [
       "Familia: Sulfato",
       "Sistema: Triclínico",
+      "Dureza: Medio",
       "Brillo: No metálico (vítreo)",
+      "Dureza (Mohs): 3.5",
       "Raya: blanco",
       "Fórmula: K₂Ca₂Mg(SO₄)₄·2H₂O"
-    ]
-  },
-  {
-    "idNum": 276,
-    "id": "troilita",
-    "nombre": "Troilita",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Sikhote%20alin.jpg?width=1200",
-    "familia": "Sulfuro",
-    "color": "",
-    "sistema": "Hexagonal",
-    "densidad": "",
-    "brillo": "Metálico",
-    "raya": "",
-    "pistas": [
-      "Familia: Sulfuro",
-      "Sistema: Hexagonal",
-      "Brillo: Metálico",
-      "Fórmula: FeS"
     ]
   },
   {
@@ -5679,7 +6119,7 @@ export const MINERALS = [
     "tipo": "mineral",
     "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Scorodite-scoro-20a.jpg?width=1200",
     "familia": "Óxido / hidróxido",
-    "color": "",
+    "color": "Verde a marrón",
     "sistema": "Ortorrómbico",
     "densidad": "",
     "brillo": "",
@@ -5687,321 +6127,34 @@ export const MINERALS = [
     "pistas": [
       "Familia: Óxido / hidróxido",
       "Sistema: Ortorrómbico",
+      "Color: Verde a marrón",
       "Fórmula: Fe³⁺AsO₄·2H₂O"
     ]
   },
   {
     "idNum": 278,
-    "id": "colemanita",
-    "nombre": "Colemanita",
+    "id": "troilita",
+    "nombre": "Troilita",
     "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/ColemaniteUSGOV.jpg?width=1200",
-    "familia": "Óxido / hidróxido",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Sikhote%20alin.jpg?width=1200",
+    "familia": "Sulfuro",
     "color": "",
-    "sistema": "Monoclínico",
-    "densidad": "",
-    "brillo": "",
-    "raya": "blanco",
+    "sistema": "Hexagonal",
+    "densidad": "4294 g/cm³",
+    "brillo": "Metálico",
+    "raya": "",
     "pistas": [
-      "Familia: Óxido / hidróxido",
-      "Sistema: Monoclínico",
-      "Raya: blanco",
-      "Fórmula: CaB₃O₄(OH)₃·H₂O"
+      "Grupo espacial: P-62c",
+      "Grupo puntual: ditrigonal-dipyramidal",
+      "Familia: Sulfuro",
+      "Sistema: Hexagonal",
+      "Densidad: 4294 g/cm³",
+      "Brillo: Metálico",
+      "Fórmula: FeS"
     ]
   },
   {
     "idNum": 279,
-    "id": "litargirio",
-    "nombre": "Litargirio",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Litharge.jpg?width=1200",
-    "familia": "Óxido / hidróxido",
-    "color": "",
-    "sistema": "Tetragonal",
-    "densidad": "",
-    "brillo": "",
-    "raya": "",
-    "pistas": [
-      "Familia: Óxido / hidróxido",
-      "Sistema: Tetragonal",
-      "Fórmula: PbO"
-    ]
-  },
-  {
-    "idNum": 280,
-    "id": "otavita",
-    "nombre": "Otavita",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Otavite-89481.jpg?width=1200",
-    "familia": "Carbonato",
-    "color": "",
-    "sistema": "Trigonal",
-    "densidad": "",
-    "brillo": "No metálico (vítreo)",
-    "raya": "",
-    "pistas": [
-      "Familia: Carbonato",
-      "Sistema: Trigonal",
-      "Brillo: No metálico (vítreo)",
-      "Fórmula: CdCO₃"
-    ]
-  },
-  {
-    "idNum": 281,
-    "id": "adelita",
-    "nombre": "Adelita",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Adelite.jpg?width=1200",
-    "familia": "Óxido / hidróxido",
-    "color": "",
-    "sistema": "Ortorrómbico",
-    "densidad": "",
-    "brillo": "",
-    "raya": "",
-    "pistas": [
-      "Familia: Óxido / hidróxido",
-      "Sistema: Ortorrómbico",
-      "Fórmula: CaMgAsO₄(OH)"
-    ]
-  },
-  {
-    "idNum": 282,
-    "id": "wustita",
-    "nombre": "Wustita",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/W%C3%BCstite-110970.jpg?width=1200",
-    "familia": "Óxido / hidróxido",
-    "color": "",
-    "sistema": "Cúbico",
-    "densidad": "",
-    "brillo": "",
-    "raya": "",
-    "pistas": [
-      "Grupo espacial: Fm-3m",
-      "Familia: Óxido / hidróxido",
-      "Sistema: Cúbico",
-      "Fórmula: FeO"
-    ]
-  },
-  {
-    "idNum": 283,
-    "id": "sugilita",
-    "nombre": "Sugilita",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Sugilite-40452.jpg?width=1200",
-    "familia": "Silicato",
-    "color": "",
-    "sistema": "Hexagonal",
-    "densidad": "",
-    "brillo": "No metálico (vítreo)",
-    "raya": "blanco",
-    "pistas": [
-      "Familia: Silicato",
-      "Sistema: Hexagonal",
-      "Brillo: No metálico (vítreo)",
-      "Raya: blanco",
-      "Fórmula: K(Na,☐)₂Li₃(Fe,Mn,Al,Zr)₂[Si₁₂O₃₀]"
-    ]
-  },
-  {
-    "idNum": 284,
-    "id": "ferberita",
-    "nombre": "Ferberita",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Ferberite%20-%20Panasqueira%20mines%2C%20Beira%20Baixa%2C%20Portugal.jpg?width=1200",
-    "familia": "Óxido / hidróxido",
-    "color": "",
-    "sistema": "Monoclínico",
-    "densidad": "",
-    "brillo": "",
-    "raya": "",
-    "pistas": [
-      "Familia: Óxido / hidróxido",
-      "Sistema: Monoclínico",
-      "Fórmula: Fe²⁺WO₄"
-    ]
-  },
-  {
-    "idNum": 285,
-    "id": "cancrinita",
-    "nombre": "Cancrinita",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Cancrinite1%20Bellerberg%20RuudKoorn-7.jpg?width=1200",
-    "familia": "Carbonato",
-    "color": "",
-    "sistema": "Hexagonal",
-    "densidad": "",
-    "brillo": "No metálico (vítreo)",
-    "raya": "blanco",
-    "pistas": [
-      "Grupo espacial: P6₃",
-      "Familia: Carbonato",
-      "Sistema: Hexagonal",
-      "Brillo: No metálico (vítreo)",
-      "Raya: blanco",
-      "Fórmula: (Na,Ca,☐)₈(Al₆Si₆)O₂₄(CO₃,SO₄)₂·2H₂O"
-    ]
-  },
-  {
-    "idNum": 286,
-    "id": "berthierita",
-    "nombre": "Berthierita",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Berthierite.jpg?width=1200",
-    "familia": "Sulfuro",
-    "color": "",
-    "sistema": "Ortorrómbico",
-    "densidad": "",
-    "brillo": "Metálico",
-    "raya": "",
-    "pistas": [
-      "Familia: Sulfuro",
-      "Sistema: Ortorrómbico",
-      "Brillo: Metálico",
-      "Fórmula: FeSb₂S₄"
-    ]
-  },
-  {
-    "idNum": 287,
-    "id": "melita",
-    "nombre": "Melita",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Mellite-242353.jpg?width=1200",
-    "familia": "Óxido / hidróxido",
-    "color": "",
-    "sistema": "Tetragonal",
-    "densidad": "",
-    "brillo": "",
-    "raya": "blanco",
-    "pistas": [
-      "Familia: Óxido / hidróxido",
-      "Sistema: Tetragonal",
-      "Raya: blanco",
-      "Fórmula: Al₂[C₆(COO)₆] * 16H₂O"
-    ]
-  },
-  {
-    "idNum": 288,
-    "id": "hidromagnesita",
-    "nombre": "Hidromagnesita",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Hydromagnesite.png?width=1200",
-    "familia": "Carbonato",
-    "color": "",
-    "sistema": "Monoclínico",
-    "densidad": "",
-    "brillo": "No metálico (vítreo)",
-    "raya": "blanco",
-    "pistas": [
-      "Familia: Carbonato",
-      "Sistema: Monoclínico",
-      "Brillo: No metálico (vítreo)",
-      "Raya: blanco",
-      "Fórmula: Mg₅(CO₃)₄(OH)₂·4H₂O"
-    ]
-  },
-  {
-    "idNum": 289,
-    "id": "bismutita",
-    "nombre": "Bismutita",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Bismutite-120470.jpg?width=1200",
-    "familia": "Carbonato",
-    "color": "",
-    "sistema": "Ortorrómbico",
-    "densidad": "",
-    "brillo": "No metálico (vítreo)",
-    "raya": "gris",
-    "pistas": [
-      "Familia: Carbonato",
-      "Sistema: Ortorrómbico",
-      "Brillo: No metálico (vítreo)",
-      "Raya: gris",
-      "Fórmula: Bi₂O₂(CO₃)"
-    ]
-  },
-  {
-    "idNum": 290,
-    "id": "sperrylita",
-    "nombre": "Sperrylita",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Sperrylite-195702.jpg?width=1200",
-    "familia": "",
-    "color": "",
-    "sistema": "Cúbico",
-    "densidad": "",
-    "brillo": "",
-    "raya": "negro",
-    "pistas": [
-      "Sistema: Cúbico",
-      "Raya: negro",
-      "Fórmula: PtAs₂"
-    ]
-  },
-  {
-    "idNum": 291,
-    "id": "argirodita",
-    "nombre": "Argirodita",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Argyrodite-154922.jpg?width=1200",
-    "familia": "Sulfuro",
-    "color": "",
-    "sistema": "Ortorrómbico",
-    "densidad": "",
-    "brillo": "Metálico",
-    "raya": "",
-    "pistas": [
-      "Familia: Sulfuro",
-      "Sistema: Ortorrómbico",
-      "Brillo: Metálico",
-      "Fórmula: Ag₈GeS₆"
-    ]
-  },
-  {
-    "idNum": 292,
-    "id": "onfacita",
-    "nombre": "Onfacita",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Eclogite%20Norway.jpg?width=1200",
-    "familia": "Silicato",
-    "color": "",
-    "sistema": "Monoclínico",
-    "densidad": "",
-    "brillo": "No metálico (vítreo)",
-    "raya": "",
-    "pistas": [
-      "Grupo espacial: P2/n",
-      "Familia: Silicato",
-      "Sistema: Monoclínico",
-      "Brillo: No metálico (vítreo)",
-      "Fórmula: (Ca,Na)(Mg,Fe,Al)Si₂O₆"
-    ]
-  },
-  {
-    "idNum": 293,
-    "id": "magnesiotaaffeite-2n-2s",
-    "nombre": "Magnesiotaaffeite-2N'2S",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Magnesiotaaffeite-2N2S-53105.jpg?width=1200",
-    "familia": "Óxido / hidróxido",
-    "color": "",
-    "sistema": "Hexagonal",
-    "densidad": "3.6 g/cm³",
-    "brillo": "",
-    "raya": "blanco",
-    "pistas": [
-      "Grupo espacial: P6/mmm",
-      "Familia: Óxido / hidróxido",
-      "Sistema: Hexagonal",
-      "Densidad: 3.6 g/cm³",
-      "Dureza: Duro",
-      "Dureza (Mohs): 8",
-      "Raya: blanco",
-      "Fórmula: Mg₃BeAl₈O₁₆"
-    ]
-  },
-  {
-    "idNum": 294,
     "id": "arfvedsonita",
     "nombre": "Arfvedsonita",
     "tipo": "mineral",
@@ -6021,279 +6174,216 @@ export const MINERALS = [
     ]
   },
   {
-    "idNum": 295,
-    "id": "powellita",
-    "nombre": "Powellita",
+    "idNum": 280,
+    "id": "colemanita",
+    "nombre": "Colemanita",
     "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Powellite-23107.jpg?width=1200",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/ColemaniteUSGOV.jpg?width=1200",
     "familia": "Óxido / hidróxido",
-    "color": "",
-    "sistema": "Tetragonal",
-    "densidad": "",
-    "brillo": "",
-    "raya": "",
-    "pistas": [
-      "Familia: Óxido / hidróxido",
-      "Sistema: Tetragonal",
-      "Fórmula: CaMoO₄"
-    ]
-  },
-  {
-    "idNum": 296,
-    "id": "antigorita",
-    "nombre": "Antigorita",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Antigorite-199680.jpg?width=1200",
-    "familia": "Silicato",
     "color": "",
     "sistema": "Monoclínico",
     "densidad": "",
-    "brillo": "No metálico (vítreo)",
-    "raya": "",
+    "brillo": "",
+    "raya": "blanco",
     "pistas": [
-      "Familia: Silicato",
+      "Familia: Óxido / hidróxido",
       "Sistema: Monoclínico",
-      "Brillo: No metálico (vítreo)",
-      "Fórmula: Mg₃Si₂O₅(OH)₄"
+      "Dureza: Medio",
+      "Dureza (Mohs): 4.5",
+      "Raya: blanco",
+      "Fórmula: CaB₃O₄(OH)₃·H₂O"
     ]
   },
   {
-    "idNum": 297,
-    "id": "chorlo",
-    "nombre": "Chorlo",
+    "idNum": 281,
+    "id": "otavita",
+    "nombre": "Otavita",
     "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Schorl%20-%20Galil%C3%A9ia%2C%20Minas%20Gerais%2C%20Brazil.jpg?width=1200",
-    "familia": "Silicato",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Otavite-89481.jpg?width=1200",
+    "familia": "Carbonato",
     "color": "",
     "sistema": "Trigonal",
-    "densidad": "",
+    "densidad": "4956.5 g/cm³",
     "brillo": "No metálico (vítreo)",
     "raya": "",
     "pistas": [
-      "Grupo espacial: R3m",
-      "Familia: Silicato",
+      "Grupo espacial: R-3c",
+      "Grupo puntual: ditrigonal scalahedral",
+      "Familia: Carbonato",
       "Sistema: Trigonal",
-      "Dureza: Duro",
+      "Densidad: 4956.5 g/cm³",
       "Brillo: No metálico (vítreo)",
-      "Dureza (Mohs): 7",
-      "Fórmula: Na(Fe²⁺₃)Al₆(Si₆O₁₈)(BO₃)₃(OH)₃(OH)"
+      "Fórmula: CdCO₃"
     ]
   },
   {
-    "idNum": 298,
-    "id": "bertrandita",
-    "nombre": "Bertrandita",
+    "idNum": 282,
+    "id": "adelita",
+    "nombre": "Adelita",
     "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Bertrandite-118734.jpg?width=1200",
-    "familia": "Silicato",
-    "color": "",
-    "sistema": "Ortorrómbico",
-    "densidad": "",
-    "brillo": "No metálico (vítreo)",
-    "raya": "",
-    "pistas": [
-      "Grupo espacial: Cmc2₁",
-      "Familia: Silicato",
-      "Sistema: Ortorrómbico",
-      "Brillo: No metálico (vítreo)",
-      "Fórmula: Be₄Si₂O₇(OH)₂"
-    ]
-  },
-  {
-    "idNum": 299,
-    "id": "awaruita",
-    "nombre": "Awaruita",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Awaruite-117868.jpg?width=1200",
-    "familia": "Haluro",
-    "color": "",
-    "sistema": "Cúbico",
-    "densidad": "",
-    "brillo": "No metálico (vítreo)",
-    "raya": "",
-    "pistas": [
-      "Grupo espacial: Pm-3m",
-      "Familia: Haluro",
-      "Sistema: Cúbico",
-      "Brillo: No metálico (vítreo)",
-      "Fórmula: Ni₂Fe"
-    ]
-  },
-  {
-    "idNum": 300,
-    "id": "beudantita",
-    "nombre": "Beudantita",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Beudantite-170099.jpg?width=1200",
-    "familia": "Sulfato",
-    "color": "",
-    "sistema": "Trigonal",
-    "densidad": "",
-    "brillo": "No metálico (vítreo)",
-    "raya": "",
-    "pistas": [
-      "Familia: Sulfato",
-      "Sistema: Trigonal",
-      "Brillo: No metálico (vítreo)",
-      "Fórmula: PbFe³⁺₃(AsO₄)(SO₄)(OH)₆"
-    ]
-  },
-  {
-    "idNum": 301,
-    "id": "abhurita",
-    "nombre": "Abhurita",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Abhurite%20-%20Shipwreck%20Hydra%2C%20South%20coast%20of%20Norway.jpg?width=1200",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Adelite.jpg?width=1200",
     "familia": "Óxido / hidróxido",
     "color": "",
-    "sistema": "Trigonal",
+    "sistema": "Ortorrómbico",
     "densidad": "",
     "brillo": "",
     "raya": "",
     "pistas": [
       "Familia: Óxido / hidróxido",
-      "Sistema: Trigonal",
-      "Dureza: Blando",
-      "Dureza (Mohs): 2",
-      "Fórmula: Sn²⁺₂₁O₆(OH)₁₄Cl₁₆"
+      "Sistema: Ortorrómbico",
+      "Dureza: Medio",
+      "Dureza (Mohs): 5",
+      "Fórmula: CaMgAsO₄(OH)"
     ]
   },
   {
-    "idNum": 302,
-    "id": "variscita",
-    "nombre": "Variscita",
+    "idNum": 283,
+    "id": "wustita",
+    "nombre": "Wustita",
     "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Variscite.jpg?width=1200",
-    "familia": "Fosfato",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/W%C3%BCstite-110970.jpg?width=1200",
+    "familia": "Óxido / hidróxido",
     "color": "",
-    "sistema": "Ortorrómbico",
+    "sistema": "Cúbico",
+    "densidad": "",
+    "brillo": "",
+    "raya": "",
+    "pistas": [
+      "Grupo espacial: Fm-3m",
+      "Grupo puntual: cubic-hexoctahedral",
+      "Familia: Óxido / hidróxido",
+      "Sistema: Cúbico",
+      "Dureza: Medio",
+      "Dureza (Mohs): 5",
+      "Fórmula: FeO"
+    ]
+  },
+  {
+    "idNum": 284,
+    "id": "sugilita",
+    "nombre": "Sugilita",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Sugilite-40452.jpg?width=1200",
+    "familia": "Silicato",
+    "color": "",
+    "sistema": "Hexagonal",
     "densidad": "",
     "brillo": "No metálico (vítreo)",
     "raya": "blanco",
     "pistas": [
-      "Familia: Fosfato",
-      "Sistema: Ortorrómbico",
+      "Familia: Silicato",
+      "Sistema: Hexagonal",
       "Brillo: No metálico (vítreo)",
       "Raya: blanco",
-      "Fórmula: Al(PO₄)·2H₂O"
+      "Fórmula: K(Na,☐)₂Li₃(Fe,Mn,Al,Zr)₂[Si₁₂O₃₀]"
     ]
   },
   {
-    "idNum": 303,
-    "id": "polibasita",
-    "nombre": "Polibasita",
+    "idNum": 285,
+    "id": "ferberita",
+    "nombre": "Ferberita",
     "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Mineraly.sk%20-%20polybazit-per2.jpg?width=1200",
-    "familia": "Sulfuro",
-    "color": "",
-    "sistema": "Monoclínico",
-    "densidad": "",
-    "brillo": "Metálico",
-    "raya": "",
-    "pistas": [
-      "Familia: Sulfuro",
-      "Sistema: Monoclínico",
-      "Brillo: Metálico",
-      "Fórmula: [Ag₉CuS₄][(Ag,Cu)₆(Sb,As)₂S₇]"
-    ]
-  },
-  {
-    "idNum": 304,
-    "id": "linarita",
-    "nombre": "Linarita",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Linarite-269083.jpg?width=1200",
-    "familia": "Sulfato",
-    "color": "",
-    "sistema": "Monoclínico",
-    "densidad": "",
-    "brillo": "No metálico (vítreo)",
-    "raya": "",
-    "pistas": [
-      "Familia: Sulfato",
-      "Sistema: Monoclínico",
-      "Brillo: No metálico (vítreo)",
-      "Fórmula: PbCuSO₄(OH)₂"
-    ]
-  },
-  {
-    "idNum": 305,
-    "id": "clinozoisita",
-    "nombre": "Clinozoisita",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Clinozoisite%2C%20Amphibole%20Group%20-%20Mount%20Belvidere%20Quarries%2C%20Vermont%2C%20USA.jpg?width=1200",
-    "familia": "Silicato",
-    "color": "",
-    "sistema": "Monoclínico",
-    "densidad": "",
-    "brillo": "No metálico (vítreo)",
-    "raya": "",
-    "pistas": [
-      "Grupo espacial: P2₁/m",
-      "Familia: Silicato",
-      "Sistema: Monoclínico",
-      "Brillo: No metálico (vítreo)",
-      "Fórmula: Ca₂Al₃(Si₂O₇)(SiO₄)O(OH)"
-    ]
-  },
-  {
-    "idNum": 306,
-    "id": "hessita",
-    "nombre": "Hessita",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Hessite-tmu68b.jpg?width=1200",
-    "familia": "",
-    "color": "",
-    "sistema": "Monoclínico",
-    "densidad": "",
-    "brillo": "",
-    "raya": "negro",
-    "pistas": [
-      "Sistema: Monoclínico",
-      "Raya: negro",
-      "Fórmula: Ag₂Te"
-    ]
-  },
-  {
-    "idNum": 307,
-    "id": "quermesita",
-    "nombre": "Quermesita",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Kermesite-Calcite-280586.jpg?width=1200",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Ferberite%20-%20Panasqueira%20mines%2C%20Beira%20Baixa%2C%20Portugal.jpg?width=1200",
     "familia": "Óxido / hidróxido",
-    "color": "",
-    "sistema": "Triclínico",
+    "color": "Negro",
+    "sistema": "Monoclínico",
     "densidad": "",
     "brillo": "",
     "raya": "",
     "pistas": [
       "Familia: Óxido / hidróxido",
-      "Sistema: Triclínico",
-      "Fórmula: Sb₂OS₂"
+      "Sistema: Monoclínico",
+      "Color: Negro",
+      "Fórmula: Fe²⁺WO₄"
     ]
   },
   {
-    "idNum": 308,
-    "id": "taenita",
-    "nombre": "Taenita",
+    "idNum": 286,
+    "id": "cancrinita",
+    "nombre": "Cancrinita",
     "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Widmanstatten%20patterns%202.jpg?width=1200",
-    "familia": "Haluro",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Cancrinite1%20Bellerberg%20RuudKoorn-7.jpg?width=1200",
+    "familia": "Carbonato",
     "color": "",
-    "sistema": "Cúbico",
+    "sistema": "Hexagonal",
     "densidad": "",
     "brillo": "No metálico (vítreo)",
-    "raya": "",
+    "raya": "blanco",
     "pistas": [
-      "Grupo espacial: Fm-3m",
-      "Familia: Haluro",
-      "Sistema: Cúbico",
+      "Grupo espacial: P6₃",
+      "Grupo puntual: hexagonal-pyramidal",
+      "Familia: Carbonato",
+      "Sistema: Hexagonal",
       "Brillo: No metálico (vítreo)",
-      "Fórmula: (Ni,Fe)"
+      "Raya: blanco",
+      "Fórmula: (Na,Ca,☐)₈(Al₆Si₆)O₂₄(CO₃,SO₄)₂·2H₂O"
     ]
   },
   {
-    "idNum": 309,
+    "idNum": 287,
+    "id": "berthierita",
+    "nombre": "Berthierita",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Berthierite.jpg?width=1200",
+    "familia": "Sulfuro",
+    "color": "",
+    "sistema": "Ortorrómbico",
+    "densidad": "",
+    "brillo": "Metálico",
+    "raya": "",
+    "pistas": [
+      "Grupo espacial: 62",
+      "Grupo puntual: ortorrómbico-dipiramidal",
+      "Familia: Sulfuro",
+      "Sistema: Ortorrómbico",
+      "Brillo: Metálico",
+      "Fórmula: FeSb₂S₄"
+    ]
+  },
+  {
+    "idNum": 288,
+    "id": "melita",
+    "nombre": "Melita",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Mellite-242353.jpg?width=1200",
+    "familia": "Óxido / hidróxido",
+    "color": "Miel a marrón",
+    "sistema": "Tetragonal",
+    "densidad": "",
+    "brillo": "",
+    "raya": "blanco",
+    "pistas": [
+      "Familia: Óxido / hidróxido",
+      "Sistema: Tetragonal",
+      "Raya: blanco",
+      "Color: Miel a marrón",
+      "Fórmula: Al₂[C₆(COO)₆] * 16H₂O"
+    ]
+  },
+  {
+    "idNum": 289,
+    "id": "hidromagnesita",
+    "nombre": "Hidromagnesita",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Hydromagnesite.png?width=1200",
+    "familia": "Carbonato",
+    "color": "",
+    "sistema": "Monoclínico",
+    "densidad": "",
+    "brillo": "No metálico (vítreo)",
+    "raya": "blanco",
+    "pistas": [
+      "Familia: Carbonato",
+      "Sistema: Monoclínico",
+      "Dureza: Medio",
+      "Brillo: No metálico (vítreo)",
+      "Dureza (Mohs): 3.5",
+      "Raya: blanco",
+      "Fórmula: Mg₅(CO₃)₄(OH)₂·4H₂O"
+    ]
+  },
+  {
+    "idNum": 290,
     "id": "saponita",
     "nombre": "Saponita",
     "tipo": "mineral",
@@ -6313,107 +6403,412 @@ export const MINERALS = [
     ]
   },
   {
-    "idNum": 310,
-    "id": "escolecita",
-    "nombre": "Escolecita",
+    "idNum": 291,
+    "id": "sperrylita",
+    "nombre": "Sperrylita",
     "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Scol%C3%A9cite.jpg?width=1200",
-    "familia": "Silicato",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Sperrylite-195702.jpg?width=1200",
+    "familia": "",
     "color": "",
-    "sistema": "Monoclínico",
-    "densidad": "",
-    "brillo": "No metálico (vítreo)",
-    "raya": "blanco",
+    "sistema": "Cúbico",
+    "densidad": "10562.6 g/cm³",
+    "brillo": "",
+    "raya": "negro",
     "pistas": [
-      "Familia: Silicato",
-      "Sistema: Monoclínico",
-      "Brillo: No metálico (vítreo)",
-      "Raya: blanco",
-      "Fórmula: Ca(Si₃Al₂)O₁₀·3H₂O"
+      "Grupo espacial: Pa-3",
+      "Grupo puntual: cubic-diploidal",
+      "Sistema: Cúbico",
+      "Densidad: 10562.6 g/cm³",
+      "Raya: negro",
+      "Fórmula: PtAs₂"
     ]
   },
   {
-    "idNum": 311,
-    "id": "neptunita",
-    "nombre": "Neptunita",
+    "idNum": 292,
+    "id": "bismutita",
+    "nombre": "Bismutita",
     "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Neptunite.jpg?width=1200",
-    "familia": "Silicato",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Bismutite-120470.jpg?width=1200",
+    "familia": "Carbonato",
     "color": "",
-    "sistema": "Monoclínico",
-    "densidad": "",
+    "sistema": "Ortorrómbico",
+    "densidad": "7860.4 g/cm³",
     "brillo": "No metálico (vítreo)",
-    "raya": "",
+    "raya": "gris",
     "pistas": [
-      "Grupo espacial: Cc",
-      "Familia: Silicato",
-      "Sistema: Monoclínico",
+      "Familia: Carbonato",
+      "Sistema: Ortorrómbico",
+      "Densidad: 7860.4 g/cm³",
       "Brillo: No metálico (vítreo)",
-      "Fórmula: Na₂KLiFe²⁺₂Ti₂Si₈O₂₄"
+      "Raya: gris",
+      "Fórmula: Bi₂O₂(CO₃)"
     ]
   },
   {
-    "idNum": 312,
-    "id": "cubanita",
-    "nombre": "Cubanita",
+    "idNum": 293,
+    "id": "argirodita",
+    "nombre": "Argirodita",
     "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Cubanite-163273.jpg?width=1200",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Argyrodite-154922.jpg?width=1200",
     "familia": "Sulfuro",
     "color": "",
     "sistema": "Ortorrómbico",
-    "densidad": "",
-    "brillo": "Metálico",
-    "raya": "negro",
-    "pistas": [
-      "Familia: Sulfuro",
-      "Sistema: Ortorrómbico",
-      "Brillo: Metálico",
-      "Raya: negro",
-      "Fórmula: CuFe₂S₃"
-    ]
-  },
-  {
-    "idNum": 313,
-    "id": "oro-nativo",
-    "nombre": "Oro nativo",
-    "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Or%20Venezuela.jpg?width=1200",
-    "familia": "Elemento nativo",
-    "color": "",
-    "sistema": "Cúbico",
-    "densidad": "17.4 g/cm³",
+    "densidad": "6204.4 g/cm³",
     "brillo": "Metálico",
     "raya": "",
     "pistas": [
-      "Grupo espacial: Fm-3m",
-      "Familia: Elemento nativo",
-      "Sistema: Cúbico",
-      "Densidad: 17.4 g/cm³",
-      "Dureza: Blando",
+      "Grupo espacial: 33",
+      "Grupo puntual: ortorrómbico-piramidal",
+      "Familia: Sulfuro",
+      "Sistema: Ortorrómbico",
+      "Densidad: 6204.4 g/cm³",
       "Brillo: Metálico",
-      "Dureza (Mohs): 2.75",
-      "Fórmula: Au"
+      "Fórmula: Ag₈GeS₆"
     ]
   },
   {
-    "idNum": 314,
-    "id": "krennerita",
-    "nombre": "Krennerita",
+    "idNum": 294,
+    "id": "onfacita",
+    "nombre": "Onfacita",
     "tipo": "mineral",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Krennerite-118304.jpg?width=1200",
-    "familia": "",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Eclogite%20Norway.jpg?width=1200",
+    "familia": "Silicato",
+    "color": "",
+    "sistema": "Monoclínico",
+    "densidad": "",
+    "brillo": "No metálico (vítreo)",
+    "raya": "",
+    "pistas": [
+      "Grupo espacial: P2/n",
+      "Familia: Silicato",
+      "Sistema: Monoclínico",
+      "Brillo: No metálico (vítreo)",
+      "Fórmula: (Ca,Na)(Mg,Fe,Al)Si₂O₆"
+    ]
+  },
+  {
+    "idNum": 295,
+    "id": "magnesiotaaffeite-2n-2s",
+    "nombre": "Magnesiotaaffeite-2N'2S",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Magnesiotaaffeite-2N2S-53105.jpg?width=1200",
+    "familia": "Óxido / hidróxido",
+    "color": "",
+    "sistema": "Hexagonal",
+    "densidad": "3.6 g/cm³",
+    "brillo": "",
+    "raya": "blanco",
+    "pistas": [
+      "Grupo espacial: P6/mmm",
+      "Grupo puntual: dihexagonal-dipyramidal",
+      "Familia: Óxido / hidróxido",
+      "Sistema: Hexagonal",
+      "Densidad: 3.6 g/cm³",
+      "Dureza: Duro",
+      "Dureza (Mohs): 8",
+      "Raya: blanco",
+      "Fórmula: Mg₃BeAl₈O₁₆"
+    ]
+  },
+  {
+    "idNum": 296,
+    "id": "powellita",
+    "nombre": "Powellita",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Powellite-23107.jpg?width=1200",
+    "familia": "Óxido / hidróxido",
+    "color": "",
+    "sistema": "Tetragonal",
+    "densidad": "4.3 g/cm³",
+    "brillo": "",
+    "raya": "",
+    "pistas": [
+      "Grupo espacial: I4₁/a",
+      "Grupo puntual: tetragonal-dipyramidal",
+      "Familia: Óxido / hidróxido",
+      "Sistema: Tetragonal",
+      "Densidad: 4.3 g/cm³",
+      "Fórmula: CaMoO₄"
+    ]
+  },
+  {
+    "idNum": 297,
+    "id": "antigorita",
+    "nombre": "Antigorita",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Antigorite-199680.jpg?width=1200",
+    "familia": "Silicato",
+    "color": "",
+    "sistema": "Monoclínico",
+    "densidad": "2.5 g/cm³",
+    "brillo": "No metálico (vítreo)",
+    "raya": "",
+    "pistas": [
+      "Grupo espacial: P31m",
+      "Grupo puntual: ditrigonal pyramidal",
+      "Familia: Silicato",
+      "Sistema: Monoclínico",
+      "Densidad: 2.5 g/cm³",
+      "Brillo: No metálico (vítreo)",
+      "Fórmula: Mg₃Si₂O₅(OH)₄"
+    ]
+  },
+  {
+    "idNum": 298,
+    "id": "chorlo",
+    "nombre": "Chorlo",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Schorl%20-%20Galil%C3%A9ia%2C%20Minas%20Gerais%2C%20Brazil.jpg?width=1200",
+    "familia": "Silicato",
+    "color": "",
+    "sistema": "Trigonal",
+    "densidad": "",
+    "brillo": "No metálico (vítreo)",
+    "raya": "",
+    "pistas": [
+      "Grupo espacial: R3m",
+      "Grupo puntual: ditrigonal pyramidal",
+      "Familia: Silicato",
+      "Sistema: Trigonal",
+      "Dureza: Duro",
+      "Brillo: No metálico (vítreo)",
+      "Dureza (Mohs): 7",
+      "Fórmula: Na(Fe²⁺₃)Al₆(Si₆O₁₈)(BO₃)₃(OH)₃(OH)"
+    ]
+  },
+  {
+    "idNum": 299,
+    "id": "bertrandita",
+    "nombre": "Bertrandita",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Bertrandite-118734.jpg?width=1200",
+    "familia": "Silicato",
     "color": "",
     "sistema": "Ortorrómbico",
+    "densidad": "2.5 g/cm³",
+    "brillo": "No metálico (vítreo)",
+    "raya": "",
+    "pistas": [
+      "Grupo espacial: Cmc2₁",
+      "Grupo puntual: ortorrómbico-piramidal",
+      "Familia: Silicato",
+      "Sistema: Ortorrómbico",
+      "Densidad: 2.5 g/cm³",
+      "Brillo: No metálico (vítreo)",
+      "Fórmula: Be₄Si₂O₇(OH)₂"
+    ]
+  },
+  {
+    "idNum": 300,
+    "id": "awaruita",
+    "nombre": "Awaruita",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Awaruite-117868.jpg?width=1200",
+    "familia": "Haluro",
+    "color": "",
+    "sistema": "Cúbico",
+    "densidad": "",
+    "brillo": "No metálico (vítreo)",
+    "raya": "",
+    "pistas": [
+      "Grupo espacial: Pm-3m",
+      "Grupo puntual: cubic-hexoctahedral",
+      "Familia: Haluro",
+      "Sistema: Cúbico",
+      "Brillo: No metálico (vítreo)",
+      "Fórmula: Ni₂Fe"
+    ]
+  },
+  {
+    "idNum": 301,
+    "id": "beudantita",
+    "nombre": "Beudantita",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Beudantite-170099.jpg?width=1200",
+    "familia": "Sulfato",
+    "color": "Verde a marrón",
+    "sistema": "Trigonal",
+    "densidad": "",
+    "brillo": "No metálico (vítreo)",
+    "raya": "",
+    "pistas": [
+      "Familia: Sulfato",
+      "Sistema: Trigonal",
+      "Brillo: No metálico (vítreo)",
+      "Color: Verde a marrón",
+      "Fórmula: PbFe³⁺₃(AsO₄)(SO₄)(OH)₆"
+    ]
+  },
+  {
+    "idNum": 302,
+    "id": "abhurita",
+    "nombre": "Abhurita",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Abhurite%20-%20Shipwreck%20Hydra%2C%20South%20coast%20of%20Norway.jpg?width=1200",
+    "familia": "Óxido / hidróxido",
+    "color": "",
+    "sistema": "Trigonal",
     "densidad": "",
     "brillo": "",
     "raya": "",
     "pistas": [
-      "Sistema: Ortorrómbico",
-      "Fórmula: Au₃AgTe₈"
+      "Familia: Óxido / hidróxido",
+      "Sistema: Trigonal",
+      "Dureza: Blando",
+      "Dureza (Mohs): 2",
+      "Fórmula: Sn²⁺₂₁O₆(OH)₁₄Cl₁₆"
     ]
   },
   {
-    "idNum": 315,
+    "idNum": 303,
+    "id": "variscita",
+    "nombre": "Variscita",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Variscite.jpg?width=1200",
+    "familia": "Fosfato",
+    "color": "",
+    "sistema": "Ortorrómbico",
+    "densidad": "",
+    "brillo": "No metálico (vítreo)",
+    "raya": "blanco",
+    "pistas": [
+      "Familia: Fosfato",
+      "Sistema: Ortorrómbico",
+      "Dureza: Medio",
+      "Brillo: No metálico (vítreo)",
+      "Dureza (Mohs): 4.5",
+      "Raya: blanco",
+      "Fórmula: Al(PO₄)·2H₂O"
+    ]
+  },
+  {
+    "idNum": 304,
+    "id": "polibasita",
+    "nombre": "Polibasita",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Mineraly.sk%20-%20polybazit-per2.jpg?width=1200",
+    "familia": "Sulfuro",
+    "color": "Negro metálico",
+    "sistema": "Monoclínico",
+    "densidad": "",
+    "brillo": "Metálico",
+    "raya": "",
+    "pistas": [
+      "Familia: Sulfuro",
+      "Sistema: Monoclínico",
+      "Brillo: Metálico",
+      "Color: Negro metálico",
+      "Fórmula: [Ag₉CuS₄][(Ag,Cu)₆(Sb,As)₂S₇]"
+    ]
+  },
+  {
+    "idNum": 305,
+    "id": "linarita",
+    "nombre": "Linarita",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Linarite-269083.jpg?width=1200",
+    "familia": "Sulfato",
+    "color": "",
+    "sistema": "Monoclínico",
+    "densidad": "",
+    "brillo": "No metálico (vítreo)",
+    "raya": "",
+    "pistas": [
+      "Grupo espacial: P2₁/m",
+      "Grupo puntual: monoclinic-prismatic",
+      "Familia: Sulfato",
+      "Sistema: Monoclínico",
+      "Dureza: Blando",
+      "Brillo: No metálico (vítreo)",
+      "Dureza (Mohs): 2.5",
+      "Fórmula: PbCuSO₄(OH)₂"
+    ]
+  },
+  {
+    "idNum": 306,
+    "id": "clinozoisita",
+    "nombre": "Clinozoisita",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Clinozoisite%2C%20Amphibole%20Group%20-%20Mount%20Belvidere%20Quarries%2C%20Vermont%2C%20USA.jpg?width=1200",
+    "familia": "Silicato",
+    "color": "",
+    "sistema": "Monoclínico",
+    "densidad": "",
+    "brillo": "No metálico (vítreo)",
+    "raya": "",
+    "pistas": [
+      "Grupo espacial: P2₁/m",
+      "Grupo puntual: monoclinic-prismatic",
+      "Familia: Silicato",
+      "Sistema: Monoclínico",
+      "Brillo: No metálico (vítreo)",
+      "Fórmula: Ca₂Al₃(Si₂O₇)(SiO₄)O(OH)"
+    ]
+  },
+  {
+    "idNum": 307,
+    "id": "hessita",
+    "nombre": "Hessita",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Hessite-tmu68b.jpg?width=1200",
+    "familia": "",
+    "color": "Gris plomo",
+    "sistema": "Monoclínico",
+    "densidad": "8246.6 g/cm³",
+    "brillo": "",
+    "raya": "negro",
+    "pistas": [
+      "Sistema: Monoclínico",
+      "Densidad: 8246.6 g/cm³",
+      "Raya: negro",
+      "Color: Gris plomo",
+      "Fórmula: Ag₂Te"
+    ]
+  },
+  {
+    "idNum": 308,
+    "id": "quermesita",
+    "nombre": "Quermesita",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Kermesite-Calcite-280586.jpg?width=1200",
+    "familia": "Óxido / hidróxido",
+    "color": "",
+    "sistema": "Triclínico",
+    "densidad": "4680 g/cm³",
+    "brillo": "",
+    "raya": "",
+    "pistas": [
+      "Grupo espacial: triclinic-pinacoidal",
+      "Grupo puntual: triclinic-pinacoidal",
+      "Familia: Óxido / hidróxido",
+      "Sistema: Triclínico",
+      "Densidad: 4680 g/cm³",
+      "Fórmula: Sb₂OS₂"
+    ]
+  },
+  {
+    "idNum": 309,
+    "id": "taenita",
+    "nombre": "Taenita",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Widmanstatten%20patterns%202.jpg?width=1200",
+    "familia": "Haluro",
+    "color": "",
+    "sistema": "Cúbico",
+    "densidad": "",
+    "brillo": "No metálico (vítreo)",
+    "raya": "",
+    "pistas": [
+      "Grupo espacial: Fm-3m",
+      "Grupo puntual: cubic-hexoctahedral",
+      "Familia: Haluro",
+      "Sistema: Cúbico",
+      "Brillo: No metálico (vítreo)",
+      "Fórmula: (Ni,Fe)"
+    ]
+  },
+  {
+    "idNum": 310,
     "id": "maghemita",
     "nombre": "Maghemita",
     "tipo": "mineral",
@@ -6434,7 +6829,134 @@ export const MINERALS = [
     ]
   },
   {
+    "idNum": 311,
+    "id": "bromargirita",
+    "nombre": "Bromargirita",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Bromargyrite-rh3-12b.jpg?width=1200",
+    "familia": "Haluro",
+    "color": "",
+    "sistema": "Cúbico",
+    "densidad": "6444.4 g/cm³",
+    "brillo": "No metálico (vítreo)",
+    "raya": "",
+    "pistas": [
+      "Familia: Haluro",
+      "Sistema: Cúbico",
+      "Densidad: 6444.4 g/cm³",
+      "Brillo: No metálico (vítreo)",
+      "Fórmula: AgBr"
+    ]
+  },
+  {
+    "idNum": 312,
+    "id": "escolecita",
+    "nombre": "Escolecita",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Scol%C3%A9cite.jpg?width=1200",
+    "familia": "Silicato",
+    "color": "",
+    "sistema": "Monoclínico",
+    "densidad": "",
+    "brillo": "No metálico (vítreo)",
+    "raya": "blanco",
+    "pistas": [
+      "Familia: Silicato",
+      "Sistema: Monoclínico",
+      "Brillo: No metálico (vítreo)",
+      "Raya: blanco",
+      "Fórmula: Ca(Si₃Al₂)O₁₀·3H₂O"
+    ]
+  },
+  {
+    "idNum": 313,
+    "id": "neptunita",
+    "nombre": "Neptunita",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Neptunite.jpg?width=1200",
+    "familia": "Silicato",
+    "color": "",
+    "sistema": "Monoclínico",
+    "densidad": "",
+    "brillo": "No metálico (vítreo)",
+    "raya": "",
+    "pistas": [
+      "Grupo espacial: Cc",
+      "Grupo puntual: monoclínico-domático",
+      "Familia: Silicato",
+      "Sistema: Monoclínico",
+      "Brillo: No metálico (vítreo)",
+      "Fórmula: Na₂KLiFe²⁺₂Ti₂Si₈O₂₄"
+    ]
+  },
+  {
+    "idNum": 314,
+    "id": "cubanita",
+    "nombre": "Cubanita",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Cubanite-163273.jpg?width=1200",
+    "familia": "Sulfuro",
+    "color": "",
+    "sistema": "Ortorrómbico",
+    "densidad": "",
+    "brillo": "Metálico",
+    "raya": "negro",
+    "pistas": [
+      "Grupo espacial: 62",
+      "Grupo puntual: ortorrómbico-dipiramidal",
+      "Familia: Sulfuro",
+      "Sistema: Ortorrómbico",
+      "Dureza: Medio",
+      "Brillo: Metálico",
+      "Dureza (Mohs): 3.5",
+      "Raya: negro",
+      "Fórmula: CuFe₂S₃"
+    ]
+  },
+  {
+    "idNum": 315,
+    "id": "oro-nativo",
+    "nombre": "Oro nativo",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Or%20Venezuela.jpg?width=1200",
+    "familia": "Elemento nativo",
+    "color": "",
+    "sistema": "Cúbico",
+    "densidad": "17.4 g/cm³",
+    "brillo": "Metálico",
+    "raya": "",
+    "pistas": [
+      "Grupo espacial: Fm-3m",
+      "Grupo puntual: cubic-hexoctahedral",
+      "Familia: Elemento nativo",
+      "Sistema: Cúbico",
+      "Densidad: 17.4 g/cm³",
+      "Dureza: Blando",
+      "Brillo: Metálico",
+      "Dureza (Mohs): 2.75",
+      "Fórmula: Au"
+    ]
+  },
+  {
     "idNum": 316,
+    "id": "krennerita",
+    "nombre": "Krennerita",
+    "tipo": "mineral",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Krennerite-118304.jpg?width=1200",
+    "familia": "",
+    "color": "Amarillo latón",
+    "sistema": "Ortorrómbico",
+    "densidad": "",
+    "brillo": "",
+    "raya": "",
+    "pistas": [
+      "Sistema: Ortorrómbico",
+      "Color: Amarillo latón",
+      "Fórmula: Au₃AgTe₈"
+    ]
+  },
+  {
+    "idNum": 317,
     "id": "artinita",
     "nombre": "Artinita",
     "tipo": "mineral",
@@ -6448,13 +6970,15 @@ export const MINERALS = [
     "pistas": [
       "Familia: Carbonato",
       "Sistema: Monoclínico",
+      "Dureza: Blando",
       "Brillo: No metálico (vítreo)",
+      "Dureza (Mohs): 2.5",
       "Raya: blanco",
       "Fórmula: Mg₂CO₃(OH)₂·3H₂O"
     ]
   },
   {
-    "idNum": 317,
+    "idNum": 318,
     "id": "abenakiita-ce",
     "nombre": "Abenakiíta-(Ce)",
     "tipo": "mineral",
@@ -6467,6 +6991,7 @@ export const MINERALS = [
     "raya": "blanco",
     "pistas": [
       "Grupo espacial: R-3",
+      "Grupo puntual: trigonal-rhombohedral",
       "Familia: Carbonato",
       "Sistema: Trigonal",
       "Brillo: No metálico (vítreo)",
@@ -6475,7 +7000,7 @@ export const MINERALS = [
     ]
   },
   {
-    "idNum": 318,
+    "idNum": 319,
     "id": "bavenita",
     "nombre": "Bavenita",
     "tipo": "mineral",
@@ -6495,26 +7020,29 @@ export const MINERALS = [
     ]
   },
   {
-    "idNum": 319,
+    "idNum": 320,
     "id": "paragonita",
     "nombre": "Paragonita",
     "tipo": "mineral",
     "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/ParagoniteWithGarnet%203392.jpg?width=1200",
     "familia": "Silicato",
     "color": "",
-    "sistema": "",
+    "sistema": "Trigonal",
     "densidad": "",
     "brillo": "No metálico (vítreo)",
     "raya": "blanco",
     "pistas": [
+      "Grupo espacial: P3₁12",
+      "Grupo puntual: trigonal-trapezoidal",
       "Familia: Silicato",
+      "Sistema: Trigonal",
       "Brillo: No metálico (vítreo)",
       "Raya: blanco",
       "Fórmula: NaAl₂(Si₃Al)O₁₀(OH)₂"
     ]
   },
   {
-    "idNum": 320,
+    "idNum": 321,
     "id": "jacobsita",
     "nombre": "Jacobsita",
     "tipo": "mineral",
@@ -6527,13 +7055,14 @@ export const MINERALS = [
     "raya": "",
     "pistas": [
       "Grupo espacial: Fd-3m",
+      "Grupo puntual: cubic-hexoctahedral",
       "Familia: Óxido / hidróxido",
       "Sistema: Cúbico",
       "Fórmula: Mn²⁺Fe³⁺₂O₄"
     ]
   },
   {
-    "idNum": 321,
+    "idNum": 322,
     "id": "granito",
     "nombre": "Granito",
     "tipo": "roca",
@@ -6541,14 +7070,17 @@ export const MINERALS = [
     "rocaTipo": "Ígnea",
     "textura": "Grano grueso",
     "composicion": "Cuarzo, feldespato y mica",
+    "color": "Gris a rosado",
     "pistas": [
+      "Dureza: Duro",
       "Tipo de roca: Ígnea",
       "Textura: Grano grueso",
-      "Composición: Cuarzo, feldespato y mica"
+      "Composición: Cuarzo, feldespato y mica",
+      "Color: Gris a rosado"
     ]
   },
   {
-    "idNum": 322,
+    "idNum": 323,
     "id": "marmol",
     "nombre": "Mármol",
     "tipo": "roca",
@@ -6556,14 +7088,17 @@ export const MINERALS = [
     "rocaTipo": "Metamórfica",
     "textura": "Cristalina",
     "composicion": "Calcita recristalizada",
+    "color": "Blanco a variado",
     "pistas": [
+      "Dureza: Medio",
       "Tipo de roca: Metamórfica",
       "Textura: Cristalina",
-      "Composición: Calcita recristalizada"
+      "Composición: Calcita recristalizada",
+      "Color: Blanco a variado"
     ]
   },
   {
-    "idNum": 323,
+    "idNum": 324,
     "id": "caliza",
     "nombre": "Caliza",
     "tipo": "roca",
@@ -6571,14 +7106,17 @@ export const MINERALS = [
     "rocaTipo": "Sedimentaria",
     "textura": "Grano fino",
     "composicion": "Calcita (carbonato de calcio)",
+    "color": "Blanco a gris amarillento",
     "pistas": [
+      "Dureza: Medio",
       "Tipo de roca: Sedimentaria",
       "Textura: Grano fino",
-      "Composición: Calcita (carbonato de calcio)"
+      "Composición: Calcita (carbonato de calcio)",
+      "Color: Blanco a gris amarillento"
     ]
   },
   {
-    "idNum": 324,
+    "idNum": 325,
     "id": "basalto",
     "nombre": "Basalto",
     "tipo": "roca",
@@ -6586,14 +7124,17 @@ export const MINERALS = [
     "rocaTipo": "Ígnea",
     "textura": "Grano fino",
     "composicion": "Plagioclasa y piroxeno",
+    "color": "Negro a gris oscuro",
     "pistas": [
+      "Dureza: Duro",
       "Tipo de roca: Ígnea",
       "Textura: Grano fino",
-      "Composición: Plagioclasa y piroxeno"
+      "Composición: Plagioclasa y piroxeno",
+      "Color: Negro a gris oscuro"
     ]
   },
   {
-    "idNum": 325,
+    "idNum": 326,
     "id": "arenisca",
     "nombre": "Arenisca",
     "tipo": "roca",
@@ -6601,14 +7142,17 @@ export const MINERALS = [
     "rocaTipo": "Sedimentaria",
     "textura": "Granos cementados",
     "composicion": "Granos de cuarzo",
+    "color": "Amarillo a rojizo",
     "pistas": [
+      "Dureza: Medio",
       "Tipo de roca: Sedimentaria",
       "Textura: Granos cementados",
-      "Composición: Granos de cuarzo"
+      "Composición: Granos de cuarzo",
+      "Color: Amarillo a rojizo"
     ]
   },
   {
-    "idNum": 326,
+    "idNum": 327,
     "id": "lapislazuli",
     "nombre": "Lapislázuli",
     "tipo": "roca",
@@ -6616,14 +7160,17 @@ export const MINERALS = [
     "rocaTipo": "Metamórfica",
     "textura": "Compacta",
     "composicion": "Lazurita, calcita y pirita",
+    "color": "Azul intenso",
     "pistas": [
+      "Dureza: Medio",
       "Tipo de roca: Metamórfica",
       "Textura: Compacta",
-      "Composición: Lazurita, calcita y pirita"
+      "Composición: Lazurita, calcita y pirita",
+      "Color: Azul intenso"
     ]
   },
   {
-    "idNum": 327,
+    "idNum": 328,
     "id": "obsidiana",
     "nombre": "Obsidiana",
     "tipo": "roca",
@@ -6631,14 +7178,17 @@ export const MINERALS = [
     "rocaTipo": "Ígnea",
     "textura": "Vítrea",
     "composicion": "Vidrio volcánico",
+    "color": "Negro brillante",
     "pistas": [
+      "Dureza: Duro",
       "Tipo de roca: Ígnea",
       "Textura: Vítrea",
-      "Composición: Vidrio volcánico"
+      "Composición: Vidrio volcánico",
+      "Color: Negro brillante"
     ]
   },
   {
-    "idNum": 328,
+    "idNum": 329,
     "id": "gneis",
     "nombre": "Gneis",
     "tipo": "roca",
@@ -6646,14 +7196,17 @@ export const MINERALS = [
     "rocaTipo": "Metamórfica",
     "textura": "Bandeada",
     "composicion": "Cuarzo, feldespato y mica",
+    "color": "Bandas claras y oscuras",
     "pistas": [
+      "Dureza: Duro",
       "Tipo de roca: Metamórfica",
       "Textura: Bandeada",
-      "Composición: Cuarzo, feldespato y mica"
+      "Composición: Cuarzo, feldespato y mica",
+      "Color: Bandas claras y oscuras"
     ]
   },
   {
-    "idNum": 329,
+    "idNum": 330,
     "id": "pumita",
     "nombre": "Pumita",
     "tipo": "roca",
@@ -6661,14 +7214,17 @@ export const MINERALS = [
     "rocaTipo": "Ígnea",
     "textura": "Vesicular y porosa",
     "composicion": "Vidrio volcánico",
+    "color": "Gris claro a blanco",
     "pistas": [
+      "Dureza: Blando",
       "Tipo de roca: Ígnea",
       "Textura: Vesicular y porosa",
-      "Composición: Vidrio volcánico"
+      "Composición: Vidrio volcánico",
+      "Color: Gris claro a blanco"
     ]
   },
   {
-    "idNum": 330,
+    "idNum": 331,
     "id": "andesita",
     "nombre": "Andesita",
     "tipo": "roca",
@@ -6676,14 +7232,17 @@ export const MINERALS = [
     "rocaTipo": "Ígnea",
     "textura": "Grano fino",
     "composicion": "Plagioclasa y anfíbol",
+    "color": "Gris oscuro",
     "pistas": [
+      "Dureza: Duro",
       "Tipo de roca: Ígnea",
       "Textura: Grano fino",
-      "Composición: Plagioclasa y anfíbol"
+      "Composición: Plagioclasa y anfíbol",
+      "Color: Gris oscuro"
     ]
   },
   {
-    "idNum": 331,
+    "idNum": 332,
     "id": "gabro",
     "nombre": "Gabro",
     "tipo": "roca",
@@ -6691,14 +7250,17 @@ export const MINERALS = [
     "rocaTipo": "Ígnea",
     "textura": "Grano grueso",
     "composicion": "Plagioclasa y piroxeno",
+    "color": "Negro a verde oscuro",
     "pistas": [
+      "Dureza: Duro",
       "Tipo de roca: Ígnea",
       "Textura: Grano grueso",
-      "Composición: Plagioclasa y piroxeno"
+      "Composición: Plagioclasa y piroxeno",
+      "Color: Negro a verde oscuro"
     ]
   },
   {
-    "idNum": 332,
+    "idNum": 333,
     "id": "conglomerado",
     "nombre": "Conglomerado",
     "tipo": "roca",
@@ -6706,25 +7268,13 @@ export const MINERALS = [
     "rocaTipo": "Sedimentaria",
     "textura": "Cantos redondeados",
     "composicion": "Fragmentos de roca",
+    "color": "Variado",
     "pistas": [
+      "Dureza: Medio",
       "Tipo de roca: Sedimentaria",
       "Textura: Cantos redondeados",
-      "Composición: Fragmentos de roca"
-    ]
-  },
-  {
-    "idNum": 333,
-    "id": "esquisto",
-    "nombre": "Esquisto",
-    "tipo": "roca",
-    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Almandin.jpg?width=1200",
-    "rocaTipo": "Metamórfica",
-    "textura": "Foliada",
-    "composicion": "Mica y cuarzo",
-    "pistas": [
-      "Tipo de roca: Metamórfica",
-      "Textura: Foliada",
-      "Composición: Mica y cuarzo"
+      "Composición: Fragmentos de roca",
+      "Color: Variado"
     ]
   },
   {
@@ -6736,14 +7286,35 @@ export const MINERALS = [
     "rocaTipo": "Metamórfica",
     "textura": "Granular dura",
     "composicion": "Cuarzo",
+    "color": "Blanco a gris",
     "pistas": [
+      "Dureza: Duro",
       "Tipo de roca: Metamórfica",
       "Textura: Granular dura",
-      "Composición: Cuarzo"
+      "Composición: Cuarzo",
+      "Color: Blanco a gris"
     ]
   },
   {
     "idNum": 335,
+    "id": "esquisto",
+    "nombre": "Esquisto",
+    "tipo": "roca",
+    "imagen": "https://commons.wikimedia.org/wiki/Special:FilePath/Almandin.jpg?width=1200",
+    "rocaTipo": "Metamórfica",
+    "textura": "Foliada",
+    "composicion": "Mica y cuarzo",
+    "color": "Gris plateado",
+    "pistas": [
+      "Dureza: Medio",
+      "Tipo de roca: Metamórfica",
+      "Textura: Foliada",
+      "Composición: Mica y cuarzo",
+      "Color: Gris plateado"
+    ]
+  },
+  {
+    "idNum": 336,
     "id": "pizarra",
     "nombre": "Pizarra",
     "tipo": "roca",
@@ -6751,10 +7322,13 @@ export const MINERALS = [
     "rocaTipo": "Metamórfica",
     "textura": "Foliada fina",
     "composicion": "Arcillas y mica",
+    "color": "Gris a negro",
     "pistas": [
+      "Dureza: Medio",
       "Tipo de roca: Metamórfica",
       "Textura: Foliada fina",
-      "Composición: Arcillas y mica"
+      "Composición: Arcillas y mica",
+      "Color: Gris a negro"
     ]
   }
 ]
