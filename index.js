@@ -17,6 +17,7 @@ if (!process.env.JWT_SECRET) {
 }
 
 const app = express();
+app.set("trust proxy", 1); // Render está detrás de un proxy
 
 // Middlewares base
 const origenesPermitidos = [
