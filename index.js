@@ -11,6 +11,11 @@ import mineralRoutes from "./routes/minerals.js";
 import dns from "node:dns";
 dns.setServers(["8.8.8.8", "1.1.1.1"]);
 
+if (!process.env.JWT_SECRET) {
+  console.error("✘ Falta JWT_SECRET en las variables de entorno.");
+  process.exit(1);
+}
+
 const app = express();
 
 // Middlewares base
