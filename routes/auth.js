@@ -1,10 +1,12 @@
 import express from "express";
 import bcrypt from "bcrypt";
+import crypto from "node:crypto";
 import User from "../models/User.js";
 import Game from "../models/Game.js";
 import auth from "../middleware/auth.js";
 import jwt from "jsonwebtoken";
 import rateLimit from "express-rate-limit";
+import { enviarCorreoRecuperacion } from "../utils/correo.js";
 
 const router = express.Router();
 
@@ -122,6 +124,72 @@ router.delete("/me", auth, async (req, res) => {
     await User.findByIdAndDelete(user._id);
 
     res.json({ mensaje: "Cuenta eliminada." });
+  } catch (err) {
+    res.status(500).json({ error: "Error del servidor: " + err.message });
+  }
+});
+
+// POST /api/auth/olvide-password — pide el correo y envía el enlace de recuperación
+router.post("/olvide-password", limiteAuth, async (req, res) => {
+  try {
+    const { email } = req.body;
+    if (!email) {
+      return res.status(400).json({ error: "Falta el email." });
+    }
+
+    const user = await User.findOne({ email });
+
+    // Por seguridad, siempre respondemos igual exista o no el email
+    if (!user) {
+      return res.json({
+        mensaje: "Si el correo existe, se envió un enlace de recuperación.",
+      });
+    }
+
+    const token = crypto.randomBytes(32).toString("hex");
+    user.resetToken = token;
+    user.resetExpira = new Date(Date.now() + 60 * 60 * 1000); // 1 hora
+    await user.save();
+
+    await enviarCorreoRecuperacion(user.email, token);
+
+    res.json({
+      mensaje: "Si el correo existe, se envió un enlace de recuperación.",
+    });
+  } catch (err) {
+    res.status(500).json({ error: "Error del servidor: " + err.message });
+  }
+});
+
+// POST /api/auth/restablecer-password — usa el token del correo para poner nueva contraseña
+router.post("/restablecer-password", limiteAuth, async (req, res) => {
+  try {
+    const { token, password } = req.body;
+
+    if (!token || !password) {
+      return res.status(400).json({ error: "Faltan datos." });
+    }
+    if (password.length < 6) {
+      return res
+        .status(400)
+        .json({ error: "La contraseña debe tener al menos 6 caracteres." });
+    }
+
+    const user = await User.findOne({
+      resetToken: token,
+      resetExpira: { $gt: new Date() },
+    });
+
+    if (!user) {
+      return res.status(400).json({ error: "Enlace inválido o expirado." });
+    }
+
+    user.password = await bcrypt.hash(password, 10);
+    user.resetToken = null;
+    user.resetExpira = null;
+    await user.save();
+
+    res.json({ mensaje: "Contraseña actualizada." });
   } catch (err) {
     res.status(500).json({ error: "Error del servidor: " + err.message });
   }

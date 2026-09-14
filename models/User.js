@@ -28,6 +28,8 @@ const userSchema = new mongoose.Schema(
       ultimaFecha: { type: String, default: null },
       distribucion: { type: [Number], default: [0, 0, 0, 0, 0, 0] },
     },
+    resetToken: { type: String, default: null },
+    resetExpira: { type: Date, default: null },
   },
   { timestamps: true }, // añade createdAt y updatedAt automáticamente
 );
