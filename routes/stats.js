@@ -76,15 +76,32 @@ router.post("/importar", async (req, res) => {
       return res.json(user.stats); // ya tiene datos: no tocar
     }
 
+    // Normalizar cada campo numérico y validar la distribución
+    const distribucion = Array.isArray(stats.distribucion)
+      ? Array.from({ length: 6 }, (_, i) => {
+          const n = Number(stats.distribucion[i]);
+          return Number.isFinite(n) && n >= 0 ? Math.floor(n) : 0;
+        })
+      : [0, 0, 0, 0, 0, 0];
+
+    const aNumero = (v) => {
+      const n = Number(v);
+      return Number.isFinite(n) && n >= 0 ? Math.floor(n) : 0;
+    };
+
+    const fechaValida =
+      typeof stats.ultimaFecha === "string" &&
+      /^\d{4}-\d{2}-\d{2}$/.test(stats.ultimaFecha)
+        ? stats.ultimaFecha
+        : null;
+
     user.stats = {
-      jugadas: stats.jugadas || 0,
-      ganadas: stats.ganadas || 0,
-      racha: stats.racha || 0,
-      mejorRacha: stats.mejorRacha || 0,
-      ultimaFecha: stats.ultimaFecha || null,
-      distribucion: Array.isArray(stats.distribucion)
-        ? stats.distribucion
-        : [0, 0, 0, 0, 0, 0],
+      jugadas: aNumero(stats.jugadas),
+      ganadas: aNumero(stats.ganadas),
+      racha: aNumero(stats.racha),
+      mejorRacha: aNumero(stats.mejorRacha),
+      ultimaFecha: fechaValida,
+      distribucion,
     };
     user.markModified("stats");
     await user.save();
